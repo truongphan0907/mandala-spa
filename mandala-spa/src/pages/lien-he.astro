@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import BookingForm from '../components/BookingForm.astro';
+import info from '../data/info.json';
+---
+<Base title="Liên hệ & Đặt lịch" description={`Đặt lịch massage tại ${info.name}. Hotline ${info.phone}, địa chỉ ${info.address}.`}>
+  <section class="bg-sand/50 py-16 text-center md:py-20">
+    <div class="container-x">
+      <p class="eyebrow">Liên hệ</p>
+      <h1 class="mt-3 text-5xl md:text-6xl">Đặt lịch & Liên hệ</h1>
+      <p class="mx-auto mt-4 max-w-xl text-ink/70">Gửi yêu cầu bên dưới, chúng tôi sẽ gọi xác nhận trong giờ mở cửa. Cần gấp? Gọi ngay <a class="font-medium text-bark" href={`tel:${info.phoneRaw}`}>{info.phone}</a>.</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container-x grid gap-12 lg:grid-cols-5">
+      <div id="dat-lich" class="scroll-mt-24 rounded-3xl bg-white/60 p-6 ring-1 ring-bark/10 md:p-10 lg:col-span-3">
+        <h2 class="text-3xl">Đặt lịch online</h2>
+        <p class="mt-1 mb-6 text-sm text-ink/60">Các trường có dấu * là bắt buộc.</p>
+        <BookingForm />
+      </div>
+
+      <div class="space-y-6 lg:col-span-2">
+        <div>
+          <p class="eyebrow">Địa chỉ</p>
+          <p class="mt-2">{info.address}</p>
+          <a href={info.mapLink} target="_blank" rel="noopener" class="mt-1 inline-block text-sm text-gold hover:underline">Chỉ đường Google Maps →</a>
+        </div>
+        <div>
+          <p class="eyebrow">Giờ mở cửa</p>
+          {info.hours.map((h) => <p class="mt-2">{h.days}: <strong class="text-bark">{h.time}</strong></p>)}
+        </div>
+        <div>
+          <p class="eyebrow">Liên hệ nhanh</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href={`tel:${info.phoneRaw}`} class="btn-primary !py-2">Gọi {info.phone}</a>
+            <a href={info.zalo} target="_blank" rel="noopener" class="btn-ghost !py-2">Zalo</a>
+            <a href={info.messenger} target="_blank" rel="noopener" class="btn-ghost !py-2">Messenger</a>
+          </div>
+        </div>
+        <iframe
+          src={info.mapEmbedUrl}
+          title="Bản đồ Mandala Spa"
+          class="aspect-[4/3] w-full rounded-2xl border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</Base>

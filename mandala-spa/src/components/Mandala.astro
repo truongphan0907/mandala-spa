@@ -1,0 +1,24 @@
+---
+// Họa tiết mandala hình học (SVG) dùng làm điểm nhấn trang trí
+interface Props { class?: string; petals?: number }
+const { class: className = '', petals = 12 } = Astro.props;
+const angles = Array.from({ length: petals }, (_, i) => (360 / petals) * i);
+---
+<svg viewBox="-100 -100 200 200" class={className} fill="none" stroke="currentColor" stroke-width="0.8" aria-hidden="true">
+  <circle r="96" />
+  <circle r="88" stroke-dasharray="2 4" />
+  <circle r="24" />
+  <circle r="10" />
+  {angles.map((a) => (
+    <g transform={`rotate(${a})`}>
+      <path d="M0 -24 C 14 -40, 14 -62, 0 -80 C -14 -62, -14 -40, 0 -24 Z" />
+      <path d="M0 -34 C 6 -44, 6 -56, 0 -66 C -6 -56, -6 -44, 0 -34 Z" />
+      <circle cy="-86" r="2.2" />
+    </g>
+  ))}
+  {angles.map((a) => (
+    <g transform={`rotate(${a + 180 / petals})`}>
+      <path d="M0 -26 C 8 -34, 8 -44, 0 -52 C -8 -44, -8 -34, 0 -26 Z" />
+    </g>
+  ))}
+</svg>

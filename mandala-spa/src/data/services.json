@@ -1,0 +1,81 @@
+[
+  {
+    "category": "Massage body",
+    "items": [
+      {
+        "name": "Massage thư giãn tinh dầu",
+        "description": "Động tác mềm mại kết hợp tinh dầu thiên nhiên, giúp thả lỏng cơ và ngủ ngon hơn.",
+        "options": [
+          { "duration": "60 phút", "price": 350000 },
+          { "duration": "90 phút", "price": 480000 }
+        ],
+        "featured": true
+      },
+      {
+        "name": "Massage đá nóng",
+        "description": "Đá bazan làm ấm giúp giãn cơ sâu, giảm căng cứng vai gáy và lưng.",
+        "options": [
+          { "duration": "75 phút", "price": 450000 },
+          { "duration": "90 phút", "price": 520000 }
+        ],
+        "featured": true
+      },
+      {
+        "name": "Massage trị liệu chuyên sâu",
+        "description": "Tác động lực mạnh vào nhóm cơ đau mỏi, phù hợp người làm văn phòng và chơi thể thao.",
+        "options": [
+          { "duration": "60 phút", "price": 400000 },
+          { "duration": "90 phút", "price": 550000 }
+        ]
+      },
+      {
+        "name": "Massage Thái",
+        "description": "Kéo giãn kết hợp bấm huyệt theo phương pháp truyền thống Thái Lan, mặc trang phục rộng.",
+        "options": [
+          { "duration": "60 phút", "price": 380000 },
+          { "duration": "90 phút", "price": 500000 }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Foot & Head",
+    "items": [
+      {
+        "name": "Foot massage bấm huyệt",
+        "description": "Ngâm chân thảo mộc và bấm huyệt bàn chân, giúp lưu thông khí huyết.",
+        "options": [
+          { "duration": "45 phút", "price": 220000 },
+          { "duration": "60 phút", "price": 280000 }
+        ],
+        "featured": true
+      },
+      {
+        "name": "Gội đầu dưỡng sinh",
+        "description": "Gội thảo dược, massage đầu – cổ – vai gáy, giảm đau đầu và căng thẳng.",
+        "options": [
+          { "duration": "60 phút", "price": 250000 }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Gói combo",
+    "items": [
+      {
+        "name": "Combo Mandala Signature",
+        "description": "Massage đá nóng + foot massage + gội đầu dưỡng sinh, kèm trà thảo mộc.",
+        "options": [
+          { "duration": "150 phút", "price": 850000 }
+        ]
+      },
+      {
+        "name": "Combo cặp đôi",
+        "description": "Phòng đôi riêng tư, massage tinh dầu 90 phút cho 2 người.",
+        "options": [
+          { "duration": "90 phút / 2 người", "price": 900000 }
+        ]
+      }
+    ]
+  }
+]

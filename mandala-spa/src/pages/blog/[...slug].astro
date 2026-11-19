@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<Base title={post.data.title} description={post.data.description}>
+  <article class="container-x max-w-3xl py-16 md:py-24">
+    <a href="/blog" class="text-sm text-gold hover:underline">← Tất cả bài viết</a>
+    <p class="mt-6 text-sm text-ink/50">{post.data.date.toLocaleDateString('vi-VN')}</p>
+    <h1 class="mt-2 text-4xl md:text-5xl">{post.data.title}</h1>
+    <div class="prose-spa mt-8">
+      <Content />
+    </div>
+    <div class="mt-12 rounded-2xl bg-sand/60 p-6 text-center">
+      <p class="font-serif text-2xl text-bark">Muốn trải nghiệm liệu trình này?</p>
+      <a href="/lien-he#dat-lich" class="btn-primary mt-4">Đặt lịch ngay</a>
+    </div>
+  </article>
+</Base>
+
+<style is:global>
+  .prose-spa { line-height: 1.8; color: color-mix(in srgb, var(--color-ink) 85%, transparent); }
+  .prose-spa h2 { font-size: 1.9rem; margin: 2rem 0 0.75rem; }
+  .prose-spa h3 { font-size: 1.5rem; margin: 1.5rem 0 0.5rem; }
+  .prose-spa p { margin: 0 0 1rem; }
+  .prose-spa ul { list-style: disc; padding-left: 1.4rem; margin: 0 0 1rem; }
+  .prose-spa ol { list-style: decimal; padding-left: 1.4rem; margin: 0 0 1rem; }
+  .prose-spa a { color: var(--color-gold); text-decoration: underline; }
+  .prose-spa img { border-radius: 1rem; margin: 1.5rem 0; }
+</style>

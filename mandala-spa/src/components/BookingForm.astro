@@ -1,0 +1,108 @@
+---
+import info from '../data/info.json';
+import services from '../data/services.json';
+const serviceNames = services.flatMap((c) => c.items.map((i) => i.name));
+const siteKey = info.turnstileSiteKey;
+const times = Array.from({ length: 25 }, (_, i) => {
+  const mins = 9 * 60 + i * 30; // 09:00 → 21:00, mỗi 30 phút
+  return `${String(Math.floor(mins / 60)).padStart(2, '0')}:${String(mins % 60).padStart(2, '0')}`;
+});
+---
+<form id="booking-form" class="grid gap-4 sm:grid-cols-2" novalidate>
+  <label class="sm:col-span-1">
+    <span class="mb-1 block text-sm text-bark">Họ và tên *</span>
+    <input name="name" required class="field" autocomplete="name" />
+  </label>
+  <label class="sm:col-span-1">
+    <span class="mb-1 block text-sm text-bark">Số điện thoại *</span>
+    <input name="phone" type="tel" required class="field" autocomplete="tel" inputmode="tel" />
+  </label>
+  <label class="sm:col-span-2">
+    <span class="mb-1 block text-sm text-bark">Dịch vụ</span>
+    <select name="service" class="field">
+      <option value="">— Chọn dịch vụ —</option>
+      {serviceNames.map((s) => <option>{s}</option>)}
+    </select>
+  </label>
+  <label>
+    <span class="mb-1 block text-sm text-bark">Ngày</span>
+    <input name="date" type="date" class="field" />
+  </label>
+  <div class="grid grid-cols-2 gap-4">
+    <label>
+      <span class="mb-1 block text-sm text-bark">Giờ</span>
+      <select name="time" class="field">
+        {times.map((t) => <option>{t}</option>)}
+      </select>
+    </label>
+    <label>
+      <span class="mb-1 block text-sm text-bark">Số khách</span>
+      <input name="guests" type="number" min="1" max="10" value="1" class="field" />
+    </label>
+  </div>
+  <label class="sm:col-span-2">
+    <span class="mb-1 block text-sm text-bark">Ghi chú</span>
+    <textarea name="note" rows="3" class="field" placeholder="Vùng cơ cần chú ý, yêu cầu kỹ thuật viên nam/nữ…"></textarea>
+  </label>
+
+  <!-- Bẫy bot, người dùng không nhìn thấy -->
+  <input name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+
+  {siteKey && <div class="cf-turnstile sm:col-span-2" data-sitekey={siteKey} data-language="vi"></div>}
+
+  <div class="sm:col-span-2">
+    <button type="submit" class="btn-primary w-full sm:w-auto">Gửi yêu cầu đặt lịch</button>
+    <p id="booking-msg" class="mt-3 text-sm" role="status"></p>
+  </div>
+</form>
+
+{siteKey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
+
+<script>
+  const form = document.getElementById('booking-form') as HTMLFormElement | null;
+  const msg = document.getElementById('booking-msg');
+  const dateInput = form?.querySelector<HTMLInputElement>('input[name="date"]');
+  if (dateInput) {
+    const today = new Date();
+    today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+    dateInput.min = today.toISOString().slice(0, 10);
+    dateInput.value = dateInput.min;
+  }
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!msg) return;
+    const data = Object.fromEntries(new FormData(form).entries());
+    if (!String(data.name).trim() || !String(data.phone).trim()) {
+      msg.textContent = 'Vui lòng nhập họ tên và số điện thoại.';
+      msg.className = 'mt-3 text-sm text-red-700';
+      return;
+    }
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    btn.disabled = true;
+    msg.textContent = 'Đang gửi…';
+    msg.className = 'mt-3 text-sm text-bark';
+    try {
+      const res = await fetch('/api/booking', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const out = await res.json();
+      if (out.ok) {
+        form.reset();
+        msg.textContent = 'Cảm ơn bạn! Mandala Spa sẽ gọi xác nhận lịch hẹn trong ít phút.';
+        msg.className = 'mt-3 text-sm text-sage font-medium';
+      } else {
+        throw new Error(out.error);
+      }
+    } catch (err) {
+      msg.textContent = (err as Error).message || 'Có lỗi xảy ra, vui lòng gọi hotline.';
+      msg.className = 'mt-3 text-sm text-red-700';
+    } finally {
+      btn.disabled = false;
+      // @ts-ignore – làm mới Turnstile nếu có
+      window.turnstile?.reset?.();
+    }
+  });
+</script>

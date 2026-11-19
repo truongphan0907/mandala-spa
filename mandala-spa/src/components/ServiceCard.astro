@@ -1,0 +1,18 @@
+---
+interface Option { duration: string; price: number }
+interface Props { name: string; description: string; options: Option[] }
+const { name, description, options } = Astro.props;
+const vnd = (n: number) => new Intl.NumberFormat('vi-VN').format(n) + 'đ';
+---
+<article class="flex h-full flex-col rounded-2xl border border-bark/10 bg-white/60 p-6 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-bark/5">
+  <h3 class="text-2xl font-semibold">{name}</h3>
+  <p class="mt-2 flex-1 text-sm leading-relaxed text-ink/70">{description}</p>
+  <ul class="mt-5 space-y-2 border-t border-dashed border-bark/20 pt-4">
+    {options.map((o) => (
+      <li class="flex items-baseline justify-between text-sm">
+        <span class="text-ink/70">{o.duration}</span>
+        <span class="font-semibold text-bark">{vnd(o.price)}</span>
+      </li>
+    ))}
+  </ul>
+</article>

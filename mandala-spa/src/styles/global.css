@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Bảng màu thương hiệu Mandala – đổi màu ở đây là đổi toàn bộ web */
+@theme {
+  --color-cream: #f7f1e8;
+  --color-sand: #e9dcc7;
+  --color-clay: #c9a67a;
+  --color-gold: #a8834f;
+  --color-bark: #5b4636;
+  --color-ink: #2b2520;
+  --color-sage: #7a8767;
+
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+  }
+  h1, h2, h3 { @apply font-serif text-bark; letter-spacing: -0.01em; }
+}
+
+/* Class dùng chung – sửa ở đây là đổi toàn bộ nút, ô nhập… */
+@utility container-x { @apply mx-auto w-full max-w-6xl px-5 md:px-8; }
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium tracking-wide transition disabled:opacity-60;
+}
+@utility btn-primary { @apply btn bg-bark text-cream hover:bg-ink; }
+@utility btn-ghost { @apply btn border border-bark/30 text-bark hover:bg-bark hover:text-cream; }
+@utility eyebrow { @apply text-xs font-medium uppercase tracking-[0.25em] text-gold; }
+@utility field {
+  @apply w-full rounded-xl border border-bark/20 bg-white/70 px-4 py-3 text-sm outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/20;
+}
+
+/* Lớp nền ảnh tạm – thay bằng ảnh thật sau */
+.photo-placeholder {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,.35), transparent 50%),
+    linear-gradient(135deg, #c9a67a 0%, #8a6a4f 55%, #5b4636 100%);
+}

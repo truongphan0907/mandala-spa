@@ -1,0 +1,139 @@
+---
+import Base from '../layouts/Base.astro';
+import Mandala from '../components/Mandala.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import info from '../data/info.json';
+import services from '../data/services.json';
+import { getCollection } from 'astro:content';
+
+const featured = services.flatMap((c) => c.items).filter((i) => i.featured).slice(0, 3);
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+
+const benefits = [
+  { title: 'Kỹ thuật viên tay nghề cao', text: 'Được đào tạo bài bản về trị liệu và bấm huyệt, nhiều năm kinh nghiệm.' },
+  { title: 'Tinh dầu & thảo mộc thiên nhiên', text: 'Nguyên liệu chọn lọc, an toàn cho da nhạy cảm.' },
+  { title: 'Không gian riêng tư', text: 'Phòng trị liệu yên tĩnh, sạch sẽ, khăn và dụng cụ thay mới cho từng khách.' },
+  { title: 'Giá minh bạch', text: 'Niêm yết rõ ràng, không phát sinh phụ phí.' },
+];
+
+const reviews = [
+  { name: 'Chị Lan', text: 'Massage đá nóng rất thư giãn, kỹ thuật viên nhẹ nhàng và chu đáo. Sẽ quay lại!' },
+  { name: 'Anh Minh', text: 'Đau vai gáy lâu năm, sau 2 buổi trị liệu thấy nhẹ hẳn. Không gian rất yên tĩnh.' },
+  { name: 'Ms. Sarah', text: 'Lovely place, great foot massage and very friendly staff.' },
+];
+---
+<Base>
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <Mandala class="pointer-events-none absolute -top-40 -right-40 h-[36rem] w-[36rem] text-gold/15 md:h-[48rem] md:w-[48rem]" petals={16} />
+    <div class="container-x relative grid items-center gap-12 py-16 md:grid-cols-2 md:py-28">
+      <div>
+        <p class="eyebrow">Spa & Massage trị liệu</p>
+        <h1 class="mt-4 text-5xl leading-[1.05] font-semibold md:text-7xl">
+          {info.slogan.split(' cho ')[0]}<br /><em class="text-gold">cho thân và tâm</em>
+        </h1>
+        <p class="mt-6 max-w-md text-base leading-relaxed text-ink/70">{info.description}</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/lien-he#dat-lich" class="btn-primary">Đặt lịch ngay</a>
+          <a href="/dich-vu" class="btn-ghost">Xem bảng giá</a>
+        </div>
+        <p class="mt-6 text-sm text-ink/60">Mở cửa {info.hours[0].time} · Hotline <a class="font-medium text-bark" href={`tel:${info.phoneRaw}`}>{info.phone}</a></p>
+      </div>
+      <div class="relative">
+        <!-- Thay bằng ảnh thật: <img src="/images/hero.webp" alt="..." class="..." /> -->
+        <div class="photo-placeholder aspect-[4/5] w-full rounded-t-full rounded-b-3xl shadow-2xl shadow-bark/20"></div>
+        <div class="absolute -bottom-6 -left-6 hidden rounded-2xl bg-cream p-5 shadow-xl md:block">
+          <p class="font-serif text-3xl text-bark">4.9★</p>
+          <p class="text-xs text-ink/60">Đánh giá trên Google</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DỊCH VỤ NỔI BẬT -->
+  <section class="bg-sand/50 py-20">
+    <div class="container-x">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="eyebrow">Dịch vụ nổi bật</p>
+          <h2 class="mt-3 text-4xl md:text-5xl">Liệu trình được yêu thích</h2>
+        </div>
+        <a href="/dich-vu" class="text-sm font-medium text-bark underline-offset-4 hover:underline">Tất cả dịch vụ →</a>
+      </div>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        {featured.map((s) => <ServiceCard {...s} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- VÌ SAO CHỌN -->
+  <section class="py-20">
+    <div class="container-x grid gap-12 md:grid-cols-2 md:items-center">
+      <div class="photo-placeholder aspect-square rounded-full"></div>
+      <div>
+        <p class="eyebrow">Vì sao chọn Mandala</p>
+        <h2 class="mt-3 text-4xl md:text-5xl">Chăm sóc tận tâm, từng chi tiết</h2>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2">
+          {benefits.map((b) => (
+            <div>
+              <Mandala class="h-8 w-8 text-gold" petals={8} />
+              <h3 class="mt-3 text-xl font-semibold">{b.title}</h3>
+              <p class="mt-1 text-sm leading-relaxed text-ink/70">{b.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ĐÁNH GIÁ -->
+  <section class="bg-bark py-20 text-cream">
+    <div class="container-x">
+      <p class="eyebrow text-clay">Khách hàng nói gì</p>
+      <h2 class="mt-3 text-4xl text-cream md:text-5xl">Cảm nhận sau liệu trình</h2>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        {reviews.map((r) => (
+          <figure class="rounded-2xl bg-cream/5 p-6 ring-1 ring-cream/10">
+            <p class="text-clay">★★★★★</p>
+            <blockquote class="mt-3 font-serif text-xl leading-snug italic">“{r.text}”</blockquote>
+            <figcaption class="mt-4 text-sm text-sand/70">— {r.name}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  {posts.length > 0 && (
+    <section class="py-20">
+      <div class="container-x">
+        <p class="eyebrow">Góc sức khỏe</p>
+        <h2 class="mt-3 text-4xl md:text-5xl">Bài viết mới</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          {posts.map((p) => (
+            <a href={`/blog/${p.id}`} class="group rounded-2xl border border-bark/10 bg-white/50 p-6 transition hover:shadow-lg">
+              <p class="text-xs text-ink/50">{p.data.date.toLocaleDateString('vi-VN')}</p>
+              <h3 class="mt-2 text-2xl font-semibold group-hover:text-gold">{p.data.title}</h3>
+              <p class="mt-2 text-sm text-ink/70">{p.data.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA -->
+  <section class="relative overflow-hidden bg-sand py-20 text-center">
+    <Mandala class="pointer-events-none absolute top-1/2 left-1/2 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 text-gold/10" petals={20} />
+    <div class="container-x relative">
+      <h2 class="text-4xl md:text-5xl">Dành cho mình một khoảng lặng</h2>
+      <p class="mx-auto mt-4 max-w-lg text-ink/70">Đặt lịch trước để được giữ phòng và chọn kỹ thuật viên phù hợp.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/lien-he#dat-lich" class="btn-primary">Đặt lịch online</a>
+        <a href={`tel:${info.phoneRaw}`} class="btn-ghost">Gọi {info.phone}</a>
+      </div>
+    </div>
+  </section>
+</Base>
