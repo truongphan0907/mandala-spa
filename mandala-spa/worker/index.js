@@ -62,7 +62,7 @@ async function handleBooking(request, env) {
   }
 
   const lines = [
-    '🌿 <b>LỊCH HẸN MỚI – Mandala Spa</b>',
+    '🌿 <b>LỊCH HẸN MỚI – Mandala Healthcare &amp; Spa</b>',
     `👤 ${escapeHtml(booking.name)}`,
     `📞 ${escapeHtml(booking.phone)}`,
     `💆 ${escapeHtml(booking.service || 'Chưa chọn')}`,

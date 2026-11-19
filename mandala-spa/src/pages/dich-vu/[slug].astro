@@ -1,0 +1,92 @@
+---
+// Trang chi tiết nhóm dịch vụ – nội dung lấy từ src/data/services.json
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import PriceList from '../../components/PriceList.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Mandala from '../../components/Mandala.astro';
+import services from '../../data/services.json';
+
+export function getStaticPaths() {
+  return services.groups.map((g) => ({ params: { slug: g.slug }, props: { g } }));
+}
+const { g } = Astro.props;
+const others = services.groups.filter((x) => x.slug !== g.slug);
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+<Base title={g.seoTitle} description={g.seoDescription} schema={faqSchema}>
+  <PageHero eyebrow={g.menuName} title={g.heading} text={g.intro} image={g.heroImage || undefined} alt={g.heroAlt}
+            crumbs={[{ href: '/dich-vu/', label: 'Dịch vụ' }]}>
+    <a href={`/lien-he/#dat-lich`} class="btn-primary mt-7">Đặt lịch {g.title.toLowerCase()}</a>
+  </PageHero>
+
+  <section class="section">
+    <div class="container-x grid gap-8 md:grid-cols-2">
+      <div class="rounded-2xl border border-line bg-ivory p-6 md:p-8">
+        <h2 class="text-[28px]">Phù hợp với</h2>
+        <ul class="mt-4 space-y-3">
+          {g.suitable.map((s) => <li class="flex gap-3"><Mandala class="mt-1 h-5 w-5 shrink-0 text-gold" petals={8} stroke={7} />{s}</li>)}
+        </ul>
+      </div>
+      <div class="rounded-2xl border border-line bg-ivory p-6 md:p-8">
+        <h2 class="text-[28px]">Lợi ích</h2>
+        <ul class="mt-4 space-y-3">
+          {g.benefits.map((s) => <li class="flex gap-3"><span class="mt-0.5 text-bronze" aria-hidden="true">✓</span>{s}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-sand/60" id="bang-gia">
+    <div class="container-x">
+      <p class="eyebrow">Bảng giá</p>
+      <h2 class="h2 mt-3">Liệu trình {g.title.toLowerCase()}</h2>
+      <div class="mt-8"><PriceList items={g.items} /></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x grid gap-12 lg:grid-cols-2">
+      <div>
+        <p class="eyebrow">Quy trình</p>
+        <h2 class="h2 mt-3">Các bước trải nghiệm</h2>
+        <ol class="mt-8 space-y-5">
+          {g.process.map((p, i) => (
+            <li class="flex items-center gap-4">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold/60 font-serif text-lg text-bronze">{i + 1}</span>{p}
+            </li>
+          ))}
+        </ol>
+        <div class="mt-8 rounded-2xl border border-gold/40 bg-sand/50 p-5 text-[15px]">
+          <p class="font-medium text-cocoa">Lưu ý</p>
+          <p class="mt-1 text-muted">{g.notes}</p>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Hỏi đáp</p>
+        <h2 class="h2 mt-3">Câu hỏi thường gặp</h2>
+        <div class="mt-8"><Faq items={g.faq} /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-14 md:pb-24">
+    <div class="container-x">
+      <p class="text-sm font-medium tracking-[0.12em] text-muted uppercase">Dịch vụ khác</p>
+      <div class="mt-4 grid gap-3 md:grid-cols-3">
+        {others.map((o) => (
+          <a href={`/dich-vu/${o.slug}/`} class="rounded-2xl border border-line bg-ivory p-5 hover:border-bronze">
+            <span class="font-serif text-2xl text-cocoa">{o.title}</span>
+            <span class="mt-1 block text-[15px] text-muted">{o.short}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

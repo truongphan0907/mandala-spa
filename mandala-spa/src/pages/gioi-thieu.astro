@@ -1,56 +1,76 @@
 ---
+import { Picture } from 'astro:assets';
 import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
 import Mandala from '../components/Mandala.astro';
-
-const team = [
-  { name: 'Chị Hoa', role: 'Trưởng kỹ thuật viên · 10 năm kinh nghiệm' },
-  { name: 'Anh Tuấn', role: 'Chuyên viên trị liệu cơ – xương' },
-  { name: 'Chị Mai', role: 'Chuyên viên massage đá nóng & foot' },
-];
+import CtaBand from '../components/CtaBand.astro';
+import about from '../data/about.json';
+import home from '../data/home.json';
+import { img } from '../lib/site';
 ---
-<Base title="Giới thiệu" description="Câu chuyện, triết lý chăm sóc và đội ngũ kỹ thuật viên của Mandala Spa & Massage.">
-  <section class="relative overflow-hidden py-16 md:py-24">
-    <Mandala class="pointer-events-none absolute -left-32 top-0 h-[30rem] w-[30rem] text-gold/10" />
-    <div class="container-x relative grid gap-12 md:grid-cols-2 md:items-center">
+<Base title="Về Mandala – Healthcare & Spa Buôn Ma Thuột"
+      description="Câu chuyện Mandala: không gian dưỡng sinh trị liệu kết hợp tinh hoa phương Đông giữa lòng Buôn Ma Thuột.">
+  <PageHero eyebrow="Giới thiệu" title={about.heroTitle} image={about.heroImage} alt={about.heroAlt} />
+
+  <section class="section">
+    <div class="container-x grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <Picture src={img(about.meaningImage)!} alt={about.meaningAlt} widths={[480, 800]} sizes="(min-width: 1024px) 520px, 100vw"
+               formats={['avif', 'webp']} class="aspect-[4/5] w-full rounded-t-[999px] rounded-b-[2rem] object-cover" />
       <div>
-        <p class="eyebrow">Về chúng tôi</p>
-        <h1 class="mt-3 text-5xl md:text-6xl">Mandala – vòng tròn của sự cân bằng</h1>
-        <div class="mt-6 space-y-4 leading-relaxed text-ink/75">
-          <p>Mandala là biểu tượng của sự trọn vẹn và hài hòa. Chúng tôi chọn cái tên này vì tin rằng một buổi trị liệu tốt không chỉ làm cơ thể nhẹ nhõm, mà còn giúp tâm trí lắng lại.</p>
-          <p>Mỗi liệu trình tại Mandala Spa bắt đầu bằng việc lắng nghe: bạn mệt ở đâu, ngủ thế nào, cần nhẹ hay sâu. Từ đó kỹ thuật viên điều chỉnh lực và động tác cho riêng bạn.</p>
-          <p class="text-sm text-ink/50">(Đoạn giới thiệu mẫu – thay bằng câu chuyện thật của spa.)</p>
-        </div>
+        <p class="eyebrow">Mandala</p>
+        <h2 class="h2 mt-3">{about.meaningTitle}</h2>
+        {about.meaning.map((p) => <p class="mt-5 text-muted">{p}</p>)}
+        <h3 class="mt-10 text-[28px]">{about.storyTitle}</h3>
+        {about.story.map((p) => <p class="mt-3 text-muted">{p}</p>)}
       </div>
-      <div class="photo-placeholder aspect-[4/5] rounded-3xl"></div>
     </div>
   </section>
 
-  <section class="bg-sand/50 py-20">
+  <section class="section bg-espresso text-cream">
     <div class="container-x">
-      <p class="eyebrow">Đội ngũ</p>
-      <h2 class="mt-3 text-4xl md:text-5xl">Những đôi tay tận tâm</h2>
-      <div class="mt-10 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-        {team.map((m) => (
-          <div class="text-center">
-            <div class="photo-placeholder mx-auto aspect-square w-48 rounded-full"></div>
-            <h3 class="mt-4 text-2xl font-semibold">{m.name}</h3>
-            <p class="text-sm text-ink/60">{m.role}</p>
+      <p class="text-[13px] font-medium tracking-[0.18em] text-goldlight uppercase">Triết lý chăm sóc</p>
+      <h2 class="h2 mt-3 text-cream">Tĩnh tâm – Thư giãn – Phục hồi</h2>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {about.pillars.map((p) => (
+          <div class="rounded-2xl bg-cream/5 p-6 ring-1 ring-cream/10">
+            <Mandala class="h-10 w-10 text-goldlight" petals={10} stroke={5} />
+            <h3 class="mt-4 text-[28px] text-cream">{p.title}</h3>
+            <p class="mt-2 text-sand/80">{p.text}</p>
           </div>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="py-20">
+  <section class="section">
     <div class="container-x">
       <p class="eyebrow">Không gian</p>
-      <h2 class="mt-3 text-4xl md:text-5xl">Thư viện ảnh</h2>
-      <!-- Thay bằng ảnh thật trong public/images/ -->
-      <div class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <div class:list={['photo-placeholder rounded-2xl', i % 3 === 0 ? 'aspect-[3/4]' : 'aspect-square']}></div>
+      <h2 class="h2 mt-3">{home.space.title}</h2>
+      <div class="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
+        {home.space.images.map((s) => (
+          <figure class="overflow-hidden rounded-2xl">
+            <Picture src={img(s.src)!} alt={s.alt} widths={[360, 600, 800]} sizes="(min-width: 768px) 33vw, 50vw" formats={['avif', 'webp']} class="aspect-square w-full object-cover" />
+            <figcaption class="pt-2 text-sm text-muted">{s.caption}</figcaption>
+          </figure>
         ))}
       </div>
     </div>
   </section>
+
+  <section class="section bg-sand/60">
+    <div class="container-x grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <div>
+        <p class="eyebrow">Con người</p>
+        <h2 class="h2 mt-3">{about.teamTitle}</h2>
+        <p class="mt-5 text-muted">{about.teamText}</p>
+        <h3 class="mt-10 text-[26px]">Cam kết của Mandala</h3>
+        <ul class="mt-4 space-y-3">
+          {about.commitments.map((c) => <li class="flex gap-3"><span class="text-bronze" aria-hidden="true">✓</span>{c}</li>)}
+        </ul>
+      </div>
+      <Picture src={img(about.teamImage)!} alt={about.teamAlt} widths={[480, 800, 1200]} sizes="(min-width: 1024px) 520px, 100vw"
+               formats={['avif', 'webp']} class="aspect-[4/3] w-full rounded-[2rem] object-cover" />
+    </div>
+  </section>
+  <CtaBand />
 </Base>

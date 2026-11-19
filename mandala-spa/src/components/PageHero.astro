@@ -1,0 +1,32 @@
+---
+// Đầu trang cho các trang con (tiêu đề + mô tả + ảnh tùy chọn)
+import { Picture } from 'astro:assets';
+import Mandala from './Mandala.astro';
+import { img } from '../lib/site';
+
+interface Props { eyebrow?: string; title: string; text?: string; image?: string; alt?: string; crumbs?: { href: string; label: string }[] }
+const { eyebrow, title, text, image, alt = '', crumbs = [] } = Astro.props;
+const photo = img(image);
+---
+<section class="relative overflow-hidden bg-sand/60">
+  <Mandala class="pointer-events-none absolute -top-32 -right-32 h-[26rem] w-[26rem] text-gold/15" petals={16} />
+  <div class:list={['container-x relative grid items-center gap-8 py-10 md:py-16', photo && 'lg:grid-cols-[1.1fr_1fr] lg:gap-14']}>
+    <div>
+      {crumbs.length > 0 && (
+        <nav aria-label="Đường dẫn" class="mb-4 text-sm text-muted">
+          <a href="/" class="hover:text-bronze">Trang chủ</a>
+          {crumbs.map((c) => <>{' / '}<a href={c.href} class="hover:text-bronze">{c.label}</a></>)}
+        </nav>
+      )}
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h1 class="mt-3 text-[38px] md:text-[58px]">{title}</h1>
+      {text && <p class="mt-4 max-w-2xl text-[17px] text-muted">{text}</p>}
+      <slot />
+    </div>
+    {photo && (
+      <Picture src={photo} alt={alt} widths={[480, 800, 1200]} sizes="(min-width: 1024px) 520px, 100vw" formats={['avif', 'webp']}
+               loading="eager" fetchpriority="high"
+               class="aspect-[4/3] w-full rounded-3xl object-cover shadow-xl shadow-espresso/10 lg:aspect-[5/4]" />
+    )}
+  </div>
+</section>

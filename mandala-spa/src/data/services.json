@@ -1,81 +1,358 @@
-[
-  {
-    "category": "Massage body",
-    "items": [
-      {
-        "name": "Massage thư giãn tinh dầu",
-        "description": "Động tác mềm mại kết hợp tinh dầu thiên nhiên, giúp thả lỏng cơ và ngủ ngon hơn.",
-        "options": [
-          { "duration": "60 phút", "price": 350000 },
-          { "duration": "90 phút", "price": 480000 }
-        ],
-        "featured": true
-      },
-      {
-        "name": "Massage đá nóng",
-        "description": "Đá bazan làm ấm giúp giãn cơ sâu, giảm căng cứng vai gáy và lưng.",
-        "options": [
-          { "duration": "75 phút", "price": 450000 },
-          { "duration": "90 phút", "price": 520000 }
-        ],
-        "featured": true
-      },
-      {
-        "name": "Massage trị liệu chuyên sâu",
-        "description": "Tác động lực mạnh vào nhóm cơ đau mỏi, phù hợp người làm văn phòng và chơi thể thao.",
-        "options": [
-          { "duration": "60 phút", "price": 400000 },
-          { "duration": "90 phút", "price": 550000 }
-        ]
-      },
-      {
-        "name": "Massage Thái",
-        "description": "Kéo giãn kết hợp bấm huyệt theo phương pháp truyền thống Thái Lan, mặc trang phục rộng.",
-        "options": [
-          { "duration": "60 phút", "price": 380000 },
-          { "duration": "90 phút", "price": 500000 }
-        ]
-      }
-    ]
-  },
-  {
-    "category": "Foot & Head",
-    "items": [
-      {
-        "name": "Foot massage bấm huyệt",
-        "description": "Ngâm chân thảo mộc và bấm huyệt bàn chân, giúp lưu thông khí huyết.",
-        "options": [
-          { "duration": "45 phút", "price": 220000 },
-          { "duration": "60 phút", "price": 280000 }
-        ],
-        "featured": true
-      },
-      {
-        "name": "Gội đầu dưỡng sinh",
-        "description": "Gội thảo dược, massage đầu – cổ – vai gáy, giảm đau đầu và căng thẳng.",
-        "options": [
-          { "duration": "60 phút", "price": 250000 }
-        ]
-      }
-    ]
-  },
-  {
-    "category": "Gói combo",
-    "items": [
-      {
-        "name": "Combo Mandala Signature",
-        "description": "Massage đá nóng + foot massage + gội đầu dưỡng sinh, kèm trà thảo mộc.",
-        "options": [
-          { "duration": "150 phút", "price": 850000 }
-        ]
-      },
-      {
-        "name": "Combo cặp đôi",
-        "description": "Phòng đôi riêng tư, massage tinh dầu 90 phút cho 2 người.",
-        "options": [
-          { "duration": "90 phút / 2 người", "price": 900000 }
-        ]
-      }
-    ]
-  }
-]
+{
+  "groups": [
+    {
+      "slug": "massage-tri-lieu",
+      "title": "Massage trị liệu",
+      "menuName": "Nâng Tầm Sức Khỏe",
+      "heading": "Massage trị liệu – Nâng tầm sức khỏe",
+      "short": "Giải tỏa căng cơ, xua tan mệt mỏi với đá nóng, tinh dầu và kỹ thuật chuyên sâu.",
+      "need": "Đau mỏi vai gáy, lưng, cơ thể căng cứng",
+      "image": "phong-massage-bon-go.jpg",
+      "imageAlt": "Phòng massage riêng tư có bồn ngâm gỗ tại Mandala",
+      "heroImage": "ky-thuat-vien-massage.jpg",
+      "heroAlt": "Kỹ thuật viên Mandala đang massage lưng cho khách",
+      "seoTitle": "Massage trị liệu Buôn Ma Thuột – Đá nóng, Body chuyên sâu, Vai gáy",
+      "seoDescription": "Massage body từ 249.000đ, massage đá nóng, body chuyên sâu, vai gáy và liệu pháp hương thơm tại Mandala Buôn Ma Thuột. Phòng riêng tư, kỹ thuật viên tận tâm.",
+      "intro": "Ngồi máy tính nhiều giờ, lái xe đường dài, vận động sai tư thế… khiến cơ bắp co cứng và mỏi mệt tích tụ từng ngày. Các liệu trình massage tại Mandala kết hợp động tác xoa bóp, ấn huyệt và nhiệt (đá nóng, tinh dầu ấm) để giải phóng căng thẳng từ sâu bên trong.",
+      "suitable": [
+        "Dân văn phòng ngồi máy tính nhiều giờ",
+        "Người lao động, lái xe đường dài",
+        "Người hay mất ngủ, căng thẳng",
+        "Người chơi thể thao cần phục hồi cơ"
+      ],
+      "benefits": [
+        "Giảm đau mỏi cơ, cứng khớp",
+        "Tăng lưu thông máu, cơ thể ấm áp",
+        "Ngủ sâu và ngon giấc hơn",
+        "Giảm căng thẳng, tinh thần nhẹ nhõm"
+      ],
+      "items": [
+        {
+          "name": "Massage Body",
+          "desc": "Xoa bóp toàn thân với tinh dầu, lực vừa phải, thư giãn nhẹ nhàng.",
+          "duration": "",
+          "price": 249000,
+          "featured": false
+        },
+        {
+          "name": "Massage Body Đá Nóng",
+          "desc": "Đá bazan ấm nóng kết hợp xoa bóp giúp giãn cơ sâu, làm ấm cơ thể.",
+          "duration": "",
+          "price": 349000,
+          "featured": true
+        },
+        {
+          "name": "Body Chuyên Sâu",
+          "desc": "Lực tay mạnh, tác động vào các nhóm cơ co cứng kết hợp ấn huyệt.",
+          "duration": "",
+          "price": 399000,
+          "featured": false
+        },
+        {
+          "name": "Vai Gáy Chuyên Sâu",
+          "desc": "Tập trung tháo gỡ điểm co cứng vùng cổ – vai – gáy – lưng trên.",
+          "duration": "",
+          "price": 299000,
+          "featured": true
+        },
+        {
+          "name": "Liệu Pháp Bằng Hương Thơm",
+          "desc": "Tinh dầu thiên nhiên chọn theo tâm trạng, giúp an thần, dễ ngủ.",
+          "duration": "",
+          "price": 499000,
+          "featured": false
+        },
+        {
+          "name": "Massage Foot",
+          "desc": "Ngâm chân thảo dược, bấm huyệt bàn chân giúp lưu thông khí huyết.",
+          "duration": "",
+          "price": 0,
+          "featured": false
+        }
+      ],
+      "process": [
+        "Trà gừng ấm đón tiếp",
+        "Tư vấn vùng đau mỏi và lực tay mong muốn",
+        "Trị liệu trong phòng riêng tư",
+        "Nghỉ ngơi, thưởng thức trà thảo mộc"
+      ],
+      "notes": "Không nên massage khi quá no hoặc quá đói. Vui lòng báo kỹ thuật viên nếu bạn đang mang thai, có bệnh tim mạch, huyết áp, chấn thương, vết thương hở hoặc bệnh ngoài da.",
+      "faq": [
+        {
+          "q": "Massage bao lâu một lần là tốt?",
+          "a": "Với mục đích thư giãn, 1–2 lần mỗi tuần hoặc 2 tuần một lần là hợp lý. Nếu đang đau mỏi nhiều, bạn có thể đi dày hơn trong giai đoạn đầu."
+        },
+        {
+          "q": "Tôi có được chọn lực tay không?",
+          "a": "Có. Bạn cứ báo kỹ thuật viên nhẹ hơn hoặc mạnh hơn bất cứ lúc nào trong buổi trị liệu."
+        },
+        {
+          "q": "Có phòng cho 2 người không?",
+          "a": "Có phòng đôi, phù hợp cho cặp đôi, bạn bè và gia đình. Bạn nên đặt trước để được giữ phòng."
+        }
+      ]
+    },
+    {
+      "slug": "goi-dau-duong-sinh",
+      "title": "Gội đầu dưỡng sinh",
+      "menuName": "Sức Sống Mới",
+      "heading": "Gội đầu dưỡng sinh – Sức sống mới",
+      "short": "Thảo dược ấm nóng, bấm huyệt đầu – cổ – vai giúp đầu óc nhẹ nhõm, ngủ sâu hơn.",
+      "need": "Căng thẳng, đau đầu, khó ngủ",
+      "image": "khu-goi-dau.jpg",
+      "imageAlt": "Khu gội đầu dưỡng sinh với giường gội và rèm trắng tại Mandala",
+      "heroImage": "khu-goi-dau.jpg",
+      "heroAlt": "Khu gội đầu dưỡng sinh tại Mandala Buôn Ma Thuột",
+      "seoTitle": "Gội đầu dưỡng sinh Buôn Ma Thuột – Gội thảo dược, Gội Trung Hoa",
+      "seoDescription": "Gội đầu dưỡng sinh từ 69.000đ tại Mandala Buôn Ma Thuột. Gội thảo dược, gội Trung Hoa, chăm sóc vùng đầu giúp giảm căng thẳng, ngủ ngon.",
+      "intro": "Không chỉ làm sạch tóc, gội đầu dưỡng sinh là nghi thức chăm sóc vùng đầu – nơi tập trung nhiều huyệt đạo quan trọng. Nước thảo dược ấm, động tác day ấn nhịp nhàng cùng massage cổ vai giúp đầu óc nhẹ nhõm, tinh thần tỉnh táo và giấc ngủ sâu hơn.",
+      "suitable": [
+        "Người hay đau đầu, căng thẳng",
+        "Người khó ngủ, ngủ không sâu",
+        "Người làm việc trí óc, ngồi máy tính nhiều",
+        "Người muốn chăm sóc da đầu và mái tóc"
+      ],
+      "benefits": [
+        "Giảm căng thẳng, đầu óc nhẹ nhõm",
+        "Hỗ trợ giấc ngủ sâu hơn",
+        "Thả lỏng vùng cổ – vai – gáy",
+        "Da đầu thông thoáng, tóc mềm mượt"
+      ],
+      "items": [
+        {
+          "name": "Gội Đầu Thư Giãn",
+          "desc": "Gội sạch, massage đầu nhẹ nhàng.",
+          "duration": "",
+          "price": 69000,
+          "featured": false
+        },
+        {
+          "name": "Gội Đầu Dưỡng Sinh",
+          "desc": "Gội thảo dược kết hợp bấm huyệt đầu – cổ – vai.",
+          "duration": "",
+          "price": 159000,
+          "featured": false
+        },
+        {
+          "name": "Gội Đầu Trung Hoa",
+          "desc": "Quy trình gội nhiều bước theo phương pháp cổ truyền Trung Hoa.",
+          "duration": "",
+          "price": 239000,
+          "featured": true
+        },
+        {
+          "name": "Chăm Sóc Vùng Đầu",
+          "desc": "Liệu trình chuyên sâu cho da đầu và vùng vai gáy.",
+          "duration": "",
+          "price": 399000,
+          "featured": false
+        }
+      ],
+      "process": [
+        "Trà gừng ấm đón tiếp",
+        "Massage khởi động cổ, vai, gáy",
+        "Gội thảo dược và day ấn huyệt vùng đầu",
+        "Massage mặt, ủ ấm, sấy khô và thư giãn"
+      ],
+      "notes": "Vui lòng báo trước nếu bạn có vết thương vùng đầu, bệnh lý da đầu, huyết áp không ổn định hoặc đang mang thai.",
+      "faq": [
+        {
+          "q": "Gội đầu dưỡng sinh khác gội đầu thường thế nào?",
+          "a": "Gội đầu thường chủ yếu làm sạch tóc. Gội đầu dưỡng sinh là nghi thức chăm sóc nhiều bước: gội thảo dược, day ấn huyệt, massage cổ vai gáy và ủ ấm, giúp thư giãn toàn thân."
+        },
+        {
+          "q": "Bao lâu nên gội đầu dưỡng sinh một lần?",
+          "a": "Bạn có thể gội 1–2 lần mỗi tuần hoặc bất cứ khi nào cảm thấy căng thẳng, mệt mỏi."
+        }
+      ]
+    },
+    {
+      "slug": "dong-y-duong-sinh",
+      "title": "Đông y dưỡng sinh",
+      "menuName": "Cung Phẩm Ngự Y",
+      "heading": "Cung phẩm Ngự Y – Tinh hoa dưỡng sinh phương Đông",
+      "short": "Liệu trình chuyên sâu theo triết lý dưỡng sinh cổ truyền, kết hợp thảo dược và nhiệt.",
+      "need": "Cơ thể mệt mỏi, nhiễm lạnh, muốn bồi bổ",
+      "image": "san-pham-thao-duoc.jpg",
+      "imageAlt": "Bộ sản phẩm thảo dược dùng trong liệu trình Cung phẩm Ngự Y",
+      "heroImage": "lan-ong-dong.jpg",
+      "heroAlt": "Kỹ thuật viên lăn ống đồng thảo dược ấm dọc vai gáy khách",
+      "seoTitle": "Liệu pháp Đông y dưỡng sinh Buôn Ma Thuột – Cung phẩm Ngự Y",
+      "seoDescription": "Body chuyên sâu, cổ vai gáy, giảm mỡ Đông y, dưỡng sinh thận theo triết lý dưỡng sinh cổ truyền tại Mandala Buôn Ma Thuột.",
+      "intro": "Lấy cảm hứng từ những phương pháp chăm sóc sức khỏe nơi cung đình xưa, dòng liệu trình Cung phẩm Ngự Y kết hợp thảo dược, nhiệt và kỹ thuật tác động huyệt đạo – như lăn ống đồng thảo dược ấm nóng – để giúp khí huyết lưu thông, cơ thể cân bằng và phục hồi từ bên trong.",
+      "suitable": [
+        "Người hay mệt mỏi, cơ thể nhiễm lạnh",
+        "Người đau mỏi lâu ngày",
+        "Người muốn chăm sóc vóc dáng",
+        "Người muốn bồi bổ, phục hồi sức khỏe"
+      ],
+      "benefits": [
+        "Làm ấm cơ thể, khí huyết lưu thông",
+        "Thả lỏng cơ sâu nhờ thảo dược và nhiệt",
+        "Hỗ trợ săn chắc vùng bụng, eo",
+        "Cơ thể nhẹ nhõm, dẻo dai hơn"
+      ],
+      "items": [
+        {
+          "name": "Body Chuyên Sâu Ngự Y",
+          "desc": "Trị liệu toàn thân với thảo dược cao cấp.",
+          "duration": "",
+          "price": 599000,
+          "featured": false
+        },
+        {
+          "name": "Massage Cổ – Vai – Gáy Chuyên Sâu",
+          "desc": "Tác động sâu vùng cổ vai gáy kết hợp thảo dược ấm.",
+          "duration": "",
+          "price": 499000,
+          "featured": false
+        },
+        {
+          "name": "Giảm Mỡ Đông Y",
+          "desc": "Hỗ trợ làm săn chắc vùng bụng, eo bằng thảo dược và kỹ thuật làm nóng.",
+          "duration": "",
+          "price": 499000,
+          "featured": true
+        },
+        {
+          "name": "Dưỡng Sinh Thận",
+          "desc": "Ủ ấm, tác động vùng lưng – thắt lưng, giúp cơ thể ấm áp, dẻo dai.",
+          "duration": "",
+          "price": 499000,
+          "featured": false
+        }
+      ],
+      "process": [
+        "Trà gừng ấm đón tiếp",
+        "Tư vấn thể trạng",
+        "Trị liệu với thảo dược, nhiệt và ống đồng",
+        "Ủ ấm, nghỉ ngơi và trà thảo mộc"
+      ],
+      "notes": "Liệu pháp dưỡng sinh mang tính hỗ trợ chăm sóc sức khỏe và thư giãn, không thay thế chẩn đoán hay điều trị y khoa. Không áp dụng cho phụ nữ mang thai. Người có bệnh lý nền vui lòng báo trước khi trị liệu.",
+      "faq": [
+        {
+          "q": "Liệu trình Đông y dưỡng sinh có đau không?",
+          "a": "Không. Kỹ thuật viên điều chỉnh nhiệt độ và lực tác động phù hợp với cảm nhận của bạn. Hãy báo ngay nếu thấy quá nóng hoặc quá mạnh."
+        },
+        {
+          "q": "Bao lâu nên làm một lần?",
+          "a": "Tùy thể trạng và mục tiêu. Kỹ thuật viên sẽ tư vấn lộ trình phù hợp sau buổi đầu tiên."
+        }
+      ]
+    },
+    {
+      "slug": "cham-soc-da",
+      "title": "Chăm sóc da",
+      "menuName": "Chăm Sóc Da",
+      "heading": "Chăm sóc da – Rạng rỡ từ sự khỏe mạnh",
+      "short": "Làm sạch, thải độc, peel và phục hồi cho làn da khỏe, căng bóng tự nhiên.",
+      "need": "Da xỉn màu, mụn, thiếu sức sống",
+      "image": "",
+      "imageAlt": "",
+      "heroImage": "",
+      "heroAlt": "",
+      "seoTitle": "Chăm sóc da mặt Buôn Ma Thuột – Trị mụn, Peel, Thải độc CO2",
+      "seoDescription": "Chăm sóc da Glow Skin, Acne Basic, CO2 Therapy, peel phục hồi tại Mandala Buôn Ma Thuột. Làn da sạch khỏe, căng bóng tự nhiên.",
+      "intro": "Làn da đẹp bắt đầu từ làn da khỏe. Mandala chăm sóc da theo từng tình trạng: làm sạch sâu cho da mụn, thải độc cho da xỉn màu, peel nhẹ để tái tạo, kết hợp massage mặt thư giãn.",
+      "suitable": [
+        "Da mụn, lỗ chân lông bít tắc",
+        "Da xỉn màu, thiếu sức sống",
+        "Da khô, thiếu ẩm",
+        "Người muốn chăm sóc da định kỳ"
+      ],
+      "benefits": [
+        "Da sạch sâu, thông thoáng",
+        "Sáng da, đều màu hơn",
+        "Căng bóng, đủ ẩm",
+        "Thư giãn với massage mặt"
+      ],
+      "items": [
+        {
+          "name": "Chăm Sóc Da Glow Skin",
+          "desc": "Làm sạch, dưỡng ẩm, massage mặt thư giãn.",
+          "duration": "",
+          "price": 299000,
+          "featured": true
+        },
+        {
+          "name": "Mặt Ngọc Trẻ Hóa",
+          "desc": "Dưỡng da, nâng cơ cho làn da tươi trẻ.",
+          "duration": "",
+          "price": 399000,
+          "featured": false
+        },
+        {
+          "name": "Acne Basic",
+          "desc": "Làm sạch sâu, lấy nhân mụn, chiếu ánh sáng sinh học.",
+          "duration": "",
+          "price": 300000,
+          "featured": false
+        },
+        {
+          "name": "CO2 Therapy",
+          "desc": "Thải độc da chuyên sâu bằng CO2.",
+          "duration": "",
+          "price": 600000,
+          "featured": false
+        },
+        {
+          "name": "Glowing Skin",
+          "desc": "Trẻ hóa, trắng sáng, căng bóng.",
+          "duration": "",
+          "price": 500000,
+          "featured": false
+        },
+        {
+          "name": "Peel Phục Hồi",
+          "desc": "Tái tạo nhẹ, phục hồi làn da.",
+          "duration": "",
+          "price": 600000,
+          "featured": false
+        },
+        {
+          "name": "Peel Căng Bóng",
+          "desc": "Da mịn màng, đều màu.",
+          "duration": "",
+          "price": 700000,
+          "featured": false
+        },
+        {
+          "name": "Peel Mụn",
+          "desc": "Hỗ trợ giảm mụn, thông thoáng lỗ chân lông.",
+          "duration": "",
+          "price": 700000,
+          "featured": false
+        }
+      ],
+      "process": [
+        "Trà gừng ấm đón tiếp",
+        "Soi da và tư vấn liệu trình",
+        "Làm sạch và chăm sóc chuyên sâu",
+        "Dưỡng da, hướng dẫn chăm sóc tại nhà"
+      ],
+      "notes": "Sau peel cần tránh nắng và dùng kem chống nắng. Không peel khi da đang tổn thương hoặc kích ứng. Kỹ thuật viên sẽ soi da và tư vấn trước khi chọn liệu trình.",
+      "faq": [
+        {
+          "q": "Da nhạy cảm có làm được không?",
+          "a": "Được. Kỹ thuật viên sẽ soi da và chọn liệu trình nhẹ nhàng phù hợp. Hãy báo trước nếu bạn đang dùng thuốc trị mụn hoặc từng bị kích ứng."
+        },
+        {
+          "q": "Bao lâu nên chăm sóc da một lần?",
+          "a": "Thông thường 1–2 tuần một lần với liệu trình cơ bản. Liệu trình peel cần khoảng cách dài hơn theo tư vấn."
+        }
+      ]
+    }
+  ],
+  "combos": [
+    {
+      "name": "Liệu Pháp Thư Giãn Cơ Thể",
+      "desc": "Liên hệ để được tư vấn chi tiết các bước trong liệu trình.",
+      "price": 799000
+    },
+    {
+      "name": "Liệu Pháp Tăng Cường Tinh Thần",
+      "desc": "Liên hệ để được tư vấn chi tiết các bước trong liệu trình.",
+      "price": 999000
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+---
+// Danh sách liệu trình + giá (dùng ở trang dịch vụ và bảng giá)
+import { vnd } from '../lib/site';
+interface Item { name: string; desc?: string; duration?: string; price: number }
+interface Props { items: Item[]; book?: boolean }
+const { items, book = true } = Astro.props;
+---
+<ul class="divide-y divide-line rounded-2xl border border-line bg-ivory">
+  {items.map((i) => (
+    <li class="flex flex-col gap-2 px-5 py-4 sm:flex-row sm:items-center sm:gap-6 md:px-6">
+      <div class="flex-1">
+        <p class="font-medium text-ink">{i.name}{i.duration && <span class="ml-2 text-sm font-normal text-muted">· {i.duration}</span>}</p>
+        {i.desc && <p class="mt-0.5 text-[15px] leading-relaxed text-muted">{i.desc}</p>}
+      </div>
+      <div class="flex items-center justify-between gap-4 sm:justify-end">
+        <span class="text-lg font-medium whitespace-nowrap text-bronze">{vnd(i.price)}</span>
+        {book && (
+          <a href={`/lien-he/?dv=${encodeURIComponent(i.name)}#dat-lich`} class="text-sm font-medium whitespace-nowrap text-cocoa underline-offset-4 hover:underline">Đặt lịch →</a>
+        )}
+      </div>
+    </li>
+  ))}
+</ul>

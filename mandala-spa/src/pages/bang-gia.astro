@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import PriceList from '../components/PriceList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import services from '../data/services.json';
+import info from '../data/info.json';
+---
+<Base title="Bảng giá spa Mandala Buôn Ma Thuột"
+      description="Bảng giá massage, gội đầu dưỡng sinh, Đông y và chăm sóc da tại Mandala – 86 Hàn Mặc Tử, Buôn Ma Thuột. Massage từ 249.000đ, gội đầu từ 69.000đ.">
+  <PageHero eyebrow="Bảng giá" title="Bảng giá dịch vụ"
+            text="Giá niêm yết rõ ràng, đã bao gồm trà thảo mộc đón tiếp. Không phát sinh phụ phí.">
+    <nav class="mt-7 flex flex-wrap gap-2" aria-label="Nhóm dịch vụ">
+      {services.groups.map((g) => <a href={`#${g.slug}`} class="btn-ghost !min-h-10 !px-4 !text-sm">{g.title}</a>)}
+      <a href="#combo" class="btn-ghost !min-h-10 !px-4 !text-sm">Combo</a>
+    </nav>
+  </PageHero>
+
+  <section class="section">
+    <div class="container-x space-y-14">
+      {services.groups.map((g) => (
+        <div id={g.slug} class="scroll-mt-24">
+          <div class="mb-5 flex flex-wrap items-end justify-between gap-2">
+            <div>
+              <p class="eyebrow">{g.menuName}</p>
+              <h2 class="mt-2 text-[30px] md:text-[38px]">{g.title}</h2>
+            </div>
+            <a href={`/dich-vu/${g.slug}/`} class="text-[15px] font-medium text-cocoa underline-offset-4 hover:underline">Chi tiết liệu trình →</a>
+          </div>
+          <PriceList items={g.items} />
+        </div>
+      ))}
+      <div id="combo" class="scroll-mt-24">
+        <p class="eyebrow">Combo hoàn hảo</p>
+        <h2 class="mt-2 mb-5 text-[30px] md:text-[38px]">Combo</h2>
+        <PriceList items={services.combos} />
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-2">
+        <div class="rounded-2xl bg-espresso p-6 text-cream md:p-8">
+          <p class="font-serif text-2xl">Thẻ quà tặng Mandala</p>
+          <p class="mt-2 text-sand/80">Tặng người thương một khoảng lặng – món quà ý nghĩa dịp 8/3, 20/10, sinh nhật, Tết. Nhắn Zalo để được tư vấn.</p>
+          <a href={info.zalo} target="_blank" rel="noopener" class="btn mt-5 bg-goldlight text-espresso hover:bg-cream">Nhắn Zalo</a>
+        </div>
+        <div class="rounded-2xl border border-line bg-ivory p-6 md:p-8">
+          <p class="font-serif text-2xl text-cocoa">Lưu ý</p>
+          <ul class="mt-2 list-disc space-y-1 pl-5 text-[15px] text-muted">
+            <li>Giá có thể thay đổi; vui lòng xác nhận khi đặt lịch.</li>
+            <li>Nên đặt lịch trước, nhất là buổi tối và cuối tuần.</li>
+            <li>Báo trước nếu bạn mang thai hoặc có bệnh lý nền.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

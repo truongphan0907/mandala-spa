@@ -1,0 +1,31 @@
+{
+  "heroTitle": "Mandala – nơi thân và tâm tìm về cân bằng",
+  "heroImage": "sanh-cho.jpg",
+  "heroAlt": "Sảnh chờ Mandala với sofa kem, đèn tre và bình cỏ lau",
+  "meaningTitle": "Ý nghĩa cái tên Mandala",
+  "meaning": [
+    "Trong tiếng Phạn, Mandala nghĩa là “vòng tròn” – biểu tượng của sự trọn vẹn, hài hòa và vũ trụ thu nhỏ bên trong mỗi con người. Như những cánh hoa xếp quanh một tâm điểm, sức khỏe chỉ thật sự trọn vẹn khi thân thể, tinh thần và cảm xúc được nuôi dưỡng cùng nhau.",
+    "Chúng tôi chọn cái tên ấy như một lời hứa: mỗi liệu trình tại Mandala không chỉ giúp bạn hết mỏi mệt trong một giờ, mà giúp bạn tĩnh tâm, thư giãn và phục hồi sức khỏe từ gốc rễ."
+  ],
+  "meaningImage": "goc-tranh-son-mai.jpg",
+  "meaningAlt": "Góc dưỡng sinh với tranh sơn mài, đèn tre và hoa sen",
+  "storyTitle": "Câu chuyện của chúng tôi",
+  "story": [
+    "Mandala ra đời từ mong muốn mang phương pháp dưỡng sinh phương Đông đến gần hơn với người dân và du khách Buôn Ma Thuột – nơi bạn có thể chăm sóc sức khỏe nhẹ nhàng, đều đặn, với chi phí hợp lý."
+  ],
+  "pillars": [
+    { "title": "Tĩnh tâm", "text": "Không gian yên tĩnh, ánh sáng dịu và hương thảo mộc giúp tâm trí lắng lại." },
+    { "title": "Thư giãn", "text": "Đôi tay tận tâm giải phóng những căng thẳng tích tụ trong cơ thể." },
+    { "title": "Phục hồi", "text": "Liệu pháp dưỡng sinh hỗ trợ cơ thể tự cân bằng, khỏe mạnh lâu dài." }
+  ],
+  "teamTitle": "Đội ngũ tận tâm",
+  "teamText": "Đội ngũ kỹ thuật viên của Mandala được đào tạo bài bản về massage trị liệu và dưỡng sinh, luôn lắng nghe và chăm sóc khách bằng cả sự tận tâm.",
+  "teamImage": "ky-thuat-vien-massage.jpg",
+  "teamAlt": "Kỹ thuật viên Mandala đang thực hiện massage trị liệu",
+  "commitments": [
+    "Khăn, ga thay mới cho từng khách",
+    "Sản phẩm có nguồn gốc rõ ràng",
+    "Tư vấn trung thực, không ép mua liệu trình",
+    "Giá niêm yết minh bạch"
+  ]
+}

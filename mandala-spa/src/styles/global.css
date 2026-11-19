@@ -1,42 +1,68 @@
 @import "tailwindcss";
 
-/* Bảng màu thương hiệu Mandala – đổi màu ở đây là đổi toàn bộ web */
+/* Font tự host (chỉ tải bộ ký tự Latin + tiếng Việt) */
+@import "@fontsource/be-vietnam-pro/vietnamese-400.css";
+@import "@fontsource/be-vietnam-pro/latin-400.css";
+@import "@fontsource/be-vietnam-pro/vietnamese-500.css";
+@import "@fontsource/be-vietnam-pro/latin-500.css";
+@import "@fontsource/cormorant-garamond/vietnamese-500.css";
+@import "@fontsource/cormorant-garamond/latin-500.css";
+@import "@fontsource/cormorant-garamond/vietnamese-600.css";
+@import "@fontsource/cormorant-garamond/latin-600.css";
+@import "@fontsource/cormorant-garamond/vietnamese-500-italic.css";
+@import "@fontsource/cormorant-garamond/latin-500-italic.css";
+
+/* Bộ màu thương hiệu Mandala – đổi ở đây là đổi toàn web */
 @theme {
-  --color-cream: #f7f1e8;
-  --color-sand: #e9dcc7;
-  --color-clay: #c9a67a;
-  --color-gold: #a8834f;
-  --color-bark: #5b4636;
-  --color-ink: #2b2520;
-  --color-sage: #7a8767;
+  --color-cocoa: #5a4231;     /* Nâu Mandala – tiêu đề, nút chính */
+  --color-espresso: #3b2b20;  /* Footer, nền tối */
+  --color-gold: #b8914f;      /* Vàng đồng – chỉ để trang trí */
+  --color-bronze: #84632f;    /* Đồng đậm – giá, link, nhãn nhỏ */
+  --color-goldlight: #d9bc86; /* Vàng sữa – chữ trên nền tối */
+  --color-cream: #f7f2ea;     /* Nền trang */
+  --color-ivory: #fcfaf6;     /* Nền thẻ */
+  --color-sand: #ece2d3;      /* Nền section xen kẽ */
+  --color-line: #e3d7c6;      /* Viền */
+  --color-ink: #2b231d;       /* Chữ chính */
+  --color-muted: #6e6259;     /* Chữ phụ */
+  --color-sage: #5f6e4e;      /* Thành công */
+  --color-clay: #b4483c;      /* Lỗi */
 
   --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
-  html { scroll-behavior: smooth; }
-  body {
-    @apply bg-cream text-ink font-sans antialiased;
-  }
-  h1, h2, h3 { @apply font-serif text-bark; letter-spacing: -0.01em; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-cream text-ink font-sans text-base antialiased md:text-[17px]; line-height: 1.7; }
+  h1, h2, h3 { @apply font-serif text-cocoa font-semibold; line-height: 1.12; letter-spacing: -0.01em; }
+  ::selection { @apply bg-goldlight text-espresso; }
+  :focus-visible { outline: 2px solid var(--color-bronze); outline-offset: 2px; }
 }
 
-/* Class dùng chung – sửa ở đây là đổi toàn bộ nút, ô nhập… */
-@utility container-x { @apply mx-auto w-full max-w-6xl px-5 md:px-8; }
+@utility container-x { @apply mx-auto w-full max-w-[1200px] px-5 md:px-8; }
+@utility section { @apply py-14 md:py-24; }
 @utility btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium tracking-wide transition disabled:opacity-60;
+  @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-[15px] font-medium transition-colors disabled:opacity-60;
 }
-@utility btn-primary { @apply btn bg-bark text-cream hover:bg-ink; }
-@utility btn-ghost { @apply btn border border-bark/30 text-bark hover:bg-bark hover:text-cream; }
-@utility eyebrow { @apply text-xs font-medium uppercase tracking-[0.25em] text-gold; }
+@utility btn-primary { @apply btn bg-cocoa text-cream hover:bg-espresso; }
+@utility btn-ghost { @apply btn border border-cocoa/35 text-cocoa hover:bg-cocoa hover:text-cream; }
+@utility btn-light { @apply btn border border-cream/50 text-cream hover:bg-cream hover:text-espresso; }
+@utility eyebrow { @apply text-[13px] font-medium uppercase tracking-[0.18em] text-bronze; }
+@utility h2 { @apply text-[30px] md:text-[46px]; }
 @utility field {
-  @apply w-full rounded-xl border border-bark/20 bg-white/70 px-4 py-3 text-sm outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/20;
+  @apply w-full min-h-12 rounded-xl border border-line bg-ivory px-4 py-3 text-base outline-none transition focus:border-bronze focus:ring-2 focus:ring-bronze/20;
 }
 
-/* Lớp nền ảnh tạm – thay bằng ảnh thật sau */
-.photo-placeholder {
-  background:
-    radial-gradient(circle at 30% 20%, rgba(255,255,255,.35), transparent 50%),
-    linear-gradient(135deg, #c9a67a 0%, #8a6a4f 55%, #5b4636 100%);
-}
+/* Nội dung bài blog */
+.prose-mandala { @apply text-ink; }
+.prose-mandala h2 { @apply mt-10 mb-3 text-[28px] md:text-[34px]; }
+.prose-mandala h3 { @apply mt-8 mb-2 text-2xl; }
+.prose-mandala p { @apply mb-4; }
+.prose-mandala ul { @apply mb-4 list-disc pl-6; }
+.prose-mandala ol { @apply mb-4 list-decimal pl-6; }
+.prose-mandala li { @apply mb-1.5; }
+.prose-mandala li > ul { @apply mt-1.5 mb-0; }
+.prose-mandala a { @apply font-medium text-bronze underline underline-offset-4; }
+.prose-mandala strong { @apply font-medium text-espresso; }
+.prose-mandala em { @apply text-muted; }
