@@ -113,5 +113,24 @@
   "heroVideo": "mot-buoi-tai-mandala",
   "videosTitle": "Khoảnh khắc tại Mandala",
   "videosIntro": "Vài giây để cảm nhận sự thư thái – chạm vào video để xem có tiếng.",
-  "reviewsImage": ""
+  "reviewsImage": "nhom-khach.jpg",
+  "heroSlides": [
+    {
+      "src": "phong-doi.jpg",
+      "alt": "Phòng trị liệu đôi với tranh sơn mài và đèn tre"
+    },
+    {
+      "src": "khu-goi-dau.jpg",
+      "alt": "Khu gội đầu dưỡng sinh với giường gội và rèm trắng"
+    },
+    {
+      "src": "phong-massage-bon-go.jpg",
+      "alt": "Phòng massage riêng có bồn ngâm gỗ"
+    },
+    {
+      "src": "sanh-cho.jpg",
+      "alt": "Sảnh chờ Mandala với sofa kem và đèn tre"
+    }
+  ],
+  "heroSlideSeconds": 4
 }
