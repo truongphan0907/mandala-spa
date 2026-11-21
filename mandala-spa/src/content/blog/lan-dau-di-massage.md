@@ -3,7 +3,7 @@ title: "Lần đầu đi massage: nên chọn loại nào, cần chuẩn bị g�
 description: "Cẩm nang cho người lần đầu đi massage ở Buôn Ma Thuột: chọn loại massage phù hợp, chuẩn bị gì, mặc gì, nói gì với kỹ thuật viên và lưu ý để có trải nghiệm thoải mái."
 date: 2026-11-21
 category: "Massage & Trị liệu"
-image: "../../assets/images/blog/massage-body-tinh-dau-buon-ma-thuot.jpg"
+image: "../../assets/images/massage-body-tinh-dau-buon-ma-thuot.jpg"
 imageAlt: "Kỹ thuật viên Mandala massage lưng cho khách nữ trong phòng trị liệu có nến thơm"
 ---
 
@@ -24,7 +24,7 @@ Mỗi loại massage có lực tay, cảm giác và mục đích khác nhau. Dư
 
 **Lời khuyên cho lần đầu:** hãy chọn **Massage Body** hoặc **Massage Đá Nóng**. Lực vừa phải, dễ chịu, giúp bạn làm quen với cảm giác massage. Khi đã quen và biết cơ thể mình thích gì, bạn có thể thử các liệu trình chuyên sâu hơn. So sánh chi tiết các loại trong bài [Các loại massage khác nhau thế nào?](/blog/cac-loai-massage-khac-nhau-the-nao/)
 
-![Massage lưng thư giãn dưới ánh nến, ảnh minh họa](../../assets/images/blog/minh-hoa-massage-lung-thu-gian.jpg)
+![Massage lưng thư giãn dưới ánh nến, ảnh minh họa](../../assets/images/minh-hoa-massage-lung-thu-gian.jpg)
 
 ## 2. Trước khi đến spa
 
@@ -62,7 +62,7 @@ Trong lúc massage, nếu thấy **đau hoặc khó chịu**, hãy nói ngay. Ma
 - **Tắt chuông điện thoại** để tận hưởng trọn vẹn.
 - **Nếu lạnh**, hãy nói để được đắp thêm khăn hoặc chỉnh nhiệt độ phòng.
 
-![Kỹ thuật viên Mandala massage lưng cho khách, bên cạnh bộ sản phẩm thảo dược](../../assets/images/blog/ky-thuat-vien-massage-cung-pham-ngu-y.jpg)
+![Kỹ thuật viên Mandala massage lưng cho khách, bên cạnh bộ sản phẩm thảo dược](../../assets/images/ky-thuat-vien-massage-cung-pham-ngu-y.jpg)
 
 ## 6. Sau khi massage
 

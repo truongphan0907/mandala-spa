@@ -3,7 +3,7 @@ title: "Gội đầu Trung Hoa khác gội đầu dưỡng sinh thế nào? Nên
 description: "Gội đầu Trung Hoa và gội đầu dưỡng sinh giống và khác nhau ở đâu? So sánh quy trình, thời gian, cảm giác, giá để bạn chọn đúng liệu trình tại Buôn Ma Thuột."
 date: 2026-11-21
 category: "Dưỡng sinh Đông y"
-image: "../../assets/images/blog/goi-dau-trung-hoa-voi-phun-nuoc-vong.jpg"
+image: "../../assets/images/goi-dau-trung-hoa-voi-phun-nuoc-vong.jpg"
 imageAlt: "Khách thư giãn dưới vòi phun nước vòng cung trong liệu trình gội đầu Trung Hoa tại Mandala"
 ---
 
@@ -19,7 +19,7 @@ Cả hai đều dựa trên quan niệm của y học cổ truyền: vùng đầ
 - Nằm trong **không gian yên tĩnh, ánh sáng dịu**
 - Thưởng thức **trà gừng ấm** trước và sau liệu trình
 
-![Phòng gội đầu dưỡng sinh với giường gội, khăn cuộn và tranh thiếu nữ tại Mandala](../../assets/images/blog/phong-goi-dau-duong-sinh-mandala.jpg)
+![Phòng gội đầu dưỡng sinh với giường gội, khăn cuộn và tranh thiếu nữ tại Mandala](../../assets/images/phong-goi-dau-duong-sinh-mandala.jpg)
 
 ## Khác biệt chính giữa hai liệu trình
 
@@ -39,7 +39,7 @@ Tên gọi này xuất phát từ phong cách gội đầu dưỡng sinh nhiều
 
 Khi du nhập vào Việt Nam, gội đầu Trung Hoa được các spa điều chỉnh cho phù hợp với khí hậu và thói quen của người Việt, kết hợp thảo dược quen thuộc như bồ kết, sả, gừng, vỏ bưởi.
 
-![Kỹ thuật viên dùng vòi sen xả nước gội và massage da đầu cho khách](../../assets/images/blog/goi-dau-duong-sinh-buon-ma-thuot-mandala.jpg)
+![Kỹ thuật viên dùng vòi sen xả nước gội và massage da đầu cho khách](../../assets/images/goi-dau-duong-sinh-buon-ma-thuot-mandala.jpg)
 
 ## Một buổi gội đầu Trung Hoa tại Mandala diễn ra thế nào?
 
@@ -72,7 +72,7 @@ Với gội đầu dưỡng sinh, các bước 5, 7 được rút gọn hoặc l
 
 Nếu vẫn phân vân, hãy bắt đầu với **gội đầu Trung Hoa** cho lần đầu, sau đó duy trì bằng **gội đầu dưỡng sinh**. Đây là cách nhiều khách quen của Mandala đang làm: lần đầu để "biết thế nào là thư giãn trọn vẹn", các lần sau để giữ thói quen chăm sóc bản thân với chi phí hợp lý.
 
-![Gội đầu thư giãn với bọt thảo dược, ảnh minh họa](../../assets/images/blog/minh-hoa-goi-dau-thu-gian.jpg)
+![Gội đầu thư giãn với bọt thảo dược, ảnh minh họa](../../assets/images/minh-hoa-goi-dau-thu-gian.jpg)
 
 ## Ngoài ra còn hai lựa chọn khác
 

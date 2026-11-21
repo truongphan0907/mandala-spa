@@ -3,7 +3,7 @@ title: "Từ Krông Pắc, Cư M'gar, Buôn Đôn lên Buôn Ma Thuột: ghé sp
 description: "Gợi ý cho khách ở Krông Pắc, Cư M'gar, Buôn Đôn, Krông Ana, Cư Kuin lên Buôn Ma Thuột: kết hợp việc riêng với một buổi massage, gội đầu dưỡng sinh, ngâm thảo dược tại Mandala."
 date: 2026-11-21
 category: "Sống khỏe"
-image: "../../assets/images/blog/sanh-cho-tra-thao-moc-mandala.jpg"
+image: "../../assets/images/sanh-cho-tra-thao-moc-mandala.jpg"
 imageAlt: "Sảnh chờ Mandala với trà thảo mộc đón khách từ các vùng lân cận Buôn Ma Thuột"
 ---
 
@@ -24,7 +24,7 @@ Nhiều khách quen của Mandala không ở trung tâm Buôn Ma Thuột mà đ�
 
 Mở **[Google Maps chỉ đường đến Mandala](https://www.google.com/maps/place/Mandala+-+Healthcare+%26+Spa/data=!4m2!3m1!1s0x0:0x96ce09a711ea051c)**, chọn điểm xuất phát của bạn để xem quãng đường và thời gian di chuyển chính xác nhất theo tình hình giao thông thực tế.
 
-![Sảnh chờ Mandala với sofa, tranh tròn và cỏ lau](../../assets/images/blog/sanh-cho-mandala-spa-buon-ma-thuot.jpg)
+![Sảnh chờ Mandala với sofa, tranh tròn và cỏ lau](../../assets/images/sanh-cho-mandala-spa-buon-ma-thuot.jpg)
 
 ## Gợi ý gói theo thời gian bạn có
 
@@ -44,7 +44,7 @@ Công việc nhà nông và lái xe ở Tây Nguyên thường khiến **lưng, 
 - **Cung phẩm Ngự Y:** thảo dược ấm, lăn ống đồng, phù hợp người đau mỏi lâu ngày, cơ thể nhiễm lạnh vì làm việc ngoài trời mưa gió. Đọc thêm: [Lăn ống đồng thảo dược là gì?](/blog/lan-ong-dong-thao-duoc-la-gi/)
 - **Ngâm thảo dược:** làm ấm cơ thể, thư giãn bắp chân, bàn chân.
 
-![Kỹ thuật viên Mandala massage trị liệu cho khách bên bộ sản phẩm thảo dược Ngự Y](../../assets/images/blog/ky-thuat-vien-massage-cung-pham-ngu-y.jpg)
+![Kỹ thuật viên Mandala massage trị liệu cho khách bên bộ sản phẩm thảo dược Ngự Y](../../assets/images/ky-thuat-vien-massage-cung-pham-ngu-y.jpg)
 
 ## Dành cho người lên phố khám bệnh, chăm người thân
 
@@ -54,7 +54,7 @@ Những chuyến lên Buôn Ma Thuột để khám bệnh hay chăm người nh�
 
 Bố mẹ đưa con đi học thêm, thi cử hay khám bệnh có thể tranh thủ khoảng thời gian chờ để **gội đầu, massage vai gáy**. Hãy báo lịch của bạn khi đặt chỗ, Mandala sẽ sắp xếp khung giờ phù hợp.
 
-![Phòng gội đầu dưỡng sinh hai giường tại Mandala](../../assets/images/blog/phong-goi-dau-duong-sinh-mandala.jpg)
+![Phòng gội đầu dưỡng sinh hai giường tại Mandala](../../assets/images/phong-goi-dau-duong-sinh-mandala.jpg)
 
 ## Lên phố mùa nào thì nên thư giãn?
 

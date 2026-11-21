@@ -3,7 +3,7 @@ title: "Mất ngủ, đau đầu vì căng thẳng: gội đầu dưỡng sinh c
 description: "Căng thẳng khiến bạn khó ngủ, đau đầu? Tìm hiểu gội đầu dưỡng sinh hỗ trợ thư giãn ra sao, kết hợp thói quen nào để ngủ ngon hơn và khi nào cần gặp bác sĩ."
 date: 2026-11-21
 category: "Sống khỏe"
-image: "../../assets/images/blog/goi-dau-trung-hoa-voi-phun-nuoc-vong.jpg"
+image: "../../assets/images/goi-dau-trung-hoa-voi-phun-nuoc-vong.jpg"
 imageAlt: "Khách nhắm mắt thư giãn dưới dòng nước ấm khi gội đầu dưỡng sinh tại Mandala"
 ---
 
@@ -15,7 +15,7 @@ Khi căng thẳng kéo dài, cơ thể ở trạng thái "báo động": nhịp 
 
 Cùng lúc đó, tâm trí liên tục nghĩ về công việc, hóa đơn, những việc chưa xong. Cơ thể chưa thả lỏng, đầu óc chưa yên, nên dù rất mệt, ta vẫn khó đi vào giấc ngủ sâu. Ngủ không sâu lại khiến hôm sau mệt hơn, dễ căng thẳng hơn. Vòng lặp cứ thế tiếp diễn.
 
-![Khách thư giãn khi được gội đầu thảo dược, ảnh minh họa](../../assets/images/blog/minh-hoa-goi-dau-thu-gian.jpg)
+![Khách thư giãn khi được gội đầu thảo dược, ảnh minh họa](../../assets/images/minh-hoa-goi-dau-thu-gian.jpg)
 
 ## Gội đầu dưỡng sinh giúp gì?
 
@@ -29,7 +29,7 @@ Gội đầu dưỡng sinh có thể hỗ trợ cơ thể chuyển sang trạng 
 
 Nhiều khách tại Mandala chia sẻ họ **ngủ sâu hơn vào đêm sau buổi gội**, thậm chí ngủ quên ngay trong lúc gội. Tuy nhiên, hiệu quả khác nhau ở mỗi người, và gội đầu chỉ là một phần của bức tranh lớn hơn về giấc ngủ.
 
-![Phòng gội đầu yên tĩnh với ánh sáng dịu tại Mandala](../../assets/images/blog/phong-goi-dau-duong-sinh-mandala.jpg)
+![Phòng gội đầu yên tĩnh với ánh sáng dịu tại Mandala](../../assets/images/phong-goi-dau-duong-sinh-mandala.jpg)
 
 ## Thời điểm gội tốt nhất cho giấc ngủ
 
@@ -51,7 +51,7 @@ Một buổi gội đầu sẽ phát huy tác dụng tốt hơn nếu bạn kế
 6. **Phòng ngủ tối, mát, yên tĩnh.**
 7. **Ghi ra giấy những việc đang lo** trước khi ngủ, để tâm trí không phải "giữ" chúng.
 
-![Khăn, nến và đá thư giãn, ảnh minh họa không gian nghỉ ngơi](../../assets/images/blog/minh-hoa-khan-nen-da-spa.jpg)
+![Khăn, nến và đá thư giãn, ảnh minh họa không gian nghỉ ngơi](../../assets/images/minh-hoa-khan-nen-da-spa.jpg)
 
 ## Những liệu pháp khác có thể hỗ trợ
 

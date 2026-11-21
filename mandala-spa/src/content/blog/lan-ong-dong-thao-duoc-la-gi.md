@@ -23,7 +23,7 @@ Nếu đã từng xem video của Mandala, có lẽ bạn đã thấy chiếc **
 
 Liệu pháp lăn ống đồng lấy cảm hứng từ các phương pháp dưỡng sinh phương Đông dùng **nhiệt và thảo dược** để làm ấm cơ thể, như chườm ngải cứu, chườm muối, ôn châm. Thay vì đặt túi chườm cố định, ống đồng cho phép nhiệt và thảo dược "di chuyển" dọc theo kinh lạc, kết hợp với lực ép của massage.
 
-![Kỹ thuật viên Mandala thực hiện liệu trình Cung phẩm Ngự Y bên bộ sản phẩm thảo dược](../../assets/images/blog/ky-thuat-vien-massage-cung-pham-ngu-y.jpg)
+![Kỹ thuật viên Mandala thực hiện liệu trình Cung phẩm Ngự Y bên bộ sản phẩm thảo dược](../../assets/images/ky-thuat-vien-massage-cung-pham-ngu-y.jpg)
 
 ## Thảo dược bên trong ống thường là gì?
 
@@ -37,7 +37,7 @@ Thảo dược trong ống đồng thường là các loại **có tính ấm** 
 
 Kỹ thuật viên Mandala sẽ giới thiệu thành phần cụ thể khi bạn trải nghiệm liệu trình.
 
-![Rổ sả, quế, gừng, thảo mộc làm ấm dùng tại Mandala](../../assets/images/blog/sa-que-gung-thao-moc-mandala.jpg)
+![Rổ sả, quế, gừng, thảo mộc làm ấm dùng tại Mandala](../../assets/images/sa-que-gung-thao-moc-mandala.jpg)
 
 ## Cảm giác khi lăn ống đồng
 
@@ -62,7 +62,7 @@ Kỹ thuật viên luôn **kiểm tra nhiệt độ** trên tay mình trước k
 5. **Tập trung xử lý** các điểm co cứng
 6. **Ủ ấm, nghỉ ngơi**, thưởng thức trà thảo mộc
 
-![Kỹ thuật viên massage lưng cho khách tại phòng trị liệu Mandala](../../assets/images/blog/massage-body-tinh-dau-buon-ma-thuot.jpg)
+![Kỹ thuật viên massage lưng cho khách tại phòng trị liệu Mandala](../../assets/images/massage-body-tinh-dau-buon-ma-thuot.jpg)
 
 ## Có thể kết hợp với liệu pháp nào?
 

@@ -3,7 +3,7 @@ title: "Gội đầu dưỡng sinh ở Buôn Ma Thuột: giá, quy trình và n�
 description: "Bảng giá gội đầu dưỡng sinh tại Mandala Buôn Ma Thuột từ 69.000đ. So sánh 4 gói, quy trình từng bước, mẹo chọn gói theo nhu cầu và kinh nghiệm đặt lịch."
 date: 2026-11-21
 category: "Dưỡng sinh Đông y"
-image: "../../assets/images/blog/goi-dau-duong-sinh-buon-ma-thuot-mandala.jpg"
+image: "../../assets/images/goi-dau-duong-sinh-buon-ma-thuot-mandala.jpg"
 imageAlt: "Kỹ thuật viên Mandala xả nước gội đầu dưỡng sinh cho khách tại Buôn Ma Thuột"
 ---
 
@@ -17,7 +17,7 @@ Gội đầu dưỡng sinh thì khác. Đây là một **nghi thức chăm sóc 
 
 Bạn có thể đọc kỹ hơn về nguồn gốc và lợi ích trong bài [Gội đầu dưỡng sinh là gì? 5 lợi ích và quy trình chuẩn](/blog/goi-dau-duong-sinh-la-gi/).
 
-![Phòng gội đầu dưỡng sinh hai giường với khăn cuộn sẵn tại Mandala](../../assets/images/blog/phong-goi-dau-duong-sinh-mandala.jpg)
+![Phòng gội đầu dưỡng sinh hai giường với khăn cuộn sẵn tại Mandala](../../assets/images/phong-goi-dau-duong-sinh-mandala.jpg)
 
 ## Bảng giá gội đầu dưỡng sinh tại Mandala
 
@@ -44,7 +44,7 @@ Chọn **Gội Đầu Dưỡng Sinh (159.000đ)**. Phần bấm huyệt đầu �
 
 Chọn **Gội Đầu Trung Hoa (239.000đ)**. Quy trình nhiều bước, thời gian dài hơn, có thêm các bước chăm sóc tỉ mỉ. Đây là gói nhiều khách chọn cho lần đầu đến Mandala, hoặc khi muốn tự thưởng sau một tuần làm việc căng thẳng. Bạn có thể so sánh chi tiết trong bài [Gội đầu Trung Hoa khác gội đầu dưỡng sinh thế nào?](/blog/goi-dau-trung-hoa-khac-goi-dau-duong-sinh/)
 
-![Vòi phun nước dạng vòng cung trong liệu trình gội đầu Trung Hoa tại Mandala](../../assets/images/blog/goi-dau-trung-hoa-voi-phun-nuoc-vong.jpg)
+![Vòi phun nước dạng vòng cung trong liệu trình gội đầu Trung Hoa tại Mandala](../../assets/images/goi-dau-trung-hoa-voi-phun-nuoc-vong.jpg)
 
 ### Bạn căng thẳng, mất ngủ kéo dài, vai gáy cứng nhiều
 
@@ -64,7 +64,7 @@ Mỗi gói có số bước khác nhau, nhưng một buổi gội dưỡng sinh 
 6. **Massage mặt, ủ ấm** (tùy gói).
 7. **Sấy khô và nghỉ ngơi** với trà thảo mộc trước khi ra về.
 
-![Rổ sả, quế, gừng tươi dùng pha trà và nước thảo dược tại Mandala](../../assets/images/blog/sa-que-gung-thao-moc-mandala.jpg)
+![Rổ sả, quế, gừng tươi dùng pha trà và nước thảo dược tại Mandala](../../assets/images/sa-que-gung-thao-moc-mandala.jpg)
 
 ## Vì sao khách chọn gội đầu dưỡng sinh tại Mandala?
 

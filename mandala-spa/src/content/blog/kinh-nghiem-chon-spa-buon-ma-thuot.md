@@ -3,7 +3,7 @@ title: "Kinh nghiệm chọn spa uy tín ở Buôn Ma Thuột: 7 điều cần b
 description: "7 tiêu chí chọn spa, massage uy tín ở Buôn Ma Thuột: giá niêm yết, đánh giá thật, vệ sinh, tư vấn, riêng tư, giới hạn chuyên môn và sự thuận tiện. Kèm checklist trước khi đặt lịch."
 date: 2026-11-21
 category: "Sống khỏe"
-image: "../../assets/images/blog/sanh-cho-mandala-spa-buon-ma-thuot.jpg"
+image: "../../assets/images/sanh-cho-mandala-spa-buon-ma-thuot.jpg"
 imageAlt: "Sảnh chờ Mandala Spa Buôn Ma Thuột với sofa kem, tranh tròn và cỏ lau"
 ---
 
@@ -28,7 +28,7 @@ Mở Google Maps, tìm tên spa, xem **điểm đánh giá, số lượng đánh
 - Xem spa **phản hồi đánh giá chưa tốt** như thế nào. Một nơi cầu thị sẽ trả lời lịch sự, nhận góp ý.
 - Để ý **thời gian** của đánh giá. Đánh giá từ vài năm trước có thể không còn phản ánh hiện tại.
 
-![Khách quốc tế ghé thư giãn tại sảnh chờ Mandala](../../assets/images/blog/khach-quoc-te-tai-mandala-spa.jpg)
+![Khách quốc tế ghé thư giãn tại sảnh chờ Mandala](../../assets/images/khach-quoc-te-tai-mandala-spa.jpg)
 
 ## 3. Vệ sinh sạch sẽ
 
@@ -51,7 +51,7 @@ Dấu hiệu cần cân nhắc:
 - Liên tục **ép mua thêm gói**, thẻ liệu trình ngay trong lúc làm
 - Không điều chỉnh khi bạn báo đau
 
-![Kỹ thuật viên Mandala chăm sóc khách tại phòng có đèn soi và dụng cụ sạch sẽ](../../assets/images/blog/phong-cham-soc-da-mandala.jpg)
+![Kỹ thuật viên Mandala chăm sóc khách tại phòng có đèn soi và dụng cụ sạch sẽ](../../assets/images/phong-cham-soc-da-mandala.jpg)
 
 ## 5. Không gian riêng tư, tôn trọng khách
 
@@ -74,7 +74,7 @@ Massage, gội đầu dưỡng sinh, liệu pháp Đông y tại spa là liệu 
 - **Đặt lịch dễ dàng:** gọi, Zalo, đặt online
 - **Xác nhận lịch hẹn** rõ ràng
 
-![Không gian sảnh chờ với trà thảo mộc, sả và quế tại Mandala](../../assets/images/blog/sanh-cho-tra-thao-moc-mandala.jpg)
+![Không gian sảnh chờ với trà thảo mộc, sả và quế tại Mandala](../../assets/images/sanh-cho-tra-thao-moc-mandala.jpg)
 
 ## Những dấu hiệu nên cân nhắc lại
 

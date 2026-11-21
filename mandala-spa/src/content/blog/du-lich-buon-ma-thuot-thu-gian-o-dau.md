@@ -3,7 +3,7 @@ title: "Du lịch Buôn Ma Thuột: thư giãn ở đâu sau hành trình cà ph
 description: "Gợi ý lịch trình du lịch Buôn Ma Thuột kết hợp nghỉ ngơi: cà phê, thác Dray Nur, Buôn Đôn, hồ Lắk và một buổi massage, gội đầu dưỡng sinh, ngâm thảo dược để hồi phục sau chuyến đi."
 date: 2026-11-21
 category: "Sống khỏe"
-image: "../../assets/images/blog/khach-nhat-ban-han-quoc-tai-mandala.jpg"
+image: "../../assets/images/khach-nhat-ban-han-quoc-tai-mandala.jpg"
 imageAlt: "Du khách nước ngoài vui vẻ tại sảnh chờ Mandala Buôn Ma Thuột"
 ---
 
@@ -42,7 +42,7 @@ Một chuyến đi Tây Nguyên thường gồm **xe đường dài, leo dốc r
 - **Làm ấm cơ thể** những tối se lạnh
 - Ngủ ngon hơn để sáng hôm sau tiếp tục hành trình
 
-![Ngâm chân thảo dược và bấm huyệt bàn chân tại Mandala](../../assets/images/blog/ngam-chan-thao-duoc-massage-foot.jpg)
+![Ngâm chân thảo dược và bấm huyệt bàn chân tại Mandala](../../assets/images/ngam-chan-thao-duoc-massage-foot.jpg)
 
 ## Gợi ý lịch trình 2 ngày có "khoảng nghỉ"
 
@@ -59,7 +59,7 @@ Một chuyến đi Tây Nguyên thường gồm **xe đường dài, leo dốc r
 
 Nếu ở lâu hơn, bạn có thể dành thêm một buổi cho **ngâm bồn gỗ thảo dược kết hợp xông hơi**, trải nghiệm đậm chất dưỡng sinh Á Đông.
 
-![Khách ngâm bồn gỗ thảo dược tại Mandala Buôn Ma Thuột](../../assets/images/blog/ngam-bon-go-thao-duoc-mandala.jpg)
+![Khách ngâm bồn gỗ thảo dược tại Mandala Buôn Ma Thuột](../../assets/images/ngam-bon-go-thao-duoc-mandala.jpg)
 
 ## Gợi ý liệu trình cho du khách
 
@@ -79,7 +79,7 @@ Nếu ở lâu hơn, bạn có thể dành thêm một buổi cho **ngâm bồn 
 - 🍵 Trà gừng, sả, quế ấm đón khách, rất hợp những tối se lạnh
 - ☎ **0395 546 979** (Zalo)
 
-![Du khách nước ngoài nghỉ chân tại sảnh chờ Mandala](../../assets/images/blog/khach-quoc-te-tai-mandala-spa.jpg)
+![Du khách nước ngoài nghỉ chân tại sảnh chờ Mandala](../../assets/images/khach-quoc-te-tai-mandala-spa.jpg)
 
 ## Gợi ý lịch trình một ngày ở Buôn Ma Thuột
 

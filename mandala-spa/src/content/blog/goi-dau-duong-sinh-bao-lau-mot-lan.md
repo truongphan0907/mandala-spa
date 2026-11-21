@@ -3,7 +3,7 @@ title: "Gội đầu dưỡng sinh bao lâu một lần? Lưu ý trước, trong
 description: "Nên gội đầu dưỡng sinh bao lâu một lần để thư giãn hiệu quả? Tần suất theo từng nhu cầu và những lưu ý trước, trong, sau khi gội giúp bạn có trải nghiệm trọn vẹn."
 date: 2026-11-21
 category: "Dưỡng sinh Đông y"
-image: "../../assets/images/blog/phong-goi-dau-duong-sinh-mandala.jpg"
+image: "../../assets/images/phong-goi-dau-duong-sinh-mandala.jpg"
 imageAlt: "Phòng gội đầu dưỡng sinh với hai giường gội và khăn sạch tại Mandala Buôn Ma Thuột"
 ---
 
@@ -22,7 +22,7 @@ Không có con số cố định cho tất cả mọi người. Tần suất ph�
 
 Điều quan trọng nhất là **lắng nghe cơ thể**. Nếu sau mỗi buổi gội bạn thấy nhẹ nhõm, ngủ ngon hơn, da đầu thoáng và không khô, đó là tần suất phù hợp. Nếu da đầu bị khô, ngứa hoặc tóc xơ, hãy giãn khoảng cách và báo kỹ thuật viên để điều chỉnh sản phẩm.
 
-![Kỹ thuật viên xả nước gội và massage da đầu cho khách tại Mandala](../../assets/images/blog/goi-dau-duong-sinh-buon-ma-thuot-mandala.jpg)
+![Kỹ thuật viên xả nước gội và massage da đầu cho khách tại Mandala](../../assets/images/goi-dau-duong-sinh-buon-ma-thuot-mandala.jpg)
 
 ## Gội nhiều có hại không?
 
@@ -40,7 +40,7 @@ Với dầu gội thảo dược nhẹ dịu và động tác massage đúng cá
 - **Không cần gội ở nhà trước.** Kỹ thuật viên sẽ làm sạch kỹ.
 - **Báo kỹ thuật viên** nếu bạn đau đầu thường xuyên, có vấn đề về da đầu, huyết áp, đang mang thai hoặc vừa làm hóa chất tóc.
 
-![Trà gừng, quế, sả cùng bánh trái cây đón khách tại Mandala](../../assets/images/blog/sa-que-gung-thao-moc-mandala.jpg)
+![Trà gừng, quế, sả cùng bánh trái cây đón khách tại Mandala](../../assets/images/sa-que-gung-thao-moc-mandala.jpg)
 
 ## Trong khi gội: đừng ngại lên tiếng
 
@@ -73,7 +73,7 @@ Gội đầu dưỡng sinh giúp thư giãn, nhưng hiệu quả sẽ bền hơn
 
 Nếu bạn hay mất ngủ, đau đầu vì căng thẳng, đọc thêm: [Gội đầu dưỡng sinh có giúp ngủ ngon không?](/blog/goi-dau-duong-sinh-giup-ngu-ngon/)
 
-![Không gian sảnh chờ yên tĩnh với hoa tươi và trà thảo mộc tại Mandala](../../assets/images/blog/sanh-cho-tra-thao-moc-mandala.jpg)
+![Không gian sảnh chờ yên tĩnh với hoa tươi và trà thảo mộc tại Mandala](../../assets/images/sanh-cho-tra-thao-moc-mandala.jpg)
 
 ## Những trường hợp nên cẩn trọng
 

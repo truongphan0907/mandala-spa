@@ -3,7 +3,7 @@ title: "Massage body bao lâu một lần là tốt? Gợi ý theo từng nhu c�
 description: "Nên massage body bao lâu một lần? Gợi ý tần suất theo mục đích thư giãn, giảm đau mỏi văn phòng, chơi thể thao và dấu hiệu cho thấy bạn đang massage quá dày."
 date: 2026-11-21
 category: "Massage & Trị liệu"
-image: "../../assets/images/blog/massage-body-tinh-dau-buon-ma-thuot.jpg"
+image: "../../assets/images/massage-body-tinh-dau-buon-ma-thuot.jpg"
 imageAlt: "Massage body tinh dầu cho khách tại Mandala Buôn Ma Thuột"
 ---
 
@@ -21,7 +21,7 @@ Massage xong thấy người nhẹ hẳn, ngủ ngon hơn, ai cũng muốn đi t
 
 *Đây là gợi ý chung. Kỹ thuật viên sẽ tư vấn cụ thể hơn sau khi biết tình trạng và phản ứng của cơ thể bạn sau buổi đầu tiên.*
 
-![Kỹ thuật viên massage lưng khách nữ với nến thơm tại Mandala](../../assets/images/blog/massage-body-tinh-dau-buon-ma-thuot.jpg)
+![Kỹ thuật viên massage lưng khách nữ với nến thơm tại Mandala](../../assets/images/massage-body-tinh-dau-buon-ma-thuot.jpg)
 
 ## Vì sao giai đoạn đầu nên đi dày hơn?
 
@@ -33,7 +33,7 @@ Với **massage chuyên sâu** (lực mạnh, tác động sâu vào cơ), cơ t
 
 Với **massage thư giãn** lực nhẹ như massage tinh dầu, hương thơm, bạn có thể đi dày hơn mà không lo cơ bị quá tải.
 
-![Đá nóng đặt dọc sống lưng giúp giãn cơ sâu, ảnh minh họa](../../assets/images/blog/minh-hoa-massage-da-nong-lung.jpg)
+![Đá nóng đặt dọc sống lưng giúp giãn cơ sâu, ảnh minh họa](../../assets/images/minh-hoa-massage-da-nong-lung.jpg)
 
 ## Dấu hiệu bạn đang massage quá dày
 
@@ -67,7 +67,7 @@ Massage giúp cơ thể thả lỏng, nhưng nếu nguyên nhân gây mỏi vẫ
 
 Xem thêm: [Đau mỏi cổ vai gáy ở dân văn phòng: nguyên nhân và cách chăm sóc](/blog/dau-moi-co-vai-gay-dan-van-phong/).
 
-![Phòng xông hơi khô bằng gỗ thông tại Mandala](../../assets/images/blog/phong-xong-hoi-kho-mandala.jpg)
+![Phòng xông hơi khô bằng gỗ thông tại Mandala](../../assets/images/phong-xong-hoi-kho-mandala.jpg)
 
 ## Lên "lịch chăm sóc" cho bản thân
 

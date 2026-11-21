@@ -3,7 +3,7 @@ title: "Massage tinh dầu, đá nóng, chuyên sâu, vai gáy: các loại mass
 description: "So sánh các loại massage phổ biến: tinh dầu, đá nóng, chuyên sâu, hương thơm, vai gáy, chân. Lực tay, cảm giác, ai nên chọn, giá tham khảo tại Buôn Ma Thuột."
 date: 2026-11-21
 category: "Massage & Trị liệu"
-image: "../../assets/images/blog/ky-thuat-vien-massage-cung-pham-ngu-y.jpg"
+image: "../../assets/images/ky-thuat-vien-massage-cung-pham-ngu-y.jpg"
 imageAlt: "Kỹ thuật viên Mandala thực hiện massage trị liệu cho khách trong phòng có bồn gỗ"
 ---
 
@@ -28,7 +28,7 @@ Kỹ thuật viên dùng tinh dầu, xoa bóp toàn thân bằng các động t�
 
 **Tại Mandala:** Massage Body – **249.000đ**.
 
-![Rót dầu massage tinh dầu trước khi xoa bóp, ảnh minh họa](../../assets/images/blog/minh-hoa-dau-massage-tinh-dau.jpg)
+![Rót dầu massage tinh dầu trước khi xoa bóp, ảnh minh họa](../../assets/images/minh-hoa-dau-massage-tinh-dau.jpg)
 
 ## Massage đá nóng
 
@@ -38,7 +38,7 @@ Kết hợp xoa bóp với **đá bazan được làm ấm**. Kỹ thuật viên
 
 **Tại Mandala:** **349.000đ**. Đọc thêm: [Massage đá nóng có tác dụng gì?](/blog/massage-da-nong-co-tac-dung-gi/)
 
-![Đá bazan ấm đặt trên lưng trong massage đá nóng, ảnh minh họa](../../assets/images/blog/minh-hoa-ky-thuat-dat-da-nong.jpg)
+![Đá bazan ấm đặt trên lưng trong massage đá nóng, ảnh minh họa](../../assets/images/minh-hoa-ky-thuat-dat-da-nong.jpg)
 
 ## Massage chuyên sâu (Deep tissue)
 
@@ -48,7 +48,7 @@ Kỹ thuật viên dùng **lực mạnh, chậm**, có thể dùng cả khuỷu 
 
 **Tại Mandala:** Body Chuyên Sâu – **399.000đ**; Body Chuyên Sâu Ngự Y kết hợp thảo dược – **599.000đ**.
 
-![Kỹ thuật viên dùng cẳng tay massage chuyên sâu vùng lưng khách tại Mandala](../../assets/images/blog/massage-body-tinh-dau-buon-ma-thuot.jpg)
+![Kỹ thuật viên dùng cẳng tay massage chuyên sâu vùng lưng khách tại Mandala](../../assets/images/massage-body-tinh-dau-buon-ma-thuot.jpg)
 
 ## Còn massage Thái thì sao?
 
@@ -76,7 +76,7 @@ Ngâm chân nước thảo dược ấm, sau đó bấm huyệt và xoa bóp bà
 
 **Phù hợp:** người đứng, đi lại nhiều, du khách sau ngày tham quan.
 
-![Ngâm chân thảo dược với hoa và bấm huyệt bàn chân tại Mandala](../../assets/images/blog/ngam-chan-thao-duoc-massage-foot.jpg)
+![Ngâm chân thảo dược với hoa và bấm huyệt bàn chân tại Mandala](../../assets/images/ngam-chan-thao-duoc-massage-foot.jpg)
 
 ## Chọn thế nào cho nhanh?
 

@@ -42,9 +42,9 @@ Massage cặp đôi không chỉ dành cho người yêu hay vợ chồng. Rất
 
 Để buổi hẹn thêm trọn vẹn, nhiều cặp đôi kết hợp massage với **xông hơi khô** hoặc **ngâm bồn gỗ thảo dược**. Hơi ấm giúp cơ thể thả lỏng trước khi massage, còn bồn ngâm thảo dược với gừng, quế, sả mang lại cảm giác ấm áp, thư thái. Hãy hỏi lễ tân Mandala về các liệu trình có bước xông hơi, ngâm bồn.
 
-![Phòng xông hơi khô với gáo gỗ, đá nóng và quế tại Mandala](../../assets/images/blog/phong-xong-hoi-kho-mandala.jpg)
+![Phòng xông hơi khô với gáo gỗ, đá nóng và quế tại Mandala](../../assets/images/phong-xong-hoi-kho-mandala.jpg)
 
-![Khách ngâm bồn gỗ thảo dược trong không gian tường đá, cỏ lau tại Mandala](../../assets/images/blog/ngam-bon-go-thao-duoc-mandala.jpg)
+![Khách ngâm bồn gỗ thảo dược trong không gian tường đá, cỏ lau tại Mandala](../../assets/images/ngam-bon-go-thao-duoc-mandala.jpg)
 
 ## Dịp nào phù hợp?
 
@@ -69,7 +69,7 @@ Massage cặp đôi không chỉ dành cho người yêu hay vợ chồng. Rất
 
 Buôn Ma Thuột có nhiều lựa chọn để tiếp tục buổi tối sau massage: một bữa tối nhẹ, một quán cà phê sân vườn yên tĩnh (nên chọn đồ uống ít caffeine nếu muốn ngủ ngon), hoặc đơn giản là về nhà nghỉ ngơi sớm. Cơ thể vừa được thư giãn, đây là lúc tuyệt vời để trò chuyện chậm rãi với nhau.
 
-![Khăn cuộn, nến và đá thư giãn, ảnh minh họa không gian spa](../../assets/images/blog/minh-hoa-khan-nen-da-spa.jpg)
+![Khăn cuộn, nến và đá thư giãn, ảnh minh họa không gian spa](../../assets/images/minh-hoa-khan-nen-da-spa.jpg)
 
 ## Làm quà tặng
 

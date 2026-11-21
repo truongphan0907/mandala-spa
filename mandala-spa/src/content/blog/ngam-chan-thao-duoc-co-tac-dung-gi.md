@@ -3,7 +3,7 @@ title: "Ngâm chân, ngâm bồn thảo dược có tác dụng gì? Cách ngâm
 description: "Ngâm chân, ngâm bồn thảo dược với gừng, sả, quế giúp làm ấm cơ thể, thư giãn, dễ ngủ. Hướng dẫn ngâm đúng cách tại nhà, nhiệt độ, thời gian và những ai cần lưu ý."
 date: 2026-11-21
 category: "Dưỡng sinh Đông y"
-image: "../../assets/images/blog/ngam-chan-thao-duoc-massage-foot.jpg"
+image: "../../assets/images/ngam-chan-thao-duoc-massage-foot.jpg"
 imageAlt: "Chậu gỗ ngâm chân nước thảo dược với hoa tại Mandala Buôn Ma Thuột"
 ---
 
@@ -25,7 +25,7 @@ Theo cách nhìn hiện đại, nước ấm làm giãn mạch máu ở chân, g
 
 *Những lợi ích này chủ yếu mang tính thư giãn, hỗ trợ; không thay thế điều trị bệnh.*
 
-![Rổ sả, quế, gừng tươi và nến thơm, nguyên liệu thảo dược tại Mandala](../../assets/images/blog/sa-que-gung-thao-moc-mandala.jpg)
+![Rổ sả, quế, gừng tươi và nến thơm, nguyên liệu thảo dược tại Mandala](../../assets/images/sa-que-gung-thao-moc-mandala.jpg)
 
 ## Các loại thảo dược thường dùng
 
@@ -40,14 +40,14 @@ Theo cách nhìn hiện đại, nước ấm làm giãn mạch máu ở chân, g
 
 Tại spa, thảo dược thường được **nấu thành nước cốt** hoặc **phối trộn dạng bột**, giúp hương thơm và hơi ấm đậm hơn so với ngâm tại nhà.
 
-![Khay thảo dược gồm bột thảo mộc, muối, lá khô và nến bên bồn ngâm gỗ tại Mandala](../../assets/images/blog/khay-thao-duoc-ngam-bon-go.jpg)
+![Khay thảo dược gồm bột thảo mộc, muối, lá khô và nến bên bồn ngâm gỗ tại Mandala](../../assets/images/khay-thao-duoc-ngam-bon-go.jpg)
 
 ## Ngâm chân và ngâm bồn toàn thân khác nhau thế nào?
 
 - **Ngâm chân:** chỉ ngâm từ bàn chân đến bắp chân trong chậu gỗ, thường đi kèm **massage chân, bấm huyệt bàn chân**. Thời gian ngắn, phù hợp mọi người.
 - **Ngâm bồn toàn thân:** ngồi trong **bồn gỗ lớn** với nước thảo dược ấm ngập đến vai. Cảm giác ấm áp lan tỏa toàn thân, cơ thể thả lỏng sâu. Thường kết hợp với massage hoặc xông hơi.
 
-![Khách ngâm bồn gỗ thảo dược trong phòng tường đá với cỏ lau tại Mandala](../../assets/images/blog/ngam-bon-go-thao-duoc-mandala.jpg)
+![Khách ngâm bồn gỗ thảo dược trong phòng tường đá với cỏ lau tại Mandala](../../assets/images/ngam-bon-go-thao-duoc-mandala.jpg)
 
 ## Cách ngâm chân đúng tại nhà
 
@@ -93,7 +93,7 @@ Tại Mandala, ngâm thảo dược có hai hình thức:
 
 Sau khi ngâm, bạn có thể kết hợp **xông hơi khô** hoặc **massage** để thư giãn trọn vẹn. Hãy hỏi lễ tân để được tư vấn liệu trình có bước ngâm thảo dược phù hợp với thời gian và nhu cầu của bạn.
 
-![Phòng xông hơi khô bằng gỗ thông tại Mandala](../../assets/images/blog/phong-xong-hoi-go-thong.jpg)
+![Phòng xông hơi khô bằng gỗ thông tại Mandala](../../assets/images/phong-xong-hoi-go-thong.jpg)
 
 Tìm hiểu thêm: [Lăn ống đồng thảo dược là gì?](/blog/lan-ong-dong-thao-duoc-la-gi/) · [Du lịch Buôn Ma Thuột: thư giãn ở đâu?](/blog/du-lich-buon-ma-thuot-thu-gian-o-dau/)
 
