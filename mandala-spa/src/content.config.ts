@@ -17,4 +17,21 @@ const blog = defineCollection({
     }),
 });
 
-export const collections = { blog };
+// Bài blog tiếng nước ngoài: src/content/blog-intl/<mã ngôn ngữ>/<đường-dẫn>.md
+// translationOf = tên file bài tiếng Việt tương ứng (nếu có) để nối các bản dịch với nhau
+const blogIntl = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog-intl' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      date: z.coerce.date(),
+      category: z.string(),
+      image: image().optional(),
+      imageAlt: z.string().default(''),
+      translationOf: z.string().optional(),
+      draft: z.boolean().default(false),
+    }),
+});
+
+export const collections = { blog, blogIntl };

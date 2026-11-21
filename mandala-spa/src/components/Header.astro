@@ -8,7 +8,7 @@ const nav = [
   { href: url(lang, 'services'), label: t.nav.services },
   { href: url(lang, 'prices'), label: t.nav.prices },
   { href: url(lang, 'about'), label: t.nav.about },
-  ...(lang === 'vi' ? [{ href: '/blog/', label: t.nav.blog }] : []),
+  { href: url(lang, 'blog'), label: t.nav.blog },
   { href: url(lang, 'contact'), label: t.nav.contact },
 ];
 const path = Astro.url.pathname;

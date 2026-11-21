@@ -40,7 +40,7 @@ export const ja: UI = {
     featuredEyebrow: 'おすすめ', combo: 'おすすめコース',
     comboText: '大切な方やカップルへの贈り物にも。ギフトカードもご用意しています。詳しくはお問い合わせください。',
     journeyEyebrow: 'ご来店の流れ', spaceEyebrow: '空間', bookEyebrow: 'ご予約',
-    visit: 'Mandalaへのアクセス', open: '営業時間', mapTitle: 'Mandalaへの地図', blogNew: '',
+    visit: 'Mandalaへのアクセス', open: '営業時間', mapTitle: 'Mandalaへの地図', blogNew: 'コラム新着',
     sigBtn1: '宮廷漢方シリーズを見る', sigBtn2: '料金表を見る',
   },
   services: {
@@ -86,6 +86,7 @@ export const ja: UI = {
     seoDesc: 'バンメトートのMandalaご来店前によくいただく質問：ご予約、営業時間、カップルルーム、健康上の注意など。',
     eyebrow: 'よくある質問', title: 'よくある質問', text: 'ご来店前によくいただくご質問をまとめました。解決しない場合は、お気軽にお電話またはご予約フォームからお問い合わせください。',
   },
+  blog: { seoTitle: 'Mandala コラム – バンメトートのスパと養生', seoDesc: 'ベトナムのヘッドスパ、薬草ケア、バンメトート旅行での癒し方など、Mandala Healthcare & Spaがお届けするコラム。', eyebrow: 'コラム', title: 'Mandala コラム', text: 'ベトナムの養生の知恵、Mandalaの施術、そしてバンメトートの旅で心と体を休めるヒントをご紹介します。', readMore: 'こちらもおすすめ', ctaTitle: 'どのメニューがよいか迷ったら', ctaText: 'お電話（{phone}）または予約フォームからお気軽にご相談ください。', locale: 'ja-JP' },
   form: {
     name: 'お名前 ＊', phone: '電話番号（国番号から）＊', phonePlaceholder: '+81 90 1234 5678', service: 'メニュー', serviceNone: '未定 – おすすめを知りたい',
     date: '日付', time: '時間', guests: '人数', note: 'ご要望', notePlaceholder: '気になる部位、力加減、カップルルーム希望など…',

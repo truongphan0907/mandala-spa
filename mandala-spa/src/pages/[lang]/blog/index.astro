@@ -1,0 +1,40 @@
+---
+// Danh sách bài blog tiếng nước ngoài (/en/blog/, /ja/blog/…) – bài nằm trong src/content/blog-intl/<mã>/
+import { Picture } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/PageHero.astro';
+import Mandala from '../../../components/Mandala.astro';
+import { FOREIGN, ui, blogUrl, type Lang } from '../../../i18n';
+
+export function getStaticPaths() {
+  return FOREIGN.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const t = ui(lang);
+const fmt = (d: Date) => d.toLocaleDateString(t.blog.locale, { year: 'numeric', month: 'short', day: 'numeric' });
+const posts = (await getCollection('blogIntl', ({ id, data }) => !data.draft && id.startsWith(lang + '/')))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<Base title={t.blog.seoTitle} description={t.blog.seoDesc}>
+  <PageHero eyebrow={t.blog.eyebrow} title={t.blog.title} text={t.blog.text} />
+  <section class="section">
+    <div class="container-x grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {posts.map((p) => (
+        <a href={blogUrl(lang, p.id.split('/')[1])} class="group flex flex-col overflow-hidden rounded-2xl border border-line bg-ivory transition hover:shadow-xl hover:shadow-espresso/5">
+          <div class="aspect-[16/10] overflow-hidden bg-sand">
+            {p.data.image ? (
+              <Picture src={p.data.image} alt={p.data.imageAlt} widths={[400, 700]} sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw"
+                       formats={['avif', 'webp']} class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+            ) : <div class="flex h-full items-center justify-center"><Mandala class="h-24 w-24 text-gold/60" stroke={2.5} /></div>}
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <p class="text-xs tracking-[0.12em] text-muted uppercase">{p.data.category} · {fmt(p.data.date)}</p>
+            <h2 class="mt-2 text-[24px] group-hover:text-bronze">{p.data.title}</h2>
+            <p class="mt-2 text-[15px] text-muted">{p.data.description}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

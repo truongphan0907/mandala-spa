@@ -90,6 +90,7 @@ const vi = {
     seoDesc: 'Giải đáp thắc mắc trước khi đặt lịch tại Mandala Buôn Ma Thuột: đặt lịch, giờ mở cửa, phòng đôi, lưu ý sức khỏe.',
     eyebrow: 'Hỏi đáp', title: 'Câu hỏi thường gặp', text: 'Những điều khách hay hỏi trước khi đến Mandala. Chưa thấy câu trả lời? Nhắn Zalo cho chúng tôi nhé.',
   },
+  blog: { seoTitle: 'Blog sống khỏe – Massage, dưỡng sinh, chăm sóc da', seoDesc: 'Kiến thức massage trị liệu, dưỡng sinh Đông y, chăm sóc da và sống khỏe mỗi ngày từ Mandala Buôn Ma Thuột.', eyebrow: 'Blog', title: 'Blog Mandala – Sống khỏe mỗi ngày', text: 'Kiến thức massage, dưỡng sinh Đông y, chăm sóc da và những thói quen nhỏ cho cơ thể khỏe mạnh.', readMore: 'Đọc thêm', ctaTitle: 'Muốn được tư vấn liệu trình phù hợp?', ctaText: 'Nhắn Zalo hoặc gọi {phone} – Mandala tư vấn miễn phí.', locale: 'vi-VN' },
   form: {
     name: 'Họ và tên *', phone: 'Số điện thoại *', phonePlaceholder: '', service: 'Dịch vụ', serviceNone: 'Chưa chọn – nhờ Mandala tư vấn',
     date: 'Ngày', time: 'Giờ', guests: 'Số khách', note: 'Ghi chú', notePlaceholder: 'Vùng đau mỏi cần chú ý, muốn phòng đôi…',
@@ -141,7 +142,7 @@ const en: UI = {
     featuredEyebrow: 'Recommended', combo: 'Signature Packages',
     comboText: 'A thoughtful gift for loved ones and couples. Gift cards available – message us for details.',
     journeyEyebrow: 'Your visit', spaceEyebrow: 'Our space', bookEyebrow: 'Booking',
-    visit: 'Visit Mandala', open: 'Open', mapTitle: 'Map to Mandala', blogNew: '',
+    visit: 'Visit Mandala', open: 'Open', mapTitle: 'Map to Mandala', blogNew: 'From our journal',
     sigBtn1: 'Explore Royal Herbal Therapies', sigBtn2: 'View the Price List',
   },
   services: {
@@ -187,6 +188,7 @@ const en: UI = {
     seoDesc: 'Answers before you visit Mandala Buon Ma Thuot: booking, opening hours, couple rooms, payment and health notes.',
     eyebrow: 'FAQ', title: 'Frequently asked questions', text: 'What guests often ask before visiting Mandala. Can’t find your answer? Just give us a call or send a booking request.',
   },
+  blog: { seoTitle: 'Mandala Journal – Spa & Wellness in Buon Ma Thuot', seoDesc: 'Guides to Vietnamese head spa, herbal therapies and relaxing in Buon Ma Thuot, written by Mandala Healthcare & Spa.', eyebrow: 'Journal', title: 'Mandala Journal', text: 'Guides to Vietnamese wellness traditions, our treatments and how to unwind on your trip to Buon Ma Thuot.', readMore: 'Read more', ctaTitle: 'Would you like help choosing a treatment?', ctaText: 'Call us on {phone} or send a booking request – we are happy to advise.', locale: 'en-GB' },
   form: {
     name: 'Full name *', phone: 'Phone number (with country code) *', phonePlaceholder: '+44 7700 900123', service: 'Treatment', serviceNone: 'Not sure yet – please advise me',
     date: 'Date', time: 'Time', guests: 'Guests', note: 'Notes', notePlaceholder: 'Areas to focus on, pressure preference, couple room…',

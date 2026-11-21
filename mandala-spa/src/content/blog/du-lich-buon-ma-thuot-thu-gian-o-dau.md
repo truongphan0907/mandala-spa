@@ -111,4 +111,4 @@ Lần đầu đi spa? Tham khảo thêm [Lần đầu đi massage: nên chọn l
 
 [Đặt lịch online](/lien-he/#dat-lich) · [Xem bảng giá](/bang-gia/)
 
-*Foreign visitors: call or message us at +84 395 546 979 (Zalo). English, Japanese and Korean pages are coming soon.*
+*Bài viết dành cho du khách nước ngoài: [English](/en/blog/where-to-relax-in-buon-ma-thuot/) · [日本語](/ja/blog/where-to-relax-in-buon-ma-thuot/) · [한국어](/ko/blog/where-to-relax-in-buon-ma-thuot/) · [中文](/zh/blog/where-to-relax-in-buon-ma-thuot/)*

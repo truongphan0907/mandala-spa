@@ -40,7 +40,7 @@ export const zh: UI = {
     featuredEyebrow: '为您推荐', combo: '特色套餐',
     comboText: '送给家人、爱人的贴心礼物。我们也提供礼品卡，欢迎咨询。',
     journeyEyebrow: '到店体验', spaceEyebrow: '环境', bookEyebrow: '预约',
-    visit: '到访 Mandala', open: '营业时间', mapTitle: 'Mandala 地图', blogNew: '',
+    visit: '到访 Mandala', open: '营业时间', mapTitle: 'Mandala 地图', blogNew: '专栏最新文章',
     sigBtn1: '查看宫廷御医系列', sigBtn2: '查看价目表',
   },
   services: {
@@ -86,6 +86,7 @@ export const zh: UI = {
     seoDesc: '到访邦美蜀 Mandala 前的常见问题：预约、营业时间、双人房、健康注意事项。',
     eyebrow: '常见问题', title: '常见问题', text: '顾客到店前经常询问的问题。没有找到答案？欢迎致电或通过预约表单联系我们。',
   },
+  blog: { seoTitle: 'Mandala 养生专栏 – 邦美蜀水疗与养生', seoDesc: '越南头疗、草本理疗、邦美蜀旅行中的放松方式——来自 Mandala Healthcare & Spa 的养生专栏。', eyebrow: '专栏', title: 'Mandala 养生专栏', text: '介绍越南传统养生智慧、Mandala 的理疗项目，以及在邦美蜀旅行时放松身心的小建议。', readMore: '延伸阅读', ctaTitle: '不知道选哪个项目？', ctaText: '欢迎致电 {phone} 或通过预约表单咨询，我们乐意为您推荐。', locale: 'zh-CN' },
   form: {
     name: '姓名 *', phone: '电话号码（含国际区号）*', phonePlaceholder: '+86 138 0000 0000', service: '项目', serviceNone: '还没想好 – 请帮我推荐',
     date: '日期', time: '时间', guests: '人数', note: '备注', notePlaceholder: '需要重点护理的部位、力度偏好、双人房等…',

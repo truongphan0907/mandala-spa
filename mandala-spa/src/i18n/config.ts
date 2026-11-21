@@ -21,15 +21,15 @@ export function getLang(url: URL): Lang {
 }
 
 // ---- Đường dẫn từng trang theo ngôn ngữ ----
-export type PageKey = 'home' | 'services' | 'prices' | 'about' | 'contact' | 'faq' | 'policy';
+export type PageKey = 'home' | 'services' | 'prices' | 'about' | 'contact' | 'faq' | 'policy' | 'blog';
 
 const VI_PATH: Record<PageKey, string> = {
   home: '/', services: '/dich-vu/', prices: '/bang-gia/', about: '/gioi-thieu/',
-  contact: '/lien-he/', faq: '/hoi-dap/', policy: '/chinh-sach/',
+  contact: '/lien-he/', faq: '/hoi-dap/', policy: '/chinh-sach/', blog: '/blog/',
 };
 const FX_PATH: Record<PageKey, string> = {
   home: '', services: 'services/', prices: 'price-list/', about: 'about/',
-  contact: 'contact/', faq: 'faq/', policy: 'policy/',
+  contact: 'contact/', faq: 'faq/', policy: 'policy/', blog: 'blog/',
 };
 /** Đường dẫn nhóm dịch vụ cho bản tiếng nước ngoài */
 export const SERVICE_SLUG: Record<string, string> = {
@@ -48,8 +48,21 @@ export function serviceUrl(lang: Lang, viSlug: string): string {
 export const bookUrl = (lang: Lang, service?: string) =>
   url(lang, 'contact') + (service ? `?dv=${encodeURIComponent(service)}` : '') + '#dat-lich';
 
+/**
+ * Bài blog đã dịch: đường dẫn bản tiếng nước ngoài (giống nhau ở mọi thứ tiếng) ↔ bài tiếng Việt gốc.
+ * vi: null = bài chỉ viết cho khách nước ngoài, không có bản tiếng Việt.
+ */
+export const BLOG_POSTS: { slug: string; vi: string | null }[] = [
+  { slug: 'where-to-relax-in-buon-ma-thuot', vi: 'du-lich-buon-ma-thuot-thu-gian-o-dau' },
+  { slug: 'vietnamese-herbal-head-spa', vi: 'goi-dau-duong-sinh-la-gi' },
+  { slug: 'herbal-copper-roller-therapy', vi: 'lan-ong-dong-thao-duoc-la-gi' },
+  { slug: 'herbal-foot-soak', vi: 'ngam-chan-thao-duoc-co-tac-dung-gi' },
+  { slug: 'first-time-at-a-spa-in-vietnam', vi: null },
+];
+export const blogUrl = (lang: Lang, slug: string) => (lang === 'vi' ? `/blog/${slug}/` : `/${lang}/blog/${slug}/`);
+
 /** Các phiên bản ngôn ngữ của cùng một trang (dùng cho nút chọn ngôn ngữ + hreflang). null = trang chỉ có tiếng Việt. */
-export function alternates(pathname: string): Record<Lang, string> | null {
+export function alternates(pathname: string): Partial<Record<Lang, string>> | null {
   const lang = getLang(new URL(pathname, 'https://x'));
   const rest = lang === 'vi' ? pathname : pathname.slice(lang.length + 1);
   const build = (fn: (l: Lang) => string) =>
@@ -60,6 +73,16 @@ export function alternates(pathname: string): Record<Lang, string> | null {
   }
   for (const [vi, fx] of Object.entries(SERVICE_SLUG)) {
     if (rest === (lang === 'vi' ? `/dich-vu/${vi}/` : `/services/${fx}/`)) return build((l) => serviceUrl(l, vi));
+  }
+  for (const p of BLOG_POSTS) {
+    const hit = lang === 'vi' ? p.vi && rest === `/blog/${p.vi}/` : rest === `/blog/${p.slug}/`;
+    if (!hit) continue;
+    const out: Partial<Record<Lang, string>> = {};
+    for (const l of ENABLED) {
+      if (l === 'vi') { if (p.vi) out.vi = blogUrl('vi', p.vi); }
+      else out[l] = blogUrl(l, p.slug);
+    }
+    return out;
   }
   return null;
 }

@@ -40,7 +40,7 @@ export const ko: UI = {
     featuredEyebrow: '추천', combo: '스페셜 코스',
     comboText: '소중한 분이나 커플을 위한 의미 있는 선물로도 좋습니다. 기프트 카드도 준비되어 있으니 문의해 주세요.',
     journeyEyebrow: '방문 안내', spaceEyebrow: '공간', bookEyebrow: '예약',
-    visit: 'Mandala 오시는 길', open: '영업시간', mapTitle: 'Mandala 지도', blogNew: '',
+    visit: 'Mandala 오시는 길', open: '영업시간', mapTitle: 'Mandala 지도', blogNew: '매거진 새 글',
     sigBtn1: '궁중 한방 라인 보기', sigBtn2: '가격표 보기',
   },
   services: {
@@ -86,6 +86,7 @@ export const ko: UI = {
     seoDesc: '부온마투옷 Mandala 방문 전 자주 묻는 질문: 예약, 영업시간, 커플룸, 건강 관련 유의 사항.',
     eyebrow: '자주 묻는 질문', title: '자주 묻는 질문', text: '방문 전에 고객님들이 자주 물어보시는 내용입니다. 원하는 답이 없으면 전화나 예약 양식으로 편하게 문의해 주세요.',
   },
+  blog: { seoTitle: 'Mandala 매거진 – 부온마투옷 스파와 웰니스', seoDesc: '베트남 헤드스파, 약초 테라피, 부온마투옷 여행 중 휴식하는 법 등 Mandala Healthcare & Spa가 전하는 이야기.', eyebrow: '매거진', title: 'Mandala 매거진', text: '베트남의 양생 전통, Mandala의 관리, 그리고 부온마투옷 여행에서 몸과 마음을 쉬게 하는 방법을 소개합니다.', readMore: '함께 읽으면 좋은 글', ctaTitle: '어떤 관리가 맞을지 고민되시나요?', ctaText: '{phone}로 전화하시거나 예약 양식으로 편하게 문의해 주세요.', locale: 'ko-KR' },
   form: {
     name: '성함 *', phone: '전화번호 (국가번호 포함) *', phonePlaceholder: '+82 10 1234 5678', service: '관리', serviceNone: '아직 모르겠어요 – 추천해 주세요',
     date: '날짜', time: '시간', guests: '인원', note: '요청 사항', notePlaceholder: '집중 관리 부위, 원하는 압, 커플룸 희망 등…',

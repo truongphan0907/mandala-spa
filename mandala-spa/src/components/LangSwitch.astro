@@ -5,7 +5,8 @@ interface Props { variant?: 'header' | 'list' }
 const { variant = 'header' } = Astro.props;
 const lang = getLang(Astro.url);
 const alt = alternates(Astro.url.pathname);
-const links = ENABLED.map((l) => ({ l, href: alt?.[l] ?? url(l, 'home'), ...LANG_META[l] }));
+const inBlog = /\/blog\//.test(Astro.url.pathname);
+const links = ENABLED.map((l) => ({ l, href: alt?.[l] ?? url(l, inBlog ? 'blog' : 'home'), ...LANG_META[l] }));
 const t = ui(lang);
 ---
 {ENABLED.length > 1 && (variant === 'header' ? (
