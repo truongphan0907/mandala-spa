@@ -104,6 +104,6 @@ Hai bạn nên ăn nhẹ trước khoảng một tiếng, mặc trang phục tho
 
 ## Đặt phòng đôi tại Mandala
 
-📍 86 Hàn Mặc Tử, P. Tân An, Buôn Ma Thuột · 🕙 10:00 – 22:00 hằng ngày · ☎ **0395 546 979** (Zalo)
+📍 86 Hàn Mặc Tử, Phường Buôn Ma Thuột, Đắk Lắk · 🕙 10:00 – 22:00 hằng ngày · ☎ **0395 546 979** (Zalo)
 
 [Đặt lịch online](/lien-he/#dat-lich) · [Xem bảng giá](/bang-gia/) · [Các liệu trình massage](/dich-vu/massage-tri-lieu/)

@@ -73,7 +73,7 @@ Nếu ở lâu hơn, bạn có thể dành thêm một buổi cho **ngâm bồn 
 
 ## Mandala – điểm nghỉ chân giữa thành phố
 
-- 📍 **86 Hàn Mặc Tử, P. Tân An**, trung tâm, dễ di chuyển từ các khách sạn
+- 📍 **86 Hàn Mặc Tử, Phường Buôn Ma Thuột**, trung tâm, dễ di chuyển từ các khách sạn
 - 🕙 **10:00 – 22:00 hằng ngày**, kịp ghé sau một ngày tham quan
 - 🌏 Thường xuyên đón **du khách quốc tế** từ châu Âu, Nhật Bản, Hàn Quốc
 - 🍵 Trà gừng, sả, quế ấm đón khách, rất hợp những tối se lạnh

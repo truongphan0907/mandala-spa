@@ -96,7 +96,7 @@ Gội đầu dưỡng sinh là liệu pháp thư giãn hỗ trợ, **không thay
 
 ## Đặt lịch tại Mandala
 
-📍 86 Hàn Mặc Tử, P. Tân An, Buôn Ma Thuột · 🕙 10:00 – 22:00 · ☎ **0395 546 979** (Zalo)
+📍 86 Hàn Mặc Tử, Phường Buôn Ma Thuột, Đắk Lắk · 🕙 10:00 – 22:00 · ☎ **0395 546 979** (Zalo)
 
 [Xem các gói gội đầu dưỡng sinh](/dich-vu/goi-dau-duong-sinh/) · [Đặt lịch online](/lien-he/#dat-lich)
 

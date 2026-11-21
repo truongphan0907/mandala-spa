@@ -20,7 +20,7 @@ Nhiều khách quen của Mandala không ở trung tâm Buôn Ma Thuột mà đ�
 
 ## Mandala ở đâu?
 
-📍 **86 Hàn Mặc Tử, P. Tân An, Buôn Ma Thuột**, khu vực trung tâm, dễ tìm, **có chỗ đậu ô tô và xe máy**.
+📍 **86 Hàn Mặc Tử, Phường Buôn Ma Thuột, Đắk Lắk**, khu vực trung tâm, dễ tìm, **có chỗ đậu ô tô và xe máy**.
 
 Mở **[Google Maps chỉ đường đến Mandala](https://www.google.com/maps/place/Mandala+-+Healthcare+%26+Spa/data=!4m2!3m1!1s0x0:0x96ce09a711ea051c)**, chọn điểm xuất phát của bạn để xem quãng đường và thời gian di chuyển chính xác nhất theo tình hình giao thông thực tế.
 
@@ -88,6 +88,6 @@ Báo trước cho kỹ thuật viên nếu bạn đang mang thai, có bệnh tim
 
 ## Đặt lịch
 
-☎ **0395 546 979** (Zalo) · 🕙 10:00 – 22:00 hằng ngày · 📍 86 Hàn Mặc Tử, P. Tân An, Buôn Ma Thuột
+☎ **0395 546 979** (Zalo) · 🕙 10:00 – 22:00 hằng ngày · 📍 86 Hàn Mặc Tử, Phường Buôn Ma Thuột, Đắk Lắk
 
 [Đặt lịch online](/lien-he/#dat-lich) · [Xem bảng giá đầy đủ](/bang-gia/) · [Kinh nghiệm chọn spa uy tín](/blog/kinh-nghiem-chon-spa-buon-ma-thuot/)

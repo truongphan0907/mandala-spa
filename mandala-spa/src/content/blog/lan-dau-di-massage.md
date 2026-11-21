@@ -102,6 +102,6 @@ Massage là liệu pháp thư giãn, **không thay thế** điều trị y khoa.
 
 Mandala – Healthcare & Spa: phòng riêng tư, khăn sạch thay mới cho từng khách, kỹ thuật viên tư vấn kỹ trước mỗi liệu trình, giá niêm yết rõ ràng.
 
-📍 86 Hàn Mặc Tử, P. Tân An, Buôn Ma Thuột · 🕙 10:00 – 22:00 · ☎ **0395 546 979** (Zalo)
+📍 86 Hàn Mặc Tử, Phường Buôn Ma Thuột, Đắk Lắk · 🕙 10:00 – 22:00 · ☎ **0395 546 979** (Zalo)
 
 [Xem các liệu trình massage](/dich-vu/massage-tri-lieu/) · [Đặt lịch online](/lien-he/#dat-lich)

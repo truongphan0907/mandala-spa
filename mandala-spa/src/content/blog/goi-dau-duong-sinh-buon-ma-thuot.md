@@ -72,7 +72,7 @@ Mỗi gói có số bước khác nhau, nhưng một buổi gội dưỡng sinh 
 - **Thảo dược tự nhiên.** Gừng, sả, quế được dùng cho cả trà đón khách và nước thảo dược.
 - **Giá niêm yết rõ ràng.** Không phát sinh phụ phí, khách biết trước mình trả bao nhiêu.
 - **Mở cửa 10:00 – 22:00 hằng ngày.** Tiện ghé sau giờ làm hoặc buổi tối cuối tuần.
-- **Vị trí trung tâm.** 86 Hàn Mặc Tử, P. Tân An, Buôn Ma Thuột, dễ tìm, dễ đi.
+- **Vị trí trung tâm.** 86 Hàn Mặc Tử, Phường Buôn Ma Thuột, Đắk Lắk, dễ tìm, dễ đi.
 - **Đón cả khách du lịch.** Mandala thường xuyên đón du khách trong và ngoài nước ghé thư giãn sau hành trình.
 
 ## Kinh nghiệm để buổi gội trọn vẹn hơn
@@ -99,7 +99,7 @@ Có. Phòng gội có hai giường, phù hợp đi cùng bạn bè, người th
 
 ## Đặt lịch gội đầu dưỡng sinh tại Mandala
 
-📍 86 Hàn Mặc Tử, P. Tân An, Buôn Ma Thuột · 🕙 10:00 – 22:00 hằng ngày · ☎ **0395 546 979** (Zalo)
+📍 86 Hàn Mặc Tử, Phường Buôn Ma Thuột, Đắk Lắk · 🕙 10:00 – 22:00 hằng ngày · ☎ **0395 546 979** (Zalo)
 
 [Xem chi tiết các gói gội đầu dưỡng sinh](/dich-vu/goi-dau-duong-sinh/) · [Đặt lịch online](/lien-he/#dat-lich)
 
