@@ -1,0 +1,136 @@
+{
+  "heroDescription": "Massage trị liệu, gội đầu dưỡng sinh và liệu pháp Đông y Cung phẩm Ngự Y – trong không gian riêng tư giữa lòng Buôn Ma Thuột.",
+  "heroServicesLine": "Massage · Gội đầu dưỡng sinh · Đông y · Chăm sóc da",
+  "heroImage": "phong-bon-go.jpg",
+  "heroImageAlt": "Phòng trị liệu có bồn ngâm gỗ và rèm trắng tại Mandala",
+  "pillarsTitle": "Chăm sóc trọn vẹn từ thân đến tâm",
+  "pillarsIntro": "Bốn nhóm liệu trình, từ thư giãn nhẹ nhàng đến trị liệu chuyên sâu, để bạn chọn đúng điều cơ thể đang cần.",
+  "signature": {
+    "eyebrow": "Liệu pháp đặc trưng",
+    "title": "Cung phẩm Ngự Y",
+    "text": "Lấy cảm hứng từ phương pháp chăm sóc sức khỏe nơi cung đình xưa, Mandala kết hợp thảo dược, nhiệt và kỹ thuật lăn ống đồng ấm nóng dọc kinh lạc – giúp cơ thể ấm áp, khí huyết lưu thông và thả lỏng từ sâu bên trong.",
+    "points": [
+      "Thảo dược ấm nóng thấm sâu vào cơ",
+      "Lăn ống đồng thảo dược dọc vai, lưng",
+      "Phù hợp người đau mỏi lâu ngày, cơ thể nhiễm lạnh"
+    ],
+    "image": "lan-ong-dong.jpg",
+    "imageAlt": "Kỹ thuật viên lăn ống đồng thảo dược trên vai gáy khách",
+    "secondImage": "bon-thao-duoc.jpg",
+    "secondAlt": "Bồn ngâm nước thảo dược ấm với gừng, quế, sả",
+    "video": "lan-ong-dong-thao-duoc"
+  },
+  "journey": {
+    "title": "Mỗi lần ghé Mandala là một nghi thức chăm sóc",
+    "image": "tra-gung-don-khach.jpg",
+    "imageAlt": "Chén trà gừng quế sả ấm đón khách tại Mandala",
+    "steps": [
+      {
+        "title": "Đón tiếp",
+        "text": "Chén trà gừng – quế – sả ấm nóng giúp cơ thể thả lỏng ngay khi bước vào."
+      },
+      {
+        "title": "Tư vấn",
+        "text": "Lắng nghe thể trạng, vùng đau mỏi và mong muốn để chọn liệu trình phù hợp."
+      },
+      {
+        "title": "Trị liệu",
+        "text": "Thả mình trong không gian yên tĩnh cùng đôi tay tận tâm, lực tay theo ý bạn."
+      },
+      {
+        "title": "Thư giãn",
+        "text": "Nghỉ ngơi với trà thảo mộc để cơ thể phục hồi trọn vẹn trước khi ra về."
+      }
+    ],
+    "promises": [
+      {
+        "title": "Triết lý dưỡng sinh",
+        "text": "Chú trọng phục hồi sức khỏe lâu dài, không chỉ thư giãn tức thời."
+      },
+      {
+        "title": "Không gian riêng tư",
+        "text": "Phòng trị liệu riêng, ánh sáng dịu, có phòng đôi cho cặp đôi và gia đình."
+      },
+      {
+        "title": "Vệ sinh chuẩn mực",
+        "text": "Khăn, ga thay mới cho từng khách, dụng cụ vệ sinh sau mỗi lượt."
+      },
+      {
+        "title": "Giá minh bạch",
+        "text": "Bảng giá niêm yết rõ ràng, không phát sinh phụ phí."
+      }
+    ]
+  },
+  "featuredTitle": "Liệu trình được yêu thích",
+  "comboImage": "phong-doi.jpg",
+  "comboImageAlt": "Phòng trị liệu đôi với nệm sàn, tranh sơn mài và đèn tre",
+  "space": {
+    "title": "Một khoảng lặng giữa phố thị",
+    "text": "Tông màu đất ấm, đèn tre đan, tranh sơn mài và hương thảo mộc – mọi chi tiết được chăm chút để bạn quên đi nhịp sống ngoài kia.",
+    "images": [
+      {
+        "src": "sanh-cho.jpg",
+        "alt": "Sảnh chờ Mandala với sofa kem và đèn tre",
+        "caption": "Sảnh chờ"
+      },
+      {
+        "src": "phong-doi.jpg",
+        "alt": "Phòng trị liệu đôi",
+        "caption": "Phòng đôi"
+      },
+      {
+        "src": "phong-bon-go-vuong.jpg",
+        "alt": "Phòng trị liệu có bồn ngâm gỗ",
+        "caption": "Phòng có bồn gỗ"
+      },
+      {
+        "src": "xong-hoi.jpg",
+        "alt": "Phòng xông hơi khô bằng gỗ thông",
+        "caption": "Phòng xông hơi khô"
+      },
+      {
+        "src": "goc-tranh-son-mai.jpg",
+        "alt": "Góc tranh sơn mài, đèn tre và hoa sen",
+        "caption": "Góc dưỡng sinh"
+      },
+      {
+        "src": "hoa-sen-san-pham.jpg",
+        "alt": "Hoa sen và bộ sản phẩm thảo dược",
+        "caption": "Thảo dược tự nhiên"
+      }
+    ]
+  },
+  "reviews": [],
+  "reviewsTitle": "Khách hàng nói gì về Mandala",
+  "reviewsIntro": "Mandala hân hạnh đón tiếp khách trong nước và du khách quốc tế mỗi ngày. Đọc cảm nhận thật của khách trên Google Maps.",
+  "ctaTitle": "Dành cho mình một khoảng lặng hôm nay",
+  "ctaText": "Đặt lịch trước để Mandala giữ phòng và chuẩn bị kỹ thuật viên phù hợp cho bạn.",
+  "heroChips": [
+    "Giá từ 69.000đ",
+    "Mở cửa 10:00 – 22:00",
+    "Phòng đôi riêng tư"
+  ],
+  "heroVideo": "mot-buoi-tai-mandala",
+  "videosTitle": "Khoảnh khắc tại Mandala",
+  "videosIntro": "Vài giây để cảm nhận sự thư thái – chạm vào video để xem có tiếng.",
+  "reviewsImage": "nhom-khach.jpg",
+  "heroSlides": [
+    {
+      "src": "phong-doi.jpg",
+      "alt": "Phòng trị liệu đôi với tranh sơn mài và đèn tre"
+    },
+    {
+      "src": "khu-goi-dau.jpg",
+      "alt": "Khu gội đầu dưỡng sinh với giường gội và rèm trắng"
+    },
+    {
+      "src": "phong-massage-bon-go.jpg",
+      "alt": "Phòng massage riêng có bồn ngâm gỗ"
+    },
+    {
+      "src": "sanh-cho.jpg",
+      "alt": "Sảnh chờ Mandala với sofa kem và đèn tre"
+    }
+  ],
+  "heroSlideSeconds": 4
+}
