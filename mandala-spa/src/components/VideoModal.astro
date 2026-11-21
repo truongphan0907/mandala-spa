@@ -3,17 +3,17 @@
 // Đồng thời: chỉ cho video thẻ chạy khi hiện trên màn hình.
 import videos from '../data/videos.json';
 ---
-<dialog id="video-modal" class="m-auto max-h-none max-w-none bg-transparent p-0 backdrop:bg-espresso/90">
-  <div class="relative flex h-[100svh] w-screen items-center justify-center p-4">
-    <div class="relative aspect-[9/16] h-full max-h-[86svh] max-w-full">
-      <video id="vm-video" class="h-full w-full rounded-2xl bg-black object-contain" playsinline controls></video>
-    </div>
-    <button id="vm-close" type="button" class="absolute top-4 right-4 flex h-11 w-11 items-center justify-center rounded-full bg-cream text-cocoa" aria-label="Đóng video">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-    </button>
-    <a id="vm-book" href="/lien-he/#dat-lich" class="btn absolute bottom-6 left-1/2 -translate-x-1/2 bg-goldlight text-espresso shadow-xl hover:bg-cream" data-track="video_book">Đặt lịch liệu trình này</a>
+<div id="video-modal" class="fixed inset-0 z-[100] hidden flex-col items-center justify-center gap-4 bg-espresso px-4 pt-16 pb-[calc(1.25rem+env(safe-area-inset-bottom))]"
+     role="dialog" aria-modal="true" aria-label="Xem video">
+  <button id="vm-close" type="button" class="absolute top-[calc(0.75rem+env(safe-area-inset-top))] right-4 flex h-11 w-11 items-center justify-center rounded-full bg-cream text-cocoa" aria-label="Đóng video">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <!-- Video chiếm phần còn lại, nút Đặt lịch nằm riêng bên dưới – không che thanh điều khiển -->
+  <div class="flex min-h-0 w-full flex-1 items-center justify-center">
+    <video id="vm-video" class="aspect-[9/16] max-h-full max-w-full rounded-2xl bg-black object-contain" playsinline controls></video>
   </div>
-</dialog>
+  <a id="vm-book" href="/lien-he/#dat-lich" class="btn shrink-0 bg-goldlight whitespace-nowrap text-espresso hover:bg-cream" data-track="video_book">Đặt lịch liệu trình này</a>
+</div>
 
 <script is:inline define:vars={{ videos }}>
   (function () {
@@ -21,7 +21,7 @@ import videos from '../data/videos.json';
     const dlg = document.getElementById('video-modal');
     const vid = document.getElementById('vm-video');
     const book = document.getElementById('vm-book');
-    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches || (navigator.connection && navigator.connection.saveData);
+    const reduce = !!(navigator.connection && navigator.connection.saveData);
 
     // Tự chạy video thẻ khi vào màn hình, dừng khi ra khỏi
     const io = 'IntersectionObserver' in window && !reduce && new IntersectionObserver((entries) => {
@@ -34,19 +34,25 @@ import videos from '../data/videos.json';
 
     document.addEventListener('click', (ev) => {
       const card = ev.target.closest && ev.target.closest('[data-video]');
+      if (card && dlg.contains(card)) return;
       if (!card || !dlg) return;
       const v = map[card.dataset.video] || {};
       vid.src = '/videos/' + card.dataset.video + '.mp4';
       vid.poster = '/videos/' + card.dataset.video + '.jpg';
       vid.muted = false;
       book.href = v.service ? '/lien-he/?dv=' + encodeURIComponent(v.service) + '#dat-lich' : '/lien-he/#dat-lich';
-      dlg.showModal();
+      dlg.classList.replace('hidden', 'flex');
+      document.documentElement.style.overflow = 'hidden';
       vid.play().catch(() => {});
       (window.dataLayer = window.dataLayer || []).push({ event: 'video_open', video_id: card.dataset.video });
     });
-    const close = () => { vid.pause(); vid.removeAttribute('src'); vid.load(); dlg.close(); };
+    const close = () => {
+      vid.pause(); vid.removeAttribute('src'); vid.load();
+      dlg.classList.replace('flex', 'hidden');
+      document.documentElement.style.overflow = '';
+    };
     document.getElementById('vm-close').addEventListener('click', close);
-    dlg.addEventListener('click', (e) => { if (e.target === dlg || e.target === dlg.firstElementChild) close(); });
-    dlg.addEventListener('cancel', (e) => { e.preventDefault(); close(); });
+    dlg.addEventListener('click', (e) => { if (e.target === dlg || e.target === vid.parentElement) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && dlg.classList.contains('flex')) close(); });
   })();
 </script>
