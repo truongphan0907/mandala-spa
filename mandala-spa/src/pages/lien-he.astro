@@ -20,7 +20,7 @@ import info from '../data/info.json';
       <div class="space-y-8">
         <div>
           <p class="eyebrow">Địa chỉ</p>
-          <p class="mt-2 text-lg">{info.address}</p>
+          <p class="mt-2 text-lg"><a href={info.mapLink} target="_blank" rel="noopener" class="underline decoration-1 underline-offset-4 hover:opacity-80">{info.address}</a></p>
           <a href={info.mapLink} target="_blank" rel="noopener" class="mt-1 inline-block font-medium text-bronze underline-offset-4 hover:underline">Chỉ đường Google Maps →</a>
         </div>
         <div>

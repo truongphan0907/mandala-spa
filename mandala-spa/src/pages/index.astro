@@ -333,7 +333,7 @@ const fallback = await crop(1200, 0.85, 'jpg');
       <div class="flex flex-col gap-6">
         <div>
           <p class="eyebrow">Ghé thăm Mandala</p>
-          <p class="mt-3 font-serif text-2xl text-cocoa">{info.address}</p>
+          <p class="mt-3 font-serif text-2xl text-cocoa"><a href={info.mapLink} target="_blank" rel="noopener" class="underline decoration-1 underline-offset-4 hover:opacity-80">{info.address}</a></p>
           <p class="mt-2 text-muted">{info.tagline2} · Mở cửa {info.hoursShort}</p>
           <p class="mt-1">Hotline / Zalo: <a href={`tel:${info.phoneRaw}`} class="font-medium text-cocoa">{info.phone}</a></p>
         </div>
