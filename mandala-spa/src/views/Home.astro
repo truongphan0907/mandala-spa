@@ -42,6 +42,11 @@ const desk = { avif: await set([800, 1200, 1600], 0.85, 'avif'), webp: await set
 const fallback = await crop(1200, 0.85, 'jpg');
 ---
 <Base>
+  <!-- Báo trình duyệt tải ảnh hero ngay từ đầu (ảnh lớn nhất màn hình đầu tiên) -->
+  <Fragment slot="head">
+    <link rel="preload" as="image" type="image/avif" imagesrcset={mob.avif} imagesizes="100vw" media="(max-width: 1023px)" fetchpriority="high" />
+    <link rel="preload" as="image" type="image/avif" imagesrcset={desk.avif} imagesizes="50vw" media="(min-width: 1024px)" fetchpriority="high" />
+  </Fragment>
   <!-- 1. HERO -->
   <section class="relative isolate overflow-hidden bg-cream">
     <div class="lg:grid lg:min-h-[max(600px,calc(100svh-72px-84px))] lg:grid-cols-2">
@@ -58,12 +63,15 @@ const fallback = await crop(1200, 0.85, 'jpg');
                class="h-full w-full object-cover" />
         </picture>
           </div>
-          {home.heroSlides.map((sl) => (
-            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-[1200ms]">
-              <Picture src={img(sl.src)!} alt={sl.alt} widths={[480, 800, 1200, 1600]} sizes="(min-width: 1024px) 50vw, 100vw"
-                       formats={['avif', 'webp']} loading="lazy" decoding="async" class="h-full w-full object-cover" />
-            </div>
-          ))}
+          <!-- Các ảnh slide sau chỉ được tải SAU KHI trang tải xong, để ảnh đầu tiên hiện nhanh nhất (điểm tốc độ LCP) -->
+          <template id="hero-more">
+            {home.heroSlides.map((sl) => (
+              <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-[1200ms]">
+                <Picture src={img(sl.src)!} alt={sl.alt} widths={[480, 800, 1200, 1600]} sizes="(min-width: 1024px) 50vw, 100vw"
+                         formats={['avif', 'webp']} loading="eager" decoding="async" class="h-full w-full object-cover" />
+              </div>
+            ))}
+          </template>
           <div class="absolute bottom-5 left-1/2 z-10 hidden -translate-x-1/2 gap-2 lg:flex" aria-hidden="true">
             {[0, ...home.heroSlides].map((_, i) => <span class:list={['hero-dot h-1.5 rounded-full bg-cream/90 transition-all', i === 0 ? 'w-6' : 'w-1.5 opacity-60']}></span>)}
           </div>
@@ -121,13 +129,14 @@ const fallback = await crop(1200, 0.85, 'jpg');
   <script>
     // Ảnh hero tự chuyển (thời gian: heroSlideSeconds trong src/data/home.json)
     const box = document.getElementById('hero-slides');
-    const slides = Array.from(box?.querySelectorAll<HTMLElement>('.hero-slide') ?? []);
+    const more = document.getElementById('hero-more') as HTMLTemplateElement | null;
     const dots = Array.from(box?.querySelectorAll<HTMLElement>('.hero-dot') ?? []);
     // Chỉ dừng khi khách bật "tiết kiệm dữ liệu"; hiệu ứng mờ dần nhẹ nên vẫn chạy với chế độ giảm chuyển động
     // @ts-ignore
     const saveData = navigator.connection?.saveData === true;
-    if (box && slides.length > 1 && !saveData) {
+    if (box && more && more.content.childElementCount > 0 && !saveData) {
       let i = 0;
+      let slides: HTMLElement[] = [];
       const ms = Math.max(2, Number(box.dataset.seconds) || 4) * 1000;
       const go = () => {
         if (document.hidden) return;
@@ -138,7 +147,12 @@ const fallback = await crop(1200, 0.85, 'jpg');
         dots[i]?.classList.replace('w-1.5', 'w-6'); dots[i]?.classList.remove('opacity-60');
       };
       // Bắt đầu chuyển sau khi trang tải xong, để ảnh đầu tiên hiện nhanh nhất
-      const start = () => setInterval(go, ms);
+      const start = () => {
+        // Chèn các ảnh slide còn lại (lúc này trình duyệt mới tải chúng), rồi bắt đầu chuyển ảnh
+        box.insertBefore(more.content.cloneNode(true), more);
+        slides = Array.from(box.querySelectorAll<HTMLElement>('.hero-slide'));
+        setTimeout(() => setInterval(go, ms), 1500);
+      };
       if (document.readyState === 'complete') start();
       else window.addEventListener('load', start, { once: true });
     }

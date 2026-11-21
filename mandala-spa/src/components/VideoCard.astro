@@ -7,7 +7,7 @@ const t = ui(getLang(Astro.url));
 ---
 <button type="button" class={`video-card group relative block aspect-[9/16] w-full overflow-hidden rounded-2xl bg-espresso text-left ${cls}`}
         data-video={id} data-title={title} aria-label={`${t.video.watch} ${title}`}>
-  <video class="h-full w-full object-cover" src={`/videos/${id}.mp4`} poster={`/videos/${id}.jpg`}
+  <video class="h-full w-full object-cover" src={`/videos/${id}.mp4`} data-poster={`/videos/${id}.jpg`}
          muted loop playsinline preload="none" aria-hidden="true"></video>
   <span class="absolute inset-0 bg-gradient-to-t from-espresso/85 via-transparent to-transparent"></span>
   <span class:list={['absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-cream/85 text-cocoa transition group-hover:scale-110', compact ? 'h-10 w-10' : 'h-12 w-12']}>

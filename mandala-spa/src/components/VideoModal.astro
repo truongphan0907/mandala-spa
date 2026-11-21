@@ -37,6 +37,13 @@ const bookBase = bookUrl(lang).replace('#dat-lich', '');
     }, { threshold: 0.6 });
     document.querySelectorAll('.video-card video').forEach((v) => io && io.observe(v));
 
+    // Ảnh bìa video chỉ tải khi thẻ video sắp hiện trên màn hình (giúp trang đầu tải nhanh hơn)
+    const setPoster = (v) => { if (v.dataset.poster) { v.poster = v.dataset.poster; delete v.dataset.poster; } };
+    const pio = 'IntersectionObserver' in window && new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { setPoster(e.target); pio.unobserve(e.target); } });
+    }, { rootMargin: '300px 0px' });
+    document.querySelectorAll('.video-card video[data-poster]').forEach((v) => (pio ? pio.observe(v) : setPoster(v)));
+
     document.addEventListener('click', (ev) => {
       const card = ev.target.closest && ev.target.closest('[data-video]');
       if (card && dlg.contains(card)) return;
