@@ -6,7 +6,11 @@ import MobileBar from '../components/MobileBar.astro';
 import DesktopFloat from '../components/DesktopFloat.astro';
 import VideoModal from '../components/VideoModal.astro';
 import Gtm from '../components/Gtm.astro';
-import info from '../data/info.json';
+import { getLang, getInfo, ui, alternates, LANG_META } from '../i18n';
+const lang = getLang(Astro.url);
+const info = getInfo(lang);
+const t = ui(lang);
+const alt = alternates(Astro.url.pathname);
 
 interface Props {
   title?: string;          // Tiêu đề SEO (thẻ <title>)
@@ -17,7 +21,7 @@ interface Props {
   noindex?: boolean;
 }
 const { title, description = info.description, ogImage = '/og-image.jpg', type = 'website', schema, noindex = false } = Astro.props;
-const fullTitle = title ? `${title} | Mandala` : `${info.name} Buôn Ma Thuột – ${info.tagline}`;
+const fullTitle = title ? `${title} | Mandala` : `${info.name} ${lang === 'vi' ? 'Buôn Ma Thuột' : 'Buon Ma Thuot'} – ${info.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogUrl = new URL(ogImage, Astro.site);
 
@@ -25,6 +29,7 @@ const business = {
   '@context': 'https://schema.org',
   '@type': 'DaySpa',
   '@id': new URL('/#spa', Astro.site).toString(),
+  inLanguage: LANG_META[lang].html,
   name: info.name,
   description: info.description,
   url: Astro.site?.toString(),
@@ -47,7 +52,7 @@ const business = {
 const schemas = [business, ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
 ---
 <!doctype html>
-<html lang="vi">
+<html lang={LANG_META[lang].html}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -56,6 +61,8 @@ const schemas = [business, ...(schema ? (Array.isArray(schema) ? schema : [schem
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {alt && Object.entries(alt).map(([l, href]) => <link rel="alternate" hreflang={LANG_META[l as keyof typeof LANG_META].html} href={new URL(href, Astro.site)} />)}
+    {alt && <link rel="alternate" hreflang="x-default" href={new URL(alt.vi, Astro.site)} />}
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png" />
@@ -68,14 +75,14 @@ const schemas = [business, ...(schema ? (Array.isArray(schema) ? schema : [schem
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogUrl} />
-    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:locale" content={LANG_META[lang].og} />
     <meta name="twitter:card" content="summary_large_image" />
     <slot name="head" />
     {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
   </head>
   <body class="pb-[calc(60px+env(safe-area-inset-bottom))] lg:pb-0">
     <Gtm noscript />
-    <a href="#noi-dung" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:rounded focus:bg-ivory focus:px-4 focus:py-2">Bỏ qua menu</a>
+    <a href="#noi-dung" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:rounded focus:bg-ivory focus:px-4 focus:py-2">{t.skip}</a>
     <Header />
     <main id="noi-dung">
       <slot />

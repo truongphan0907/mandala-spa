@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import CtaBand from '../components/CtaBand.astro';
+import ExpertBanner from '../components/ExpertBanner.astro';
+import { getLang, getInfo, getServices, ui, serviceUrl } from '../i18n';
+const lang = getLang(Astro.url);
+const vi = lang === 'vi';
+const t = ui(lang);
+const info = getInfo(lang);
+const services = getServices(lang);
+---
+<Base title={t.services.seoTitle}
+      description={t.services.seoDesc}>
+  <PageHero eyebrow={t.services.eyebrow} title={t.services.title}
+            text={t.services.text} />
+
+  <ExpertBanner />
+  <section class="section">
+    <div class="container-x grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {services.groups.map((g) => <ServiceCard group={g} />)}
+    </div>
+  </section>
+
+  <section class="section bg-sand/60">
+    <div class="container-x">
+      <p class="eyebrow">{t.services.quick}</p>
+      <h2 class="h2 mt-3">{t.services.problem}</h2>
+      <div class="mt-8 grid gap-4 md:grid-cols-2">
+        {services.groups.map((g) => (
+          <a href={serviceUrl(lang, g.slug)} class="flex items-center justify-between gap-4 rounded-2xl border border-line bg-ivory p-5 hover:border-bronze">
+            <span><span class="block text-muted">{g.need}</span><span class="font-serif text-2xl text-cocoa">→ {g.title}</span></span>
+          </a>
+        ))}
+      </div>
+      <div class="mt-10 rounded-2xl bg-ivory p-6 text-center md:p-8">
+        <p class="font-serif text-2xl text-cocoa">{t.services.unsure}</p>
+        <p class="mt-2 text-muted">{t.services.unsureText}</p>
+        {vi
+          ? <a href={info.zalo} target="_blank" rel="noopener" class="btn-primary mt-5">{t.consultZalo}</a>
+          : <a href={`tel:${info.phoneRaw}`} class="btn-primary mt-5">{t.call} {info.phone}</a>}
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

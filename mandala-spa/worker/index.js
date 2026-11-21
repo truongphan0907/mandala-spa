@@ -47,6 +47,7 @@ async function handleBooking(request, env) {
     guests: clean(data.guests, 3),
     note: clean(data.note, 500),
     page: clean(data.page, 200),
+    lang: clean(data.lang, 5) || 'vi',
   };
 
   if (!booking.name || !/^[0-9+\s.-]{8,20}$/.test(booking.phone)) {
@@ -62,8 +63,13 @@ async function handleBooking(request, env) {
     if (!ok) return json({ ok: false, error: 'Xác minh chống spam thất bại, vui lòng thử lại.' }, 400);
   }
 
+  // Khách đặt từ trang tiếng nước ngoài → báo rõ cho lễ tân
+  const LANG_LABEL = { en: '🇬🇧 tiếng Anh', ja: '🇯🇵 tiếng Nhật', ko: '🇰🇷 tiếng Hàn', zh: '🇨🇳 tiếng Trung' };
+  const foreign = LANG_LABEL[booking.lang];
+
   const lines = [
     '🌿 <b>LỊCH HẸN MỚI – Mandala Healthcare &amp; Spa</b>',
+    foreign ? `🌐 <b>Khách nước ngoài – đặt từ trang ${foreign}</b>` : '',
     `👤 ${escapeHtml(booking.name)}`,
     `📞 ${escapeHtml(booking.phone)}`,
     `💆 ${escapeHtml(booking.service || 'Chưa chọn')}`,

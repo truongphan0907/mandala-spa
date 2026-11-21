@@ -1,0 +1,211 @@
+{
+  "groups": [
+    {
+      "title": "Therapeutic Massage",
+      "menuName": "Elevate Your Wellbeing",
+      "heading": "Therapeutic Massage – Elevate Your Wellbeing",
+      "short": "Release muscle tension and fatigue with hot stones, essential oils and deep-tissue techniques.",
+      "need": "Sore neck, shoulders or back; a stiff, tense body",
+      "imageAlt": "Private massage room with a wooden soaking tub at Mandala",
+      "heroAlt": "Mandala therapist giving a guest a back massage",
+      "seoTitle": "Massage in Buon Ma Thuot – Hot Stone, Deep Tissue, Neck & Shoulder",
+      "seoDescription": "Body massage from 249,000 VND, hot stone, deep tissue, neck & shoulder and aromatherapy massage at Mandala, Buon Ma Thuot. Private rooms, caring therapists.",
+      "intro": "Long hours at a desk, long-distance travel or poor posture leave muscles tight and fatigue building up day after day. Massage at Mandala combines kneading, acupressure and warmth – hot stones and warm oils – to release tension from deep within.",
+      "suitable": [
+        "Office workers who sit at a computer for hours",
+        "Travellers after long journeys by road or air",
+        "Anyone feeling stressed or sleeping poorly",
+        "Active people who need muscle recovery"
+      ],
+      "benefits": [
+        "Eases sore muscles and stiff joints",
+        "Boosts circulation and warms the body",
+        "Deeper, more restful sleep",
+        "A calmer, lighter mind"
+      ],
+      "items": [
+        { "name": "Aromatic Oil Body Massage", "desc": "Full-body massage with essential oil and medium pressure – gentle and relaxing." },
+        { "name": "Hot Stone Body Massage", "desc": "Warm basalt stones combined with massage to relax muscles deeply and warm the body." },
+        { "name": "Deep Tissue Body Massage", "desc": "Firm pressure targeting tight muscle groups, combined with acupressure." },
+        { "name": "Deep Neck & Shoulder Massage", "desc": "Focused work on knots in the neck, shoulders and upper back." },
+        { "name": "Aromatherapy Massage", "desc": "Natural essential oils chosen to suit your mood – calming and sleep-friendly." },
+        { "name": "Herbal Foot Soak & Foot Massage", "desc": "A warm herbal foot soak followed by foot acupressure to refresh tired legs." }
+      ],
+      "process": [
+        "Welcome with warm ginger tea",
+        "Discuss the areas to focus on and your preferred pressure",
+        "Treatment in a private room",
+        "Rest and enjoy herbal tea"
+      ],
+      "notes": "Please avoid massage on a very full or empty stomach. Let your therapist know if you are pregnant or have heart disease, blood pressure issues, an injury, an open wound or a skin condition.",
+      "faq": [
+        {
+          "q": "How often should I get a massage?",
+          "a": "For relaxation, once or twice a week – or every two weeks – works well. If you are very sore, you may come more often at first."
+        },
+        {
+          "q": "Can I choose the pressure?",
+          "a": "Of course. Just tell your therapist “softer” or “stronger” at any time during the treatment."
+        },
+        {
+          "q": "Do you have rooms for two?",
+          "a": "Yes, we have couple rooms for partners, friends and families. Please book ahead to reserve one."
+        }
+      ]
+    },
+    {
+      "title": "Head Spa",
+      "menuName": "Renewed Vitality",
+      "heading": "Herbal Head Spa – Renewed Vitality",
+      "short": "Warm herbal hair wash with head, neck and shoulder acupressure for a clear mind and deeper sleep.",
+      "need": "Stress, headaches, trouble sleeping",
+      "imageAlt": "Head spa area with treatment beds and white curtains at Mandala",
+      "heroAlt": "Head spa area at Mandala, Buon Ma Thuot",
+      "seoTitle": "Head Spa in Buon Ma Thuot – Herbal Head Spa & Chinese-Style Head Spa",
+      "seoDescription": "Head spa from 69,000 VND at Mandala, Buon Ma Thuot. Vietnamese herbal hair wash, Chinese-style head spa and scalp care to relieve stress and help you sleep better.",
+      "intro": "More than a hair wash, the Vietnamese herbal head spa is a ritual of care for the head – home to many important acupressure points. Warm herbal water, rhythmic pressure and a neck and shoulder massage leave your mind clear, your spirit refreshed and your sleep deeper.",
+      "suitable": [
+        "Anyone with tension headaches or stress",
+        "People who struggle to fall or stay asleep",
+        "Screen-heavy workers and busy minds",
+        "Anyone who wants to care for their scalp and hair"
+      ],
+      "benefits": [
+        "Relieves stress and clears the mind",
+        "Supports deeper sleep",
+        "Releases the neck and shoulders",
+        "A refreshed scalp and softer hair"
+      ],
+      "items": [
+        { "name": "Relaxing Hair Wash", "desc": "A thorough wash with a gentle head massage." },
+        { "name": "Herbal Head Spa", "desc": "Herbal hair wash with acupressure for the head, neck and shoulders." },
+        { "name": "Chinese-Style Head Spa", "desc": "A multi-step head spa based on traditional Chinese techniques." },
+        { "name": "Scalp, Neck & Shoulder Treatment", "desc": "An intensive treatment for the scalp, neck and shoulders." }
+      ],
+      "process": [
+        "Welcome with warm ginger tea",
+        "Warm-up massage for the neck and shoulders",
+        "Herbal wash and head acupressure",
+        "Face massage, warm wrap, blow-dry and rest"
+      ],
+      "notes": "Please let us know beforehand if you have a head wound, a scalp condition, unstable blood pressure, or if you are pregnant.",
+      "faq": [
+        {
+          "q": "How is a head spa different from a normal hair wash?",
+          "a": "A normal wash mainly cleans your hair. A herbal head spa is a multi-step ritual – herbal wash, acupressure, neck and shoulder massage and a warm wrap – that relaxes your whole body."
+        },
+        {
+          "q": "How often should I have a head spa?",
+          "a": "Once or twice a week, or whenever you feel stressed or tired."
+        }
+      ]
+    },
+    {
+      "title": "Traditional Oriental Wellness",
+      "menuName": "Royal Herbal Line",
+      "heading": "Royal Herbal Line – The Art of Oriental Wellness",
+      "short": "In-depth treatments rooted in traditional oriental wellness, combining warm herbs and gentle heat.",
+      "need": "Tired, chilled body; wanting to restore your energy",
+      "imageAlt": "Warm herbal soak with ginger, cinnamon and lemongrass",
+      "heroAlt": "Therapist gliding a warm herbal copper roller along a guest’s shoulders",
+      "seoTitle": "Oriental Herbal Therapy in Buon Ma Thuot – Royal Herbal Line",
+      "seoDescription": "Royal Herbal deep body therapy, neck & shoulder therapy, herbal body contouring and lower-back warming therapy based on traditional oriental wellness at Mandala, Buon Ma Thuot.",
+      "intro": "Inspired by the wellness rituals of Vietnam’s royal court, our Royal Herbal Line combines warm herbs, gentle heat and acupressure techniques – including our signature herb-filled copper roller – to boost circulation, rebalance the body and help you recover from within.",
+      "suitable": [
+        "Anyone who often feels tired or chilled",
+        "People with long-standing aches",
+        "Anyone wanting to care for their body shape",
+        "Anyone looking to restore their energy"
+      ],
+      "benefits": [
+        "Warms the body and improves circulation",
+        "Deep muscle relaxation through herbs and heat",
+        "Helps firm the abdomen and waist",
+        "A lighter, more supple body"
+      ],
+      "items": [
+        { "name": "Royal Herbal Deep Body Therapy", "desc": "A full-body treatment with premium herbal products." },
+        { "name": "Royal Herbal Neck & Shoulder Therapy", "desc": "Deep work on the neck and shoulders with warm herbs." },
+        { "name": "Herbal Body Contouring", "desc": "Helps firm the abdomen and waist using herbs and warming techniques." },
+        { "name": "Lower-Back Warming Therapy", "desc": "A warming treatment for the back and lower back that leaves you warm and supple. Known in oriental medicine as “kidney care”." }
+      ],
+      "process": [
+        "Welcome with warm ginger tea",
+        "Consultation about how you feel",
+        "Treatment with herbs, heat and the copper roller",
+        "Warm wrap, rest and herbal tea"
+      ],
+      "notes": "Our wellness treatments support relaxation and general wellbeing and do not replace medical diagnosis or treatment. Not suitable during pregnancy. If you have any health condition, please tell us before your treatment.",
+      "faq": [
+        {
+          "q": "Do oriental herbal treatments hurt?",
+          "a": "No. Your therapist adjusts the heat and pressure to what feels right for you. Let them know straight away if anything feels too hot or too strong."
+        },
+        {
+          "q": "How often should I have one?",
+          "a": "It depends on your body and your goals. Your therapist will suggest a suitable plan after your first session."
+        }
+      ],
+      "gallery": [
+        { "alt": "Herbal soak with ginger, cinnamon, lemongrass and herbal powder", "caption": "Warm herbal soak" },
+        { "alt": "Herbal products beside a vase of lotus flowers", "caption": "Herbal products" },
+        { "alt": "Tray of Royal Herbal Line products", "caption": "Royal Herbal Line" }
+      ]
+    },
+    {
+      "title": "Facial & Skin Care",
+      "menuName": "Skin Care",
+      "heading": "Facial & Skin Care – Radiance from Healthy Skin",
+      "short": "Cleansing, detox, peels and recovery treatments for healthy, naturally glowing skin.",
+      "need": "Dull skin, acne, tired-looking complexion",
+      "imageAlt": "Guest relaxing with a herbal compress during a treatment at Mandala",
+      "heroAlt": "Mandala therapist caring for a guest in the treatment room",
+      "seoTitle": "Facials in Buon Ma Thuot – Acne Care, Peels, CO2 Therapy",
+      "seoDescription": "Glow Skin facial, Acne Basic, CO2 Therapy and recovery peels at Mandala, Buon Ma Thuot – for clean, healthy, naturally glowing skin.",
+      "intro": "Beautiful skin starts with healthy skin. We tailor each facial to your skin: deep cleansing for acne-prone skin, detox for dull skin and gentle peels for renewal – always with a relaxing face massage.",
+      "suitable": [
+        "Acne-prone skin and clogged pores",
+        "Dull, tired-looking skin",
+        "Dry, dehydrated skin",
+        "Anyone wanting regular skin care"
+      ],
+      "benefits": [
+        "Deeply cleansed, clearer pores",
+        "Brighter, more even tone",
+        "Plump, well-hydrated skin",
+        "Relaxation with a face massage"
+      ],
+      "items": [
+        { "name": "Glow Skin Basic Facial", "desc": "Cleansing, hydration and a relaxing face massage." },
+        { "name": "Jade Face Lifting & Rejuvenation", "desc": "Nourishes and lifts the skin for a fresh, youthful look." },
+        { "name": "Acne Basic Facial", "desc": "Deep cleansing, extractions and LED light therapy." },
+        { "name": "CO2 Therapy", "desc": "An intensive skin detox using CO2 (carbonic) therapy." },
+        { "name": "Glowing Skin Facial", "desc": "Rejuvenating, brightening and glow-boosting." },
+        { "name": "Recovery Peel", "desc": "A gentle renewing peel that helps the skin recover." },
+        { "name": "Glow Peel", "desc": "For smooth, even-toned skin." },
+        { "name": "Acne Peel", "desc": "Helps calm breakouts and unclog pores." }
+      ],
+      "process": [
+        "Welcome with warm ginger tea",
+        "Skin analysis and treatment advice",
+        "Cleansing and targeted treatment",
+        "Moisturising and home-care tips"
+      ],
+      "notes": "After a peel, avoid the sun and use sunscreen. We do not peel skin that is damaged or irritated. Your therapist will analyse your skin before recommending a treatment.",
+      "faq": [
+        {
+          "q": "Is it suitable for sensitive skin?",
+          "a": "Yes. Your therapist will analyse your skin and choose a gentle treatment. Please tell us if you use acne medication or have reacted to products before."
+        },
+        {
+          "q": "How often should I have a facial?",
+          "a": "Usually every one to two weeks for basic facials. Peels need longer intervals – we will advise you."
+        }
+      ]
+    }
+  ],
+  "combos": [
+    { "name": "Body Relaxation Ritual", "desc": "Ask our reception for the full steps of this package." },
+    { "name": "Mind Revitalizing Ritual", "desc": "Ask our reception for the full steps of this package." }
+  ]
+}

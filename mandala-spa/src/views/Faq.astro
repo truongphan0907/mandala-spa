@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getLang, getFaq, ui } from '../i18n';
+const lang = getLang(Astro.url);
+const t = ui(lang);
+const faq = getFaq(lang);
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+<Base title={t.faq.seoTitle} description={t.faq.seoDesc} schema={schema}>
+  <PageHero eyebrow={t.faq.eyebrow} title={t.faq.title} text={t.faq.text} />
+  <section class="section">
+    <div class="container-x max-w-3xl"><Faq items={faq} /></div>
+  </section>
+  <CtaBand />
+</Base>

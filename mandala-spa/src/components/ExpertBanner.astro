@@ -2,8 +2,10 @@
 // Dải thông báo "Đợt trị liệu cùng chuyên gia" – bật/tắt và đổi ngày trong src/data/info.json (expertEvent)
 // Tự ẩn sau ngày kết thúc (endDate), kể cả khi quên tắt.
 import info from '../data/info.json';
+import { getLang } from '../i18n';
 const e = info.expertEvent;
-const active = e.enabled && new Date(e.endDate + 'T23:59:59+07:00') >= new Date();
+// Sự kiện chỉ hiện ở bản tiếng Việt
+const active = getLang(Astro.url) === 'vi' && e.enabled && new Date(e.endDate + 'T23:59:59+07:00') >= new Date();
 ---
 {active && (
   <section class="bg-espresso text-cream" data-end={e.endDate}>

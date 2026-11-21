@@ -1,19 +1,5 @@
 ---
-import Base from '../layouts/Base.astro';
-import PageHero from '../components/PageHero.astro';
-import Faq from '../components/Faq.astro';
-import CtaBand from '../components/CtaBand.astro';
-import faq from '../data/faq.json';
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-};
+// Nội dung trang nằm ở src/views/Faq.astro (dùng chung cho mọi ngôn ngữ)
+import View from '../views/Faq.astro';
 ---
-<Base title="Câu hỏi thường gặp" description="Giải đáp thắc mắc trước khi đặt lịch tại Mandala Buôn Ma Thuột: đặt lịch, giờ mở cửa, phòng đôi, lưu ý sức khỏe." schema={schema}>
-  <PageHero eyebrow="Hỏi đáp" title="Câu hỏi thường gặp" text="Những điều khách hay hỏi trước khi đến Mandala. Chưa thấy câu trả lời? Nhắn Zalo cho chúng tôi nhé." />
-  <section class="section">
-    <div class="container-x max-w-3xl"><Faq items={faq} /></div>
-  </section>
-  <CtaBand />
-</Base>
+<View />

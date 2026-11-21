@@ -1,12 +1,22 @@
 ---
-import info from '../data/info.json';
-import { nav } from '../lib/site';
+import LangSwitch from './LangSwitch.astro';
+import { getLang, getInfo, ui, url, bookUrl } from '../i18n';
+const lang = getLang(Astro.url);
+const t = ui(lang);
+const info = getInfo(lang);
+const nav = [
+  { href: url(lang, 'services'), label: t.nav.services },
+  { href: url(lang, 'prices'), label: t.nav.prices },
+  { href: url(lang, 'about'), label: t.nav.about },
+  ...(lang === 'vi' ? [{ href: '/blog/', label: t.nav.blog }] : []),
+  { href: url(lang, 'contact'), label: t.nav.contact },
+];
 const path = Astro.url.pathname;
 const active = (href: string) => path.startsWith(href);
 ---
 <header class="sticky top-0 z-40 border-b border-line/80 bg-cream/95 backdrop-blur">
   <div class="container-x flex h-14 items-center justify-between gap-3 md:h-[72px]">
-    <a href="/" class="flex items-center gap-2.5" aria-label="Mandala – Trang chủ">
+    <a href={url(lang, 'home')} class="flex items-center gap-2.5" aria-label={t.homeAria}>
       <img src="/logo-mandala.svg" alt="" width="40" height="40" class="h-9 w-9 md:h-11 md:w-11" />
       <span class="leading-none">
         <span class="block font-serif text-[21px] font-medium tracking-[0.1em] text-cocoa md:text-[24px]">MANDALA</span>
@@ -14,7 +24,7 @@ const active = (href: string) => path.startsWith(href);
       </span>
     </a>
 
-    <nav class="hidden items-center gap-8 lg:flex" aria-label="Menu chính">
+    <nav class="hidden items-center gap-8 lg:flex" aria-label={t.navMain}>
       {nav.map((item) => (
         <a href={item.href} aria-current={active(item.href) ? 'page' : undefined}
            class:list={['text-[15px] transition-colors hover:text-bronze', active(item.href) ? 'font-medium text-bronze' : 'text-ink']}>
@@ -23,23 +33,25 @@ const active = (href: string) => path.startsWith(href);
       ))}
     </nav>
 
-    <div class="flex items-center gap-2 md:gap-4">
+    <div class="flex items-center gap-1.5 md:gap-3">
       <a href={`tel:${info.phoneRaw}`} class="hidden text-[15px] font-medium text-cocoa xl:block">{info.phone}</a>
-      <a href="/lien-he/#dat-lich" class="btn-primary !min-h-10 !px-4 !text-sm md:!min-h-11 md:!px-6">Đặt lịch</a>
+      <LangSwitch />
+      <a href={bookUrl(lang)} class="btn-primary !min-h-10 !px-4 !text-sm whitespace-nowrap md:!min-h-11 md:!px-6">{t.book}</a>
       <button id="menu-btn" type="button" class="-mr-2 flex h-11 w-11 items-center justify-center text-cocoa lg:hidden"
-              aria-label="Mở menu" aria-expanded="false" aria-controls="mobile-menu">
+              aria-label={t.menuOpen} aria-expanded="false" aria-controls="mobile-menu" data-open={t.menuOpen} data-close={t.menuClose}>
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
       </button>
     </div>
   </div>
 
-  <nav id="mobile-menu" class="hidden border-t border-line bg-cream lg:hidden" aria-label="Menu di động">
+  <nav id="mobile-menu" class="hidden border-t border-line bg-cream lg:hidden" aria-label={t.navMobile}>
     <div class="container-x flex flex-col py-2">
-      <a href="/" class="border-b border-line/70 py-3.5 text-lg">Trang chủ</a>
+      <a href={url(lang, 'home')} class="border-b border-line/70 py-3.5 text-lg">{t.nav.home}</a>
       {nav.map((item) => (
         <a href={item.href} class:list={['border-b border-line/70 py-3.5 text-lg', active(item.href) && 'text-bronze']}>{item.label}</a>
       ))}
-      <a href="/hoi-dap/" class="py-3.5 text-lg">Hỏi đáp</a>
+      <a href={url(lang, 'faq')} class="py-3.5 text-lg">{t.nav.faq}</a>
+      <LangSwitch variant="list" />
       <p class="pb-4 text-sm text-muted">{info.address} · {info.hoursShort}</p>
     </div>
   </nav>
@@ -51,6 +63,6 @@ const active = (href: string) => path.startsWith(href);
   btn?.addEventListener('click', () => {
     const open = menu?.classList.toggle('hidden') === false;
     btn.setAttribute('aria-expanded', String(open));
-    btn.setAttribute('aria-label', open ? 'Đóng menu' : 'Mở menu');
+    btn.setAttribute('aria-label', (open ? btn.dataset.close : btn.dataset.open) || '');
   });
 </script>

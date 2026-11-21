@@ -1,10 +1,12 @@
 ---
 // Thẻ video dọc 9:16 – tự chạy không tiếng khi hiện trên màn hình; bấm để xem có tiếng (VideoModal)
 interface Props { id: string; title: string; label?: string; class?: string; compact?: boolean }
+import { getLang, ui } from '../i18n';
 const { id, title, label, class: cls = '', compact = false } = Astro.props;
+const t = ui(getLang(Astro.url));
 ---
 <button type="button" class={`video-card group relative block aspect-[9/16] w-full overflow-hidden rounded-2xl bg-espresso text-left ${cls}`}
-        data-video={id} data-title={title} aria-label={`Xem video: ${title}`}>
+        data-video={id} data-title={title} aria-label={`${t.video.watch} ${title}`}>
   <video class="h-full w-full object-cover" src={`/videos/${id}.mp4`} poster={`/videos/${id}.jpg`}
          muted loop playsinline preload="none" aria-hidden="true"></video>
   <span class="absolute inset-0 bg-gradient-to-t from-espresso/85 via-transparent to-transparent"></span>

@@ -1,0 +1,119 @@
+---
+// Chính sách đặt lịch & bảo mật – nội dung theo từng ngôn ngữ ngay trong file này
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { getLang, getInfo } from '../i18n';
+const lang = getLang(Astro.url);
+const info = getInfo(lang);
+const esc = (x: string) => x.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+type Section = { h: string; p?: string; list?: string[] };
+type Page = { seoTitle: string; seoDesc: string; eyebrow: string; title: string; sections: Section[] };
+
+const vi: Page = {
+  seoTitle: 'Chính sách đặt lịch và bảo mật',
+  seoDesc: 'Chính sách đặt lịch, hủy lịch, bảo mật thông tin và lưu ý sức khỏe khi sử dụng dịch vụ tại Mandala.',
+  eyebrow: 'Chính sách',
+  title: 'Chính sách đặt lịch & bảo mật',
+  sections: [
+    { h: '1. Đặt lịch', p: `Khách hàng có thể đặt lịch qua form trên website, gọi điện hoặc nhắn Zalo ${info.phone}. Lịch hẹn chỉ được xác nhận khi Mandala gọi hoặc nhắn tin xác nhận lại.` },
+    { h: '2. Hủy và đổi lịch', p: 'Nếu không thể đến đúng giờ, vui lòng báo trước qua Zalo hoặc hotline để Mandala sắp xếp lại lịch và nhường phòng cho khách khác.' },
+    { h: '3. Bảo mật thông tin', list: [
+      'Thông tin bạn gửi qua form (họ tên, số điện thoại, dịch vụ, ghi chú) chỉ dùng để liên hệ xác nhận và chăm sóc lịch hẹn.',
+      'Mandala không bán hay chia sẻ thông tin của bạn cho bên thứ ba.',
+      'Bạn có thể yêu cầu xóa thông tin bất cứ lúc nào bằng cách liên hệ hotline/Zalo.',
+    ] },
+    { h: '4. Lưu ý sức khỏe', p: 'Các liệu trình tại Mandala mang tính chăm sóc, thư giãn và hỗ trợ sức khỏe, <strong>không thay thế chẩn đoán hay điều trị y khoa</strong>. Vui lòng thông báo trước cho kỹ thuật viên nếu bạn đang mang thai, có bệnh lý nền (tim mạch, huyết áp, tiểu đường…), chấn thương, vết thương hở hoặc bệnh ngoài da.' },
+    { h: '5. Liên hệ', p: `${esc(info.name)} – ${esc(info.address)}. Hotline/Zalo: ${info.phone}.` },
+  ],
+};
+
+const en: Page = {
+  seoTitle: 'Booking & Privacy Policy',
+  seoDesc: 'Booking, cancellation, privacy and health information for guests of Mandala Healthcare & Spa, Buon Ma Thuot.',
+  eyebrow: 'Policy',
+  title: 'Booking & Privacy Policy',
+  sections: [
+    { h: '1. Booking', p: `You can book through the form on this website or by calling ${info.phone}. Your appointment is confirmed once Mandala calls or messages you back.` },
+    { h: '2. Cancellations and changes', p: 'If you cannot arrive on time, please let us know in advance by phone so we can reschedule your visit and offer the room to another guest.' },
+    { h: '3. Privacy', list: [
+      'The details you send through the form (name, phone number, treatment, notes) are used only to confirm and look after your booking.',
+      'Mandala never sells or shares your information with third parties.',
+      'You may ask us to delete your information at any time by contacting us.',
+    ] },
+    { h: '4. Health notice', p: 'Treatments at Mandala are for relaxation and general wellbeing and <strong>do not replace medical diagnosis or treatment</strong>. Please tell your therapist beforehand if you are pregnant or have any health condition (heart disease, blood pressure, diabetes…), a recent injury, an open wound or a skin condition.' },
+    { h: '5. Contact', p: `${esc(info.name)} – ${esc(info.address)}. Phone: ${info.phone}.` },
+  ],
+};
+
+const ja: Page = {
+  seoTitle: 'ご予約・個人情報の取り扱いについて',
+  seoDesc: 'Mandala Healthcare & Spa（バンメトート）のご予約、キャンセル、個人情報、健康上のご注意について。',
+  eyebrow: 'ポリシー',
+  title: 'ご予約・個人情報の取り扱い',
+  sections: [
+    { h: '1. ご予約', p: `このサイトの予約フォーム、またはお電話（${info.phone}）でご予約いただけます。Mandalaからの確認のお電話またはメッセージをもって、ご予約確定となります。` },
+    { h: '2. キャンセル・変更', p: 'ご予約の時間にお越しになれない場合は、事前にお電話でお知らせください。日時を調整し、お部屋をほかのお客様にご案内いたします。' },
+    { h: '3. 個人情報の取り扱い', list: [
+      'フォームでお送りいただいた情報（お名前、電話番号、メニュー、ご要望）は、ご予約の確認とご対応のためにのみ使用します。',
+      'お客様の情報を第三者に販売・提供することはありません。',
+      'お問い合わせいただければ、いつでも情報の削除を承ります。',
+    ] },
+    { h: '4. 健康上のご注意', p: 'Mandalaの施術はリラックスと健康維持を目的としたもので、<strong>医療の診断や治療に代わるものではありません</strong>。妊娠中の方、持病（心臓病、血圧、糖尿病など）、けが、傷、皮膚疾患のある方は、事前にセラピストへお知らせください。' },
+    { h: '5. お問い合わせ', p: `${esc(info.name)} – ${esc(info.address)}。電話：${info.phone}` },
+  ],
+};
+
+const ko: Page = {
+  seoTitle: '예약 및 개인정보 정책',
+  seoDesc: 'Mandala Healthcare & Spa(부온마투옷)의 예약, 취소, 개인정보, 건강 관련 유의 사항 안내.',
+  eyebrow: '정책',
+  title: '예약 및 개인정보 정책',
+  sections: [
+    { h: '1. 예약', p: `이 웹사이트의 예약 양식이나 전화(${info.phone})로 예약하실 수 있습니다. Mandala에서 전화나 메시지로 확인해 드리면 예약이 확정됩니다.` },
+    { h: '2. 취소 및 변경', p: '예약 시간에 오시기 어려우면 미리 전화로 알려 주세요. 일정을 다시 조정하고 룸을 다른 고객님께 안내하겠습니다.' },
+    { h: '3. 개인정보 보호', list: [
+      '양식으로 보내 주신 정보(성함, 전화번호, 관리, 요청 사항)는 예약 확인과 응대를 위해서만 사용합니다.',
+      'Mandala는 고객님의 정보를 제3자에게 판매하거나 공유하지 않습니다.',
+      '언제든지 연락 주시면 정보 삭제를 요청하실 수 있습니다.',
+    ] },
+    { h: '4. 건강 관련 유의 사항', p: 'Mandala의 관리는 휴식과 건강 관리를 위한 것으로, <strong>의학적 진단이나 치료를 대신하지 않습니다</strong>. 임신 중이시거나 지병(심장 질환, 혈압, 당뇨 등), 부상, 상처, 피부 질환이 있으시면 미리 테라피스트에게 알려 주세요.' },
+    { h: '5. 연락처', p: `${esc(info.name)} – ${esc(info.address)}. 전화: ${info.phone}` },
+  ],
+};
+
+const zh: Page = {
+  seoTitle: '预约与隐私政策',
+  seoDesc: 'Mandala Healthcare & Spa（邦美蜀）的预约、取消、隐私及健康注意事项。',
+  eyebrow: '政策',
+  title: '预约与隐私政策',
+  sections: [
+    { h: '1. 预约', p: `您可以通过本网站的预约表单或致电 ${info.phone} 预约。Mandala 致电或发消息确认后，预约即生效。` },
+    { h: '2. 取消与更改', p: '如无法按时到店，请提前致电告知，以便我们为您重新安排时间，并将房间留给其他顾客。' },
+    { h: '3. 隐私保护', list: [
+      '您通过表单提交的信息（姓名、电话、项目、备注）仅用于确认和跟进您的预约。',
+      'Mandala 绝不出售或向第三方分享您的信息。',
+      '您可以随时联系我们要求删除您的信息。',
+    ] },
+    { h: '4. 健康注意事项', p: 'Mandala 的理疗以放松和辅助保健为目的，<strong>不能替代医学诊断或治疗</strong>。如您怀孕，或有基础疾病（心血管、血压、糖尿病等）、外伤、开放性伤口或皮肤病，请提前告知技师。' },
+    { h: '5. 联系方式', p: `${esc(info.name)} – ${esc(info.address)}。电话：${info.phone}` },
+  ],
+};
+
+const pages: Partial<Record<typeof lang, Page>> = { vi, en, ja, ko, zh };
+const page = pages[lang] ?? en;
+---
+<Base title={page.seoTitle} description={page.seoDesc}>
+  <PageHero eyebrow={page.eyebrow} title={page.title} />
+  <section class="section">
+    <div class="container-x prose-mandala max-w-3xl">
+      {page.sections.map((s) => (
+        <>
+          <h2>{s.h}</h2>
+          {s.p && <p set:html={s.p} />}
+          {s.list && <ul>{s.list.map((li) => <li>{li}</li>)}</ul>}
+        </>
+      ))}
+    </div>
+  </section>
+</Base>

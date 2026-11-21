@@ -1,0 +1,8 @@
+---
+import View from '../../../views/Services.astro';
+import { FOREIGN } from '../../../i18n';
+export function getStaticPaths() {
+  return FOREIGN.map((lang) => ({ params: { lang } }));
+}
+---
+<View />

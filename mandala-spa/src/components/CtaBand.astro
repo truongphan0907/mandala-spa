@@ -1,8 +1,11 @@
 ---
-import info from '../data/info.json';
 import Mandala from './Mandala.astro';
+import { getLang, getInfo, ui, bookUrl } from '../i18n';
+const lang = getLang(Astro.url);
+const t = ui(lang);
+const info = getInfo(lang);
 interface Props { title?: string; text?: string }
-const { title = 'Dành cho mình một khoảng lặng hôm nay', text = 'Đặt lịch trước để Mandala giữ phòng và chuẩn bị kỹ thuật viên phù hợp cho bạn.' } = Astro.props;
+const { title = t.cta.title, text = t.cta.text } = Astro.props;
 ---
 <section class="relative overflow-hidden bg-espresso text-cream">
   <Mandala class="pointer-events-none absolute top-1/2 left-1/2 h-[42rem] w-[42rem] -translate-x-1/2 -translate-y-1/2 text-goldlight/10" petals={20} />
@@ -10,9 +13,11 @@ const { title = 'Dành cho mình một khoảng lặng hôm nay', text = 'Đặt
     <h2 class="h2 text-cream">{title}</h2>
     <p class="mx-auto mt-4 max-w-xl text-sand/80">{text}</p>
     <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-      <a href="/lien-he/#dat-lich" class="btn bg-goldlight text-espresso hover:bg-cream">Đặt lịch online</a>
-      <a href={`tel:${info.phoneRaw}`} class="btn-light">Gọi {info.phone}</a>
-      <a href={info.zalo} target="_blank" rel="noopener" class="btn-light">Chat Zalo</a>
+      <a href={bookUrl(lang)} class="btn bg-goldlight text-espresso hover:bg-cream">{t.bookOnline}</a>
+      <a href={`tel:${info.phoneRaw}`} class="btn-light">{t.call} {info.phone}</a>
+      {lang === 'vi'
+        ? <a href={info.zalo} target="_blank" rel="noopener" class="btn-light">{t.chatZalo}</a>
+        : <a href={info.mapLink} target="_blank" rel="noopener" class="btn-light">{t.directions}</a>}
     </div>
   </div>
 </section>

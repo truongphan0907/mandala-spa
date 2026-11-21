@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import PriceList from '../components/PriceList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getLang, getInfo, getServices, ui, serviceUrl, bookUrl } from '../i18n';
+const lang = getLang(Astro.url);
+const vi = lang === 'vi';
+const t = ui(lang);
+const info = getInfo(lang);
+const services = getServices(lang);
+---
+<Base title={t.prices.seoTitle}
+      description={t.prices.seoDesc}>
+  <PageHero eyebrow={t.prices.eyebrow} title={t.prices.title}
+            text={t.prices.text}>
+    <nav class="mt-7 flex flex-wrap gap-2" aria-label={t.prices.groupsAria}>
+      {services.groups.map((g) => <a href={`#${g.slug}`} class="btn-ghost !min-h-10 !px-4 !text-sm">{g.title}</a>)}
+      <a href="#combo" class="btn-ghost !min-h-10 !px-4 !text-sm">{t.prices.combo}</a>
+    </nav>
+  </PageHero>
+
+  <section class="section">
+    <div class="container-x space-y-14">
+      {services.groups.map((g) => (
+        <div id={g.slug} class="scroll-mt-24">
+          <div class="mb-5 flex flex-wrap items-end justify-between gap-2">
+            <div>
+              <p class="eyebrow">{g.menuName}</p>
+              <h2 class="mt-2 text-[30px] md:text-[38px]">{g.title}</h2>
+            </div>
+            <a href={serviceUrl(lang, g.slug)} class="text-[15px] font-medium text-cocoa underline-offset-4 hover:underline">{t.prices.details}</a>
+          </div>
+          <PriceList items={g.items} />
+        </div>
+      ))}
+      <div id="combo" class="scroll-mt-24">
+        <p class="eyebrow">{t.prices.comboEyebrow}</p>
+        <h2 class="mt-2 mb-5 text-[30px] md:text-[38px]">{t.prices.combo}</h2>
+        <PriceList items={services.combos} />
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-2">
+        <div class="rounded-2xl bg-espresso p-6 text-cream md:p-8">
+          <p class="font-serif text-2xl">{t.prices.gift}</p>
+          <p class="mt-2 text-sand/80">{t.prices.giftText}</p>
+          <a href={vi ? info.zalo : bookUrl(lang)} target={vi ? '_blank' : undefined} rel={vi ? 'noopener' : undefined} class="btn mt-5 bg-goldlight text-espresso hover:bg-cream">{t.prices.giftBtn}</a>
+        </div>
+        <div class="rounded-2xl border border-line bg-ivory p-6 md:p-8">
+          <p class="font-serif text-2xl text-cocoa">{t.prices.note}</p>
+          <ul class="mt-2 list-disc space-y-1 pl-5 text-[15px] text-muted">
+            {t.prices.notes.map((n) => <li>{n}</li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

@@ -1,0 +1,89 @@
+{
+  "heroDescription": "Therapeutic massage, herbal head spa and our Royal Herbal oriental therapies – in a calm, private space in the heart of Buon Ma Thuot.",
+  "heroImageAlt": "Treatment room with a wooden soaking tub and white curtains at Mandala",
+  "pillarsTitle": "Complete care, from body to mind",
+  "pillarsIntro": "Four families of treatments – from gentle relaxation to focused therapy – so you can choose exactly what your body needs.",
+  "signature": {
+    "eyebrow": "Signature therapy",
+    "title": "Royal Herbal Line",
+    "text": "Inspired by the wellness rituals of Vietnam’s royal court, these treatments combine warm herbs, gentle heat and our herbal copper roller glided along the body’s meridians – warming you through, easing deep tension and leaving you relaxed from the inside out.",
+    "points": [
+      "Warm herbal compresses that soothe tired muscles",
+      "Herb-filled copper roller along the shoulders and back",
+      "Ideal for long-standing aches and a body that feels chilled"
+    ],
+    "imageAlt": "Therapist gliding a warm herbal copper roller across a guest’s shoulders",
+    "secondAlt": "Warm herbal soak with ginger, cinnamon and lemongrass"
+  },
+  "journey": {
+    "title": "Every visit to Mandala is a ritual of care",
+    "imageAlt": "A cup of warm ginger, cinnamon and lemongrass tea to welcome guests",
+    "steps": [
+      {
+        "title": "Welcome",
+        "text": "A cup of warm ginger, cinnamon and lemongrass tea helps you unwind the moment you arrive."
+      },
+      {
+        "title": "Consultation",
+        "text": "We listen to how you feel, where it aches and what you hope for, then suggest the right treatment."
+      },
+      {
+        "title": "Treatment",
+        "text": "Let go in a quiet room with caring hands – the pressure is always up to you."
+      },
+      {
+        "title": "Rest",
+        "text": "Relax with herbal tea so your body can fully recover before you head out."
+      }
+    ],
+    "promises": [
+      {
+        "title": "Wellness philosophy",
+        "text": "We focus on lasting wellbeing, not just a moment of relaxation."
+      },
+      {
+        "title": "Private rooms",
+        "text": "Private treatment rooms with soft light, plus couple rooms for partners and families."
+      },
+      {
+        "title": "Spotless hygiene",
+        "text": "Fresh towels and linen for every guest; tools cleaned after each treatment."
+      },
+      {
+        "title": "Honest prices",
+        "text": "Clear, fixed prices with no hidden charges."
+      }
+    ]
+  },
+  "featuredTitle": "Guest favourites",
+  "comboImageAlt": "Couple treatment room with floor mattresses, lacquer art and bamboo lamps",
+  "space": {
+    "title": "A quiet escape from the busy streets",
+    "text": "Warm earthy tones, woven bamboo lamps, Vietnamese lacquer art and the scent of herbs – every detail is designed to help you forget the world outside.",
+    "images": [
+      { "alt": "Mandala lobby with cream sofas and bamboo lamps", "caption": "Lobby" },
+      { "alt": "Couple treatment room", "caption": "Couple room" },
+      { "alt": "Treatment room with a wooden soaking tub", "caption": "Wooden tub room" },
+      { "alt": "Dry sauna lined with pine wood", "caption": "Dry sauna" },
+      { "alt": "Corner with lacquer art, bamboo lamps and lotus flowers", "caption": "Wellness corner" },
+      { "alt": "Lotus flowers and herbal products", "caption": "Natural herbs" }
+    ]
+  },
+  "reviewsTitle": "What our guests say",
+  "reviewsIntro": "Mandala welcomes local guests and travellers from around the world every day. Read genuine reviews from our guests on Google Maps.",
+  "ctaTitle": "Give yourself a quiet moment today",
+  "ctaText": "Book ahead so we can prepare your room and the right therapist for you.",
+  "heroChips": [
+    "From 69,000 VND",
+    "Open daily 10:00 – 22:00",
+    "Private couple rooms"
+  ],
+  "videosTitle": "Moments at Mandala",
+  "videosIntro": "A few seconds to feel the calm – tap a video to watch with sound.",
+  "heroSlides": [
+    { "alt": "Couple treatment room with lacquer art and bamboo lamps" },
+    { "alt": "Head spa area with treatment beds and white curtains" },
+    { "alt": "Private massage room with a wooden soaking tub" },
+    { "alt": "Mandala lobby with cream sofas and bamboo lamps" }
+  ]
+}

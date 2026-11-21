@@ -1,9 +1,12 @@
 ---
 // Carousel video 9:16 – điện thoại: lướt ngang; máy tính: 4 thẻ + nút trái/phải
 import VideoCard from './VideoCard.astro';
-import allVideos from '../data/videos.json';
+import { getLang, getVideos, ui } from '../i18n';
 interface Props { ids?: string[]; homeOnly?: boolean }
 const { ids, homeOnly = false } = Astro.props;
+const lang = getLang(Astro.url);
+const t = ui(lang);
+const allVideos = getVideos(lang);
 const list = ids ? ids.map((i) => allVideos.find((v) => v.id === i)!).filter(Boolean) : allVideos.filter((v) => !homeOnly || v.home);
 const uid = 'vc-' + Math.random().toString(36).slice(2, 8);
 ---
@@ -17,8 +20,8 @@ const uid = 'vc-' + Math.random().toString(36).slice(2, 8);
   </div>
   {list.length > 4 && (
     <div class="mt-6 hidden justify-end gap-2 lg:flex">
-      <button type="button" class="btn-ghost !min-h-11 !w-11 !px-0" data-dir="-1" aria-label="Video trước">←</button>
-      <button type="button" class="btn-ghost !min-h-11 !w-11 !px-0" data-dir="1" aria-label="Video tiếp">→</button>
+      <button type="button" class="btn-ghost !min-h-11 !w-11 !px-0" data-dir="-1" aria-label={t.video.prev}>←</button>
+      <button type="button" class="btn-ghost !min-h-11 !w-11 !px-0" data-dir="1" aria-label={t.video.next}>→</button>
     </div>
   )}
 </div>

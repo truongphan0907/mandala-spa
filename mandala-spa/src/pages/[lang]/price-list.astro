@@ -1,0 +1,9 @@
+---
+// Bản tiếng nước ngoài (/en/, /ja/…) – dùng chung giao diện với bản tiếng Việt
+import View from '../../views/Prices.astro';
+import { FOREIGN } from '../../i18n';
+export function getStaticPaths() {
+  return FOREIGN.map((lang) => ({ params: { lang } }));
+}
+---
+<View />

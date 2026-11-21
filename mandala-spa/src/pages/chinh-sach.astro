@@ -1,26 +1,5 @@
 ---
-import Base from '../layouts/Base.astro';
-import PageHero from '../components/PageHero.astro';
-import info from '../data/info.json';
+// Nội dung trang nằm ở src/views/Policy.astro (dùng chung cho mọi ngôn ngữ)
+import View from '../views/Policy.astro';
 ---
-<Base title="Chính sách đặt lịch và bảo mật" description="Chính sách đặt lịch, hủy lịch, bảo mật thông tin và lưu ý sức khỏe khi sử dụng dịch vụ tại Mandala.">
-  <PageHero eyebrow="Chính sách" title="Chính sách đặt lịch & bảo mật" />
-  <section class="section">
-    <div class="container-x prose-mandala max-w-3xl">
-      <h2>1. Đặt lịch</h2>
-      <p>Khách hàng có thể đặt lịch qua form trên website, gọi điện hoặc nhắn Zalo {info.phone}. Lịch hẹn chỉ được xác nhận khi Mandala gọi hoặc nhắn tin xác nhận lại.</p>
-      <h2>2. Hủy và đổi lịch</h2>
-      <p>Nếu không thể đến đúng giờ, vui lòng báo trước qua Zalo hoặc hotline để Mandala sắp xếp lại lịch và nhường phòng cho khách khác.</p>
-      <h2>3. Bảo mật thông tin</h2>
-      <ul>
-        <li>Thông tin bạn gửi qua form (họ tên, số điện thoại, dịch vụ, ghi chú) chỉ dùng để liên hệ xác nhận và chăm sóc lịch hẹn.</li>
-        <li>Mandala không bán hay chia sẻ thông tin của bạn cho bên thứ ba.</li>
-        <li>Bạn có thể yêu cầu xóa thông tin bất cứ lúc nào bằng cách liên hệ hotline/Zalo.</li>
-      </ul>
-      <h2>4. Lưu ý sức khỏe</h2>
-      <p>Các liệu trình tại Mandala mang tính chăm sóc, thư giãn và hỗ trợ sức khỏe, <strong>không thay thế chẩn đoán hay điều trị y khoa</strong>. Vui lòng thông báo trước cho kỹ thuật viên nếu bạn đang mang thai, có bệnh lý nền (tim mạch, huyết áp, tiểu đường…), chấn thương, vết thương hở hoặc bệnh ngoài da.</p>
-      <h2>5. Liên hệ</h2>
-      <p>{info.name} – {info.address}. Hotline/Zalo: {info.phone}.</p>
-    </div>
-  </section>
-</Base>
+<View />

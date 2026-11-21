@@ -1,0 +1,10 @@
+---
+import View from '../../../views/Service.astro';
+import { FOREIGN, SERVICE_SLUG } from '../../../i18n';
+export function getStaticPaths() {
+  return FOREIGN.flatMap((lang) =>
+    Object.entries(SERVICE_SLUG).map(([vi, slug]) => ({ params: { lang, slug }, props: { vi } })),
+  );
+}
+---
+<View slug={Astro.props.vi} />

@@ -1,0 +1,97 @@
+---
+import { Picture } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Mandala from '../components/Mandala.astro';
+import CtaBand from '../components/CtaBand.astro';
+import VideoCard from '../components/VideoCard.astro';
+import { img } from '../lib/site';
+import { getLang, getInfo, getAbout, getHome, ui, serviceUrl } from '../i18n';
+const lang = getLang(Astro.url);
+const vi = lang === 'vi';
+const t = ui(lang);
+const info = getInfo(lang);
+const about = getAbout(lang);
+const home = getHome(lang);
+---
+<Base title={t.about.seoTitle}
+      description={t.about.seoDesc}>
+  <PageHero eyebrow={t.about.eyebrow} title={about.heroTitle} image={about.heroImage} alt={about.heroAlt} />
+
+  <section class="section">
+    <div class="container-x grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <Picture src={img(about.meaningImage)!} alt={about.meaningAlt} widths={[480, 800]} sizes="(min-width: 1024px) 520px, 100vw"
+               formats={['avif', 'webp']} class="aspect-[4/5] w-full rounded-t-[999px] rounded-b-[2rem] object-cover" />
+      <div>
+        <p class="eyebrow">Mandala</p>
+        <h2 class="h2 mt-3">{about.meaningTitle}</h2>
+        {about.meaning.map((p) => <p class="mt-5 text-muted">{p}</p>)}
+        <h3 class="mt-10 text-[28px]">{about.storyTitle}</h3>
+        {about.story.map((p) => <p class="mt-3 text-muted">{p}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-sand/60">
+    <div class="container-x grid items-center gap-10 md:grid-cols-[0.8fr_1fr] lg:grid-cols-[0.6fr_1fr] lg:gap-16">
+      <div class="mx-auto w-full max-w-[320px]"><VideoCard id="mot-buoi-tai-mandala" title={t.about.videoTitle} label={t.video.eyebrow} /></div>
+      <div>
+        <p class="eyebrow">{t.about.expertEyebrow}</p>
+        <h2 class="h2 mt-3">{t.about.expertTitle}</h2>
+        <p class="mt-5 text-muted">{t.about.expertText}</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href={vi ? '/blog/tri-lieu-co-vai-gay-chuyen-sau/' : serviceUrl(lang, 'dong-y-duong-sinh')} class="btn-primary">{t.about.expertBtn}</a>
+          <a href={info.facebook} target="_blank" rel="noopener" class="btn-ghost">{t.about.expertFb}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-espresso text-cream">
+    <div class="container-x">
+      <p class="text-[13px] font-medium tracking-[0.18em] text-goldlight uppercase">{t.about.philosophy}</p>
+      <h2 class="h2 mt-3 text-cream">{t.about.philosophyTitle}</h2>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {about.pillars.map((p) => (
+          <div class="rounded-2xl bg-cream/5 p-6 ring-1 ring-cream/10">
+            <Mandala class="h-10 w-10 text-goldlight" petals={10} stroke={5} />
+            <h3 class="mt-4 text-[28px] text-cream">{p.title}</h3>
+            <p class="mt-2 text-sand/80">{p.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x">
+      <p class="eyebrow">{t.about.space}</p>
+      <h2 class="h2 mt-3">{home.space.title}</h2>
+      <div class="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
+        {home.space.images.map((s) => (
+          <figure class="overflow-hidden rounded-2xl">
+            <Picture src={img(s.src)!} alt={s.alt} widths={[360, 600, 800]} sizes="(min-width: 768px) 33vw, 50vw" formats={['avif', 'webp']} class="aspect-square w-full object-cover" />
+            <figcaption class="pt-2 text-sm text-muted">{s.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-sand/60">
+    <div class="container-x grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <div>
+        <p class="eyebrow">{t.about.people}</p>
+        <h2 class="h2 mt-3">{about.teamTitle}</h2>
+        <p class="mt-5 text-muted">{about.teamText}</p>
+        <h3 class="mt-10 text-[26px]">{t.about.commitments}</h3>
+        <ul class="mt-4 space-y-3">
+          {about.commitments.map((c) => <li class="flex gap-3"><span class="text-bronze" aria-hidden="true">✓</span>{c}</li>)}
+        </ul>
+      </div>
+      <Picture src={img(about.teamImage)!} alt={about.teamAlt} widths={[480, 800, 1200]} sizes="(min-width: 1024px) 520px, 100vw"
+               formats={['avif', 'webp']} class="aspect-[4/3] w-full rounded-[2rem] object-cover" />
+    </div>
+  </section>
+  <CtaBand />
+</Base>

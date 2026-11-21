@@ -2,7 +2,8 @@
 // Thẻ nhóm dịch vụ (có ảnh, giá từ, link sang trang chi tiết)
 import { Picture } from 'astro:assets';
 import Mandala from './Mandala.astro';
-import { img, vnd } from '../lib/site';
+import { img } from '../lib/site';
+import { getLang, ui, price, serviceUrl } from '../i18n';
 
 interface Props {
   group: { slug: string; title: string; short: string; image: string; imageAlt: string; items: { price: number }[] };
@@ -11,8 +12,10 @@ const { group } = Astro.props;
 const prices = group.items.map((i) => i.price).filter((p) => p > 0);
 const from = Math.min(...prices);
 const photo = img(group.image);
+const lang = getLang(Astro.url);
+const t = ui(lang);
 ---
-<a href={`/dich-vu/${group.slug}/`} class="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-ivory transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-espresso/5">
+<a href={serviceUrl(lang, group.slug)} class="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-ivory transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-espresso/5">
   <div class="relative aspect-[4/3] overflow-hidden bg-sand">
     {photo ? (
       <Picture src={photo} alt={group.imageAlt} widths={[400, 640, 900]} sizes="(min-width: 1024px) 280px, (min-width: 640px) 45vw, 80vw"
@@ -27,7 +30,7 @@ const photo = img(group.image);
     <h3 class="text-[24px]">{group.title}</h3>
     <p class="mt-2 flex-1 text-[15px] leading-relaxed text-muted">{group.short}</p>
     <p class="mt-4 flex items-center justify-between border-t border-line pt-3 text-[15px]">
-      <span class="text-muted">Giá từ <span class="font-medium text-bronze">{vnd(from)}</span></span>
+      <span class="text-muted">{t.priceFrom} <span class="font-medium text-bronze">{price(lang, from, t.priceOnRequest)}</span></span>
       <span class="text-cocoa transition group-hover:translate-x-1" aria-hidden="true">→</span>
     </p>
   </div>

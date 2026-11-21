@@ -1,7 +1,10 @@
 ---
-import info from '../data/info.json';
-import services from '../data/services.json';
 import Mandala from './Mandala.astro';
+import { getLang, getInfo, getServices, ui, url, serviceUrl } from '../i18n';
+const lang = getLang(Astro.url);
+const t = ui(lang);
+const info = getInfo(lang);
+const services = getServices(lang);
 const year = new Date().getFullYear();
 ---
 <footer class="relative overflow-hidden bg-espresso text-sand">
@@ -20,17 +23,18 @@ const year = new Date().getFullYear();
     </div>
 
     <div class="md:col-span-3">
-      <p class="mb-4 text-[13px] font-medium tracking-[0.18em] text-goldlight uppercase">Dịch vụ</p>
+      <p class="mb-4 text-[13px] font-medium tracking-[0.18em] text-goldlight uppercase">{t.nav.services}</p>
       <ul class="space-y-2 text-[15px]">
-        {services.groups.map((g) => <li><a href={`/dich-vu/${g.slug}/`} class="hover:text-cream">{g.title}</a></li>)}
-        <li><a href="/bang-gia/" class="hover:text-cream">Bảng giá</a></li>
+        {services.groups.map((g) => <li><a href={serviceUrl(lang, g.slug)} class="hover:text-cream">{g.title}</a></li>)}
+        <li><a href={url(lang, 'prices')} class="hover:text-cream">{t.nav.prices}</a></li>
       </ul>
     </div>
 
     <div class="space-y-2 text-[15px] md:col-span-5">
-      <p class="mb-4 text-[13px] font-medium tracking-[0.18em] text-goldlight uppercase">Liên hệ</p>
+      <p class="mb-4 text-[13px] font-medium tracking-[0.18em] text-goldlight uppercase">{t.nav.contact}</p>
       <p><a href={info.mapLink} target="_blank" rel="noopener" class="hover:text-cream">{info.address}</a></p>
-      <p>Hotline / Zalo: <a href={`tel:${info.phoneRaw}`} class="font-medium text-cream">{info.phone}</a></p>
+      {lang !== 'vi' && <p class="text-sand/70" lang="vi">86 Hàn Mặc Tử, Phường Buôn Ma Thuột, Đắk Lắk</p>}
+      <p>{t.hotlineZalo}: <a href={`tel:${info.phoneRaw}`} class="font-medium text-cream">{info.phone}</a></p>
       {info.hours.map((h) => <p>{h.days}: <span class="text-cream">{h.time}</span></p>)}
       <div class="flex flex-wrap gap-x-5 gap-y-2 pt-3">
         <a href={info.facebook} target="_blank" rel="noopener" class="underline-offset-4 hover:text-cream hover:underline">Facebook</a>
@@ -42,7 +46,7 @@ const year = new Date().getFullYear();
   <div class="relative border-t border-sand/10">
     <div class="container-x flex flex-col gap-2 py-5 text-[13px] text-sand/60 md:flex-row md:justify-between">
       <p>© {year} {info.name}</p>
-      <p class="flex gap-4"><a href="/hoi-dap/" class="hover:text-cream">Hỏi đáp</a><a href="/chinh-sach/" class="hover:text-cream">Chính sách</a></p>
+      <p class="flex gap-4"><a href={url(lang, 'faq')} class="hover:text-cream">{t.nav.faq}</a><a href={url(lang, 'policy')} class="hover:text-cream">{t.nav.policy}</a></p>
     </div>
   </div>
 </footer>

@@ -68,3 +68,12 @@
 /* Carousel video: ẩn thanh cuộn ngang */
 .no-scrollbar { scrollbar-width: none; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Chữ Nhật – Hàn – Trung: dùng font có sẵn trong máy khách (font chính không có các bộ chữ này) */
+:lang(ja) body { font-family: "Be Vietnam Pro", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, "Noto Sans JP", sans-serif; }
+:lang(ja) :is(h1, h2, h3, .font-serif) { font-family: "Noto Serif Display", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
+:lang(ko) body { font-family: "Be Vietnam Pro", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; word-break: keep-all; }
+:lang(ko) :is(h1, h2, h3, .font-serif) { font-family: "Noto Serif Display", AppleMyungjo, "Noto Serif KR", Batang, serif; }
+:lang(zh) body { font-family: "Be Vietnam Pro", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; }
+:lang(zh) :is(h1, h2, h3, .font-serif) { font-family: "Noto Serif Display", "Songti SC", SimSun, "Noto Serif SC", serif; }
+:is(:lang(ja), :lang(ko), :lang(zh)) em { font-style: normal; }
