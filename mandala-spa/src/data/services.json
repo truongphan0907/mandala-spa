@@ -90,7 +90,12 @@
           "q": "Có phòng cho 2 người không?",
           "a": "Có phòng đôi, phù hợp cho cặp đôi, bạn bè và gia đình. Bạn nên đặt trước để được giữ phòng."
         }
-      ]
+      ],
+      "videos": [
+        "massage-tinh-dau",
+        "massage-tay-vai"
+      ],
+      "gallery": []
     },
     {
       "slug": "goi-dau-duong-sinh",
@@ -164,7 +169,12 @@
           "q": "Bao lâu nên gội đầu dưỡng sinh một lần?",
           "a": "Bạn có thể gội 1–2 lần mỗi tuần hoặc bất cứ khi nào cảm thấy căng thẳng, mệt mỏi."
         }
-      ]
+      ],
+      "videos": [
+        "goi-dau-duong-sinh",
+        "cham-soc-tai"
+      ],
+      "gallery": []
     },
     {
       "slug": "dong-y-duong-sinh",
@@ -173,8 +183,8 @@
       "heading": "Cung phẩm Ngự Y – Tinh hoa dưỡng sinh phương Đông",
       "short": "Liệu trình chuyên sâu theo triết lý dưỡng sinh cổ truyền, kết hợp thảo dược và nhiệt.",
       "need": "Cơ thể mệt mỏi, nhiễm lạnh, muốn bồi bổ",
-      "image": "san-pham-thao-duoc.jpg",
-      "imageAlt": "Bộ sản phẩm thảo dược dùng trong liệu trình Cung phẩm Ngự Y",
+      "image": "bon-thao-duoc.jpg",
+      "imageAlt": "Bồn ngâm nước thảo dược ấm với gừng, quế, sả",
       "heroImage": "lan-ong-dong.jpg",
       "heroAlt": "Kỹ thuật viên lăn ống đồng thảo dược ấm dọc vai gáy khách",
       "seoTitle": "Liệu pháp Đông y dưỡng sinh Buôn Ma Thuột – Cung phẩm Ngự Y",
@@ -238,7 +248,30 @@
           "q": "Bao lâu nên làm một lần?",
           "a": "Tùy thể trạng và mục tiêu. Kỹ thuật viên sẽ tư vấn lộ trình phù hợp sau buổi đầu tiên."
         }
-      ]
+      ],
+      "videos": [
+        "lan-ong-dong-thao-duoc",
+        "ong-dong-can-canh",
+        "giac-hoi"
+      ],
+      "gallery": [
+        {
+          "src": "bon-thao-duoc.jpg",
+          "alt": "Bồn ngâm thảo dược với gừng, quế, sả và bột thảo mộc",
+          "caption": "Ngâm thảo dược ấm"
+        },
+        {
+          "src": "hoa-sen-san-pham.jpg",
+          "alt": "Bộ sản phẩm thảo dược bên bình hoa sen",
+          "caption": "Sản phẩm thảo dược"
+        },
+        {
+          "src": "san-pham-thao-duoc.jpg",
+          "alt": "Khay sản phẩm thảo dược Cung phẩm Ngự Y",
+          "caption": "Cung phẩm Ngự Y"
+        }
+      ],
+      "related": "/blog/tri-lieu-co-vai-gay-chuyen-sau/"
     },
     {
       "slug": "cham-soc-da",
@@ -247,10 +280,10 @@
       "heading": "Chăm sóc da – Rạng rỡ từ sự khỏe mạnh",
       "short": "Làm sạch, thải độc, peel và phục hồi cho làn da khỏe, căng bóng tự nhiên.",
       "need": "Da xỉn màu, mụn, thiếu sức sống",
-      "image": "",
-      "imageAlt": "",
-      "heroImage": "",
-      "heroAlt": "",
+      "image": "cham-soc-vung-dau.jpg",
+      "imageAlt": "Khách thư giãn với túi thảo mộc trong liệu trình chăm sóc tại Mandala",
+      "heroImage": "cham-soc-vung-dau.jpg",
+      "heroAlt": "Kỹ thuật viên Mandala chăm sóc khách trong phòng trị liệu",
       "seoTitle": "Chăm sóc da mặt Buôn Ma Thuột – Trị mụn, Peel, Thải độc CO2",
       "seoDescription": "Chăm sóc da Glow Skin, Acne Basic, CO2 Therapy, peel phục hồi tại Mandala Buôn Ma Thuột. Làn da sạch khỏe, căng bóng tự nhiên.",
       "intro": "Làn da đẹp bắt đầu từ làn da khỏe. Mandala chăm sóc da theo từng tình trạng: làm sạch sâu cho da mụn, thải độc cho da xỉn màu, peel nhẹ để tái tạo, kết hợp massage mặt thư giãn.",
@@ -340,7 +373,9 @@
           "q": "Bao lâu nên chăm sóc da một lần?",
           "a": "Thông thường 1–2 tuần một lần với liệu trình cơ bản. Liệu trình peel cần khoảng cách dài hơn theo tư vấn."
         }
-      ]
+      ],
+      "videos": [],
+      "gallery": []
     }
   ],
   "combos": [

@@ -19,13 +19,28 @@
   "email": "",
   "mapLink": "https://www.google.com/maps/place/Mandala+-+Healthcare+%26+Spa/data=!4m2!3m1!1s0x0:0x96ce09a711ea051c?sa=X&ved=1t:2428&ictx=111",
   "mapEmbedUrl": "https://www.google.com/maps?q=Mandala+Healthcare+%26+Spa,+86+H%C3%A0n+M%E1%BA%B7c+T%E1%BB%AD,+T%C3%A2n+An,+Bu%C3%B4n+Ma+Thu%E1%BB%99t&output=embed",
-  "hours": [{ "days": "Thứ 2 – Chủ nhật", "time": "10:00 – 22:00" }],
+  "hours": [
+    {
+      "days": "Thứ 2 – Chủ nhật",
+      "time": "10:00 – 22:00"
+    }
+  ],
   "hoursShort": "10:00 – 22:00",
   "openingHoursSchema": "Mo-Su 10:00-22:00",
   "bookingFirstSlot": "10:00",
   "bookingLastSlot": "21:00",
   "priceFrom": "69.000đ",
-  "googleRating": "",
-  "googleReviewCount": "",
-  "turnstileSiteKey": ""
+  "googleRating": "4.7",
+  "googleReviewCount": "84",
+  "turnstileSiteKey": "",
+  "tagline2": "Chốn an yên ngay giữa lòng Buôn Ma Thuột",
+  "gtmId": "GTM-MMLTQWS3",
+  "expertEvent": {
+    "enabled": false,
+    "title": "Trị liệu cổ vai gáy chuyên sâu cùng chuyên gia",
+    "dates": "04 – 05/07",
+    "endDate": "2026-07-05",
+    "text": "Chuyên gia trị liệu trực tiếp kiểm tra và thực hiện liệu trình riêng cho đau cổ vai gáy mạn tính, cổ rùa, u đại chùy, nhức mỏi bả vai. Số lịch hẹn có giới hạn.",
+    "link": "/blog/tri-lieu-co-vai-gay-chuyen-sau/"
+  }
 }

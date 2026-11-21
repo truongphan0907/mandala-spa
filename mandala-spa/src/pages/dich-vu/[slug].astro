@@ -6,6 +6,10 @@ import PriceList from '../../components/PriceList.astro';
 import Faq from '../../components/Faq.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import Mandala from '../../components/Mandala.astro';
+import VideoCarousel from '../../components/VideoCarousel.astro';
+import ExpertBanner from '../../components/ExpertBanner.astro';
+import { Picture } from 'astro:assets';
+import { img } from '../../lib/site';
 import services from '../../data/services.json';
 
 export function getStaticPaths() {
@@ -42,6 +46,28 @@ const faqSchema = {
     </div>
   </section>
 
+  {g.slug === 'dong-y-duong-sinh' && <ExpertBanner />}
+
+  {g.videos && g.videos.length > 0 && (
+    <section class="section pt-0">
+      <div class="container-x"><p class="eyebrow">Video</p><h2 class="h2 mt-3 mb-8">Cảm nhận liệu trình</h2></div>
+      <div class="md:container-x"><VideoCarousel ids={g.videos} /></div>
+    </section>
+  )}
+
+  {g.gallery && g.gallery.length > 0 && (
+    <section class="pb-14 md:pb-24">
+      <div class="container-x grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
+        {g.gallery.map((x) => (
+          <figure class="overflow-hidden rounded-2xl">
+            <Picture src={img(x.src)!} alt={x.alt} widths={[360, 600, 800]} sizes="(min-width: 768px) 33vw, 50vw" formats={['avif', 'webp']} class="aspect-[4/5] w-full object-cover" />
+            <figcaption class="pt-2 text-sm text-muted">{x.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  )}
+
   <section class="section bg-sand/60" id="bang-gia">
     <div class="container-x">
       <p class="eyebrow">Bảng giá</p>
@@ -71,6 +97,7 @@ const faqSchema = {
         <p class="eyebrow">Hỏi đáp</p>
         <h2 class="h2 mt-3">Câu hỏi thường gặp</h2>
         <div class="mt-8"><Faq items={g.faq} /></div>
+        {g.related && <a href={g.related} class="mt-6 inline-block font-medium text-cocoa underline underline-offset-4">Đọc thêm: Trị liệu cổ vai gáy chuyên sâu →</a>}
       </div>
     </div>
   </section>

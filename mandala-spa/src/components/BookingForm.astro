@@ -112,6 +112,8 @@ for (let m = toMin(info.bookingFirstSlot); m <= toMin(info.bookingLastSlot); m +
       form.reset();
       if (dateInput) dateInput.value = dateInput.min;
       show('Cảm ơn bạn! Mandala sẽ gọi xác nhận lịch hẹn trong ít phút.', true);
+      // @ts-ignore – sự kiện chuyển đổi cho Tag Manager / Google Ads / Meta
+      (window.dataLayer = window.dataLayer || []).push({ event: 'generate_lead', form: 'dat_lich', service: data.service || '' });
     } catch (err) {
       show((err as Error).message || 'Chưa gửi được, vui lòng gọi hotline.', false);
     } finally {

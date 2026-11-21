@@ -3,6 +3,9 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MobileBar from '../components/MobileBar.astro';
+import DesktopFloat from '../components/DesktopFloat.astro';
+import VideoModal from '../components/VideoModal.astro';
+import Gtm from '../components/Gtm.astro';
 import info from '../data/info.json';
 
 interface Props {
@@ -45,16 +48,11 @@ const schemas = [business, ...(schema ? (Array.isArray(schema) ? schema : [schem
 ---
 <!doctype html>
 <html lang="vi">
-  <head>    <!-- Google Tag Manager -->
-    <script is:inline async src="https://www.googletagmanager.com/gtm.js?id=GTM-MMLTQWS3"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    </script>
-    <!-- End Google Tag Manager -->
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- Google Tag Manager (mã trong src/data/info.json → gtmId) -->
+    <Gtm />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -76,6 +74,7 @@ const schemas = [business, ...(schema ? (Array.isArray(schema) ? schema : [schem
     {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
   </head>
   <body class="pb-[calc(60px+env(safe-area-inset-bottom))] lg:pb-0">
+    <Gtm noscript />
     <a href="#noi-dung" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:rounded focus:bg-ivory focus:px-4 focus:py-2">Bỏ qua menu</a>
     <Header />
     <main id="noi-dung">
@@ -83,5 +82,20 @@ const schemas = [business, ...(schema ? (Array.isArray(schema) ? schema : [schem
     </main>
     <Footer />
     <MobileBar />
+    <DesktopFloat />
+    <VideoModal />
+    <script is:inline>
+      // Gửi sự kiện cho Tag Manager khi khách bấm Gọi / Zalo / Messenger / Facebook
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]');
+        if (!a) return;
+        var h = a.getAttribute('href') || '', ev = '';
+        if (h.indexOf('tel:') === 0) ev = 'click_call';
+        else if (h.indexOf('zalo.me') > -1) ev = 'click_zalo';
+        else if (h.indexOf('m.me') > -1) ev = 'click_messenger';
+        else if (h.indexOf('/maps') > -1) ev = 'click_map';
+        if (ev) (window.dataLayer = window.dataLayer || []).push({ event: ev, link_url: h });
+      });
+    </script>
   </body>
 </html>

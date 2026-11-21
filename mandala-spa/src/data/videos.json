@@ -1,0 +1,10 @@
+[
+  { "id": "mot-buoi-tai-mandala", "title": "Một buổi tại Mandala", "label": "Toàn cảnh trải nghiệm", "slug": "", "service": "", "home": true },
+  { "id": "lan-ong-dong-thao-duoc", "title": "Lăn ống đồng thảo dược", "label": "Cung phẩm Ngự Y", "slug": "dong-y-duong-sinh", "service": "Massage Cổ – Vai – Gáy Chuyên Sâu", "home": true },
+  { "id": "massage-tinh-dau", "title": "Massage tinh dầu", "label": "Massage trị liệu", "slug": "massage-tri-lieu", "service": "Massage Body", "home": true },
+  { "id": "goi-dau-duong-sinh", "title": "Gội đầu dưỡng sinh", "label": "Gội đầu dưỡng sinh", "slug": "goi-dau-duong-sinh", "service": "Gội Đầu Dưỡng Sinh", "home": true },
+  { "id": "massage-tay-vai", "title": "Massage tay – vai", "label": "Massage trị liệu", "slug": "massage-tri-lieu", "service": "Body Chuyên Sâu", "home": true },
+  { "id": "ong-dong-can-canh", "title": "Ống đồng ấm nóng", "label": "Cung phẩm Ngự Y", "slug": "dong-y-duong-sinh", "service": "Body Chuyên Sâu Ngự Y", "home": true },
+  { "id": "cham-soc-tai", "title": "Chăm sóc tai thư giãn", "label": "Gội đầu dưỡng sinh", "slug": "goi-dau-duong-sinh", "service": "Gội Đầu Trung Hoa", "home": true },
+  { "id": "giac-hoi", "title": "Giác hơi vai lưng", "label": "Trị liệu cổ vai gáy", "slug": "dong-y-duong-sinh", "service": "Massage Cổ – Vai – Gáy Chuyên Sâu", "home": false }
+]

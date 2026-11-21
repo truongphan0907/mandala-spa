@@ -23,6 +23,13 @@ Mọi nội dung nằm trong `src/data/` và `src/content/blog/`. Sửa trên Gi
 - Thêm đánh giá khách vào `home.json` → `"reviews": [{ "name": "Chị Lan", "text": "..." }]`.
 - Có điểm Google thì điền `"googleRating": "4.9"` và `"googleReviewCount": "120"` trong `info.json`.
 
+## Video, Tag Manager, sự kiện
+
+- **Video 9:16:** file `.mp4` + ảnh bìa `.jpg` cùng tên trong `public/videos/`; khai báo trong `src/data/videos.json` (`"home": true` = hiện trên carousel trang chủ). Nén trước khi tải lên: 720×1280, dưới ~2MB.
+- **Google Tag Manager:** mã `gtmId` trong `src/data/info.json` (đang là GTM-MMLTQWS3). Không dán mã GTM vào `Base.astro` nữa.
+- **Sự kiện gửi lên Tag Manager:** `generate_lead` (gửi form đặt lịch), `click_call`, `click_zalo`, `click_messenger`, `click_map`, `video_open`.
+- **Dải "Đợt trị liệu chuyên gia":** sửa `expertEvent` trong `info.json` → `"enabled": true`, đổi `dates`, `endDate` (YYYY-MM-DD). Hết ngày tự ẩn.
+
 ## Ảnh
 
 - Ảnh nằm trong `src/assets/images/`. Tải ảnh JPG gốc (cạnh dài ≤ 2400px), đặt tên không dấu, không khoảng trắng.

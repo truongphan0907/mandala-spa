@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import CtaBand from '../components/CtaBand.astro';
+import ExpertBanner from '../components/ExpertBanner.astro';
 import services from '../data/services.json';
 import info from '../data/info.json';
 ---
@@ -11,6 +12,7 @@ import info from '../data/info.json';
   <PageHero eyebrow="Dịch vụ" title="Dịch vụ tại Mandala"
             text="Mỗi cơ thể có một câu chuyện riêng. Mandala mang đến bốn nhóm liệu trình, từ thư giãn nhẹ nhàng đến trị liệu chuyên sâu, để bạn chọn đúng điều cơ thể đang cần." />
 
+  <ExpertBanner />
   <section class="section">
     <div class="container-x grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {services.groups.map((g) => <ServiceCard group={g} />)}

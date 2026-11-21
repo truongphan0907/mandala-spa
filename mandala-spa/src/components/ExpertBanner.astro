@@ -1,0 +1,28 @@
+---
+// Dải thông báo "Đợt trị liệu cùng chuyên gia" – bật/tắt và đổi ngày trong src/data/info.json (expertEvent)
+// Tự ẩn sau ngày kết thúc (endDate), kể cả khi quên tắt.
+import info from '../data/info.json';
+const e = info.expertEvent;
+const active = e.enabled && new Date(e.endDate + 'T23:59:59+07:00') >= new Date();
+---
+{active && (
+  <section class="bg-espresso text-cream" data-end={e.endDate}>
+    <div class="container-x flex flex-col gap-4 py-6 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-[13px] font-medium tracking-[0.18em] text-goldlight uppercase">Sự kiện · {e.dates}</p>
+        <p class="mt-1 font-serif text-2xl">{e.title}</p>
+        <p class="mt-1 max-w-2xl text-[15px] text-sand/80">{e.text}</p>
+      </div>
+      <div class="flex shrink-0 gap-3">
+        <a href="/lien-he/#dat-lich" class="btn bg-goldlight text-espresso hover:bg-cream">Giữ lịch ngay</a>
+        <a href={e.link} class="btn-light">Tìm hiểu</a>
+      </div>
+    </div>
+  </section>
+)}
+<script>
+  // Ẩn ngay trên trình duyệt nếu trang build trước ngày kết thúc nhưng khách xem sau đó
+  document.querySelectorAll<HTMLElement>('[data-end]').forEach((el) => {
+    if (new Date(el.dataset.end + 'T23:59:59+07:00') < new Date()) el.remove();
+  });
+</script>

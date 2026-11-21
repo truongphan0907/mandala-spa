@@ -5,12 +5,10 @@
 @import "@fontsource/be-vietnam-pro/latin-400.css";
 @import "@fontsource/be-vietnam-pro/vietnamese-500.css";
 @import "@fontsource/be-vietnam-pro/latin-500.css";
-@import "@fontsource/cormorant-garamond/vietnamese-500.css";
-@import "@fontsource/cormorant-garamond/latin-500.css";
-@import "@fontsource/cormorant-garamond/vietnamese-600.css";
-@import "@fontsource/cormorant-garamond/latin-600.css";
-@import "@fontsource/cormorant-garamond/vietnamese-500-italic.css";
-@import "@fontsource/cormorant-garamond/latin-500-italic.css";
+@import "@fontsource/noto-serif-display/vietnamese-500.css";
+@import "@fontsource/noto-serif-display/latin-500.css";
+@import "@fontsource/noto-serif-display/vietnamese-500-italic.css";
+@import "@fontsource/noto-serif-display/latin-500-italic.css";
 
 /* Bộ màu thương hiệu Mandala – đổi ở đây là đổi toàn web */
 @theme {
@@ -28,14 +26,14 @@
   --color-sage: #5f6e4e;      /* Thành công */
   --color-clay: #b4483c;      /* Lỗi */
 
-  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-serif: "Noto Serif Display", ui-serif, Georgia, serif;
   --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   body { @apply bg-cream text-ink font-sans text-base antialiased md:text-[17px]; line-height: 1.7; }
-  h1, h2, h3 { @apply font-serif text-cocoa font-semibold; line-height: 1.12; letter-spacing: -0.01em; }
+  h1, h2, h3 { @apply font-serif text-cocoa font-medium; line-height: 1.22; letter-spacing: -0.01em; }
   ::selection { @apply bg-goldlight text-espresso; }
   :focus-visible { outline: 2px solid var(--color-bronze); outline-offset: 2px; }
 }
@@ -49,7 +47,7 @@
 @utility btn-ghost { @apply btn border border-cocoa/35 text-cocoa hover:bg-cocoa hover:text-cream; }
 @utility btn-light { @apply btn border border-cream/50 text-cream hover:bg-cream hover:text-espresso; }
 @utility eyebrow { @apply text-[13px] font-medium uppercase tracking-[0.18em] text-bronze; }
-@utility h2 { @apply text-[30px] md:text-[46px]; }
+@utility h2 { @apply text-[28px] md:text-[42px]; }
 @utility field {
   @apply w-full min-h-12 rounded-xl border border-line bg-ivory px-4 py-3 text-base outline-none transition focus:border-bronze focus:ring-2 focus:ring-bronze/20;
 }
@@ -66,3 +64,7 @@
 .prose-mandala a { @apply font-medium text-bronze underline underline-offset-4; }
 .prose-mandala strong { @apply font-medium text-espresso; }
 .prose-mandala em { @apply text-muted; }
+
+/* Carousel video: ẩn thanh cuộn ngang */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }

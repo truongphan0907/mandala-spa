@@ -4,6 +4,8 @@ import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import Mandala from '../components/Mandala.astro';
 import CtaBand from '../components/CtaBand.astro';
+import VideoCard from '../components/VideoCard.astro';
+import info from '../data/info.json';
 import about from '../data/about.json';
 import home from '../data/home.json';
 import { img } from '../lib/site';
@@ -22,6 +24,21 @@ import { img } from '../lib/site';
         {about.meaning.map((p) => <p class="mt-5 text-muted">{p}</p>)}
         <h3 class="mt-10 text-[28px]">{about.storyTitle}</h3>
         {about.story.map((p) => <p class="mt-3 text-muted">{p}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-sand/60">
+    <div class="container-x grid items-center gap-10 md:grid-cols-[0.8fr_1fr] lg:grid-cols-[0.6fr_1fr] lg:gap-16">
+      <div class="mx-auto w-full max-w-[320px]"><VideoCard id="mot-buoi-tai-mandala" title="Một buổi tại Mandala" label="Video" /></div>
+      <div>
+        <p class="eyebrow">Trị liệu chuyên sâu</p>
+        <h2 class="h2 mt-3">Đồng hành cùng chuyên gia trị liệu</h2>
+        <p class="mt-5 text-muted">Bên cạnh các liệu trình hằng ngày, Mandala định kỳ tổ chức các đợt trị liệu cổ vai gáy chuyên sâu cùng chuyên gia – kiểm tra tình trạng và thực hiện liệu trình riêng cho từng khách, hướng đến giải phóng căng cứng, cải thiện vận động và giúp cơ thể tìm lại sự nhẹ nhàng.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/blog/tri-lieu-co-vai-gay-chuyen-sau/" class="btn-primary">Tìm hiểu trị liệu cổ vai gáy</a>
+          <a href={info.facebook} target="_blank" rel="noopener" class="btn-ghost">Xem lịch trên Facebook</a>
+        </div>
       </div>
     </div>
   </section>

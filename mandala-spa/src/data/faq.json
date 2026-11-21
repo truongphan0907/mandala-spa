@@ -1,10 +1,42 @@
 [
-  { "q": "Có cần đặt lịch trước không?", "a": "Bạn nên đặt trước, nhất là buổi tối và cuối tuần, để được giữ phòng. Bạn có thể đặt online trên website, gọi hoặc nhắn Zalo 0395 546 979." },
-  { "q": "Mandala mở cửa mấy giờ?", "a": "Mandala mở cửa từ 10:00 đến 22:00 hằng ngày. Bạn nên đến sớm để có đủ thời gian cho liệu trình đã chọn." },
-  { "q": "Tôi chưa biết nên chọn liệu trình nào?", "a": "Hãy nhắn Zalo mô tả tình trạng của bạn (đau mỏi, mất ngủ, da mụn…), Mandala sẽ tư vấn miễn phí liệu trình phù hợp." },
-  { "q": "Có phòng cho cặp đôi hoặc nhóm bạn không?", "a": "Có. Mandala có phòng đôi riêng tư, phù hợp cho cặp đôi, bạn bè và gia đình. Vui lòng đặt trước để được giữ phòng." },
-  { "q": "Phụ nữ mang thai có làm được không?", "a": "Một số liệu trình không phù hợp với phụ nữ mang thai. Vui lòng báo trước để được tư vấn và nên hỏi ý kiến bác sĩ." },
-  { "q": "Tôi có được chọn lực tay không?", "a": "Có. Trước khi trị liệu, kỹ thuật viên sẽ hỏi lực tay mong muốn, và bạn có thể báo điều chỉnh bất cứ lúc nào." },
-  { "q": "Muốn hủy hoặc đổi lịch thì làm thế nào?", "a": "Vui lòng báo trước qua Zalo hoặc hotline 0395 546 979 để Mandala sắp xếp lại lịch cho bạn." },
-  { "q": "Liệu pháp dưỡng sinh có thay thế điều trị y khoa không?", "a": "Không. Các liệu trình tại Mandala mang tính chăm sóc, thư giãn và hỗ trợ sức khỏe, không thay thế chẩn đoán hay điều trị của bác sĩ." }
+  {
+    "q": "Có cần đặt lịch trước không?",
+    "a": "Bạn nên đặt trước, nhất là buổi tối và cuối tuần, để được giữ phòng. Bạn có thể đặt online trên website, gọi hoặc nhắn Zalo 0395 546 979."
+  },
+  {
+    "q": "Mandala mở cửa mấy giờ?",
+    "a": "Mandala mở cửa từ 10:00 đến 22:00 hằng ngày. Bạn nên đến sớm để có đủ thời gian cho liệu trình đã chọn."
+  },
+  {
+    "q": "Tôi chưa biết nên chọn liệu trình nào?",
+    "a": "Hãy nhắn Zalo mô tả tình trạng của bạn (đau mỏi, mất ngủ, da mụn…), Mandala sẽ tư vấn miễn phí liệu trình phù hợp."
+  },
+  {
+    "q": "Có phòng cho cặp đôi hoặc nhóm bạn không?",
+    "a": "Có. Mandala có phòng đôi riêng tư, phù hợp cho cặp đôi, bạn bè và gia đình. Vui lòng đặt trước để được giữ phòng."
+  },
+  {
+    "q": "Phụ nữ mang thai có làm được không?",
+    "a": "Một số liệu trình không phù hợp với phụ nữ mang thai. Vui lòng báo trước để được tư vấn và nên hỏi ý kiến bác sĩ."
+  },
+  {
+    "q": "Tôi có được chọn lực tay không?",
+    "a": "Có. Trước khi trị liệu, kỹ thuật viên sẽ hỏi lực tay mong muốn, và bạn có thể báo điều chỉnh bất cứ lúc nào."
+  },
+  {
+    "q": "Mandala có trị liệu cổ vai gáy chuyên sâu không?",
+    "a": "Có. Ngoài các liệu trình vai gáy hằng ngày, Mandala tổ chức các đợt trị liệu cổ vai gáy chuyên sâu cùng chuyên gia cho tình trạng đau mỏi mạn tính, cổ rùa, nhức mỏi bả vai. Theo dõi Facebook hoặc nhắn Zalo 0395 546 979 để biết lịch đợt tiếp theo."
+  },
+  {
+    "q": "Vết đỏ sau cạo gió, giác hơi có sao không?",
+    "a": "Vết đỏ là các mao mạch nhỏ dưới da vỡ ra khi da được miết hoặc hút – phản ứng thường gặp của liệu pháp, thường mờ dần sau vài ngày. Nếu bạn có rối loạn đông máu, đang dùng thuốc chống đông hoặc mang thai, vui lòng báo trước."
+  },
+  {
+    "q": "Muốn hủy hoặc đổi lịch thì làm thế nào?",
+    "a": "Vui lòng báo trước qua Zalo hoặc hotline 0395 546 979 để Mandala sắp xếp lại lịch cho bạn."
+  },
+  {
+    "q": "Liệu pháp dưỡng sinh có thay thế điều trị y khoa không?",
+    "a": "Không. Các liệu trình tại Mandala mang tính chăm sóc, thư giãn và hỗ trợ sức khỏe, không thay thế chẩn đoán hay điều trị của bác sĩ."
+  }
 ]

@@ -1,12 +1,8 @@
 {
-  "heroDescription": "Dưỡng sinh phương Đông kết hợp trị liệu hiện đại. Massage, gội đầu dưỡng sinh, Đông y và chăm sóc da trong không gian riêng tư, ấm cúng.",
+  "heroDescription": "Massage trị liệu, gội đầu dưỡng sinh và liệu pháp Đông y Cung phẩm Ngự Y – trong không gian riêng tư giữa lòng Buôn Ma Thuột.",
   "heroServicesLine": "Massage · Gội đầu dưỡng sinh · Đông y · Chăm sóc da",
   "heroImage": "phong-bon-go.jpg",
-  "heroImageAlt": "Không gian trị liệu tại Mandala Healthcare & Spa",
-  "heroMobileImage": "ky-thuat-vien-massage.jpg",
-  "heroMobileAlt": "Kỹ thuật viên Mandala đang massage trị liệu cho khách",
-  "heroInsetImage": "lan-ong-dong.jpg",
-  "heroInsetAlt": "Lăn ống đồng thảo dược ấm",
+  "heroImageAlt": "Phòng trị liệu có bồn ngâm gỗ và rèm trắng tại Mandala",
   "pillarsTitle": "Chăm sóc trọn vẹn từ thân đến tâm",
   "pillarsIntro": "Bốn nhóm liệu trình, từ thư giãn nhẹ nhàng đến trị liệu chuyên sâu, để bạn chọn đúng điều cơ thể đang cần.",
   "signature": {
@@ -19,7 +15,10 @@
       "Phù hợp người đau mỏi lâu ngày, cơ thể nhiễm lạnh"
     ],
     "image": "lan-ong-dong.jpg",
-    "imageAlt": "Kỹ thuật viên lăn ống đồng thảo dược trên vai gáy khách"
+    "imageAlt": "Kỹ thuật viên lăn ống đồng thảo dược trên vai gáy khách",
+    "secondImage": "bon-thao-duoc.jpg",
+    "secondAlt": "Bồn ngâm nước thảo dược ấm với gừng, quế, sả",
+    "video": "lan-ong-dong-thao-duoc"
   },
   "journey": {
     "title": "Mỗi lần ghé Mandala là một nghi thức chăm sóc",
@@ -95,15 +94,24 @@
         "caption": "Góc dưỡng sinh"
       },
       {
-        "src": "phong-massage-sen.jpg",
-        "alt": "Phòng massage với bình sen và nến",
-        "caption": "Phòng massage"
+        "src": "hoa-sen-san-pham.jpg",
+        "alt": "Hoa sen và bộ sản phẩm thảo dược",
+        "caption": "Thảo dược tự nhiên"
       }
     ]
   },
   "reviews": [],
   "reviewsTitle": "Khách hàng nói gì về Mandala",
-  "reviewsIntro": "Mandala hân hạnh được đón tiếp khách trong nước và du khách quốc tế. Đọc cảm nhận thật của khách trên Google Maps.",
+  "reviewsIntro": "Mandala hân hạnh đón tiếp khách trong nước và du khách quốc tế mỗi ngày. Đọc cảm nhận thật của khách trên Google Maps.",
   "ctaTitle": "Dành cho mình một khoảng lặng hôm nay",
-  "ctaText": "Đặt lịch trước để Mandala giữ phòng và chuẩn bị kỹ thuật viên phù hợp cho bạn."
+  "ctaText": "Đặt lịch trước để Mandala giữ phòng và chuẩn bị kỹ thuật viên phù hợp cho bạn.",
+  "heroChips": [
+    "Giá từ 69.000đ",
+    "Mở cửa 10:00 – 22:00",
+    "Phòng đôi riêng tư"
+  ],
+  "heroVideo": "mot-buoi-tai-mandala",
+  "videosTitle": "Khoảnh khắc tại Mandala",
+  "videosIntro": "Vài giây để cảm nhận sự thư thái – chạm vào video để xem có tiếng.",
+  "reviewsImage": ""
 }
