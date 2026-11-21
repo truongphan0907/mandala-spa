@@ -1,5 +1,5 @@
 ---
-// Form đặt lịch → gửi tới /api/booking (worker/index.js) → báo về Telegram
+// Form đặt lịch → gửi tới /api/booking (worker/index.js) → báo về Telegram + lưu Google Sheets
 import info from '../data/info.json';
 import services from '../data/services.json';
 
@@ -95,6 +95,7 @@ for (let m = toMin(info.bookingFirstSlot); m <= toMin(info.bookingLastSlot); m +
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(form).entries());
+    data.page = location.pathname + location.search;
     if (!String(data.name).trim()) return show('Vui lòng nhập họ tên.', false);
     if (!/^[0-9+\s.-]{8,20}$/.test(String(data.phone).trim())) return show('Vui lòng nhập số điện thoại hợp lệ.', false);
 
