@@ -113,8 +113,10 @@ const fallback = await crop(1200, 0.85, 'jpg');
     const box = document.getElementById('hero-slides');
     const slides = Array.from(box?.querySelectorAll<HTMLElement>('.hero-slide') ?? []);
     const dots = Array.from(box?.querySelectorAll<HTMLElement>('.hero-dot') ?? []);
-    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (box && slides.length > 1 && !still) {
+    // Chỉ dừng khi khách bật "tiết kiệm dữ liệu"; hiệu ứng mờ dần nhẹ nên vẫn chạy với chế độ giảm chuyển động
+    // @ts-ignore
+    const saveData = navigator.connection?.saveData === true;
+    if (box && slides.length > 1 && !saveData) {
       let i = 0;
       const ms = Math.max(2, Number(box.dataset.seconds) || 4) * 1000;
       const go = () => {
@@ -126,7 +128,9 @@ const fallback = await crop(1200, 0.85, 'jpg');
         dots[i]?.classList.replace('w-1.5', 'w-6'); dots[i]?.classList.remove('opacity-60');
       };
       // Bắt đầu chuyển sau khi trang tải xong, để ảnh đầu tiên hiện nhanh nhất
-      window.addEventListener('load', () => setInterval(go, ms));
+      const start = () => setInterval(go, ms);
+      if (document.readyState === 'complete') start();
+      else window.addEventListener('load', start, { once: true });
     }
   </script>
 
