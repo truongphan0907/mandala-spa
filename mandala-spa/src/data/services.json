@@ -11,7 +11,7 @@
       "imageAlt": "Phòng massage riêng tư có bồn ngâm gỗ tại Mandala",
       "heroImage": "ky-thuat-vien-massage.jpg",
       "heroAlt": "Kỹ thuật viên Mandala đang massage lưng cho khách",
-      "seoTitle": "Massage trị liệu Buôn Ma Thuột – Đá nóng, Body chuyên sâu, Vai gáy",
+      "seoTitle": "Massage Trị Liệu: Body, Đá Nóng, Chuyên Sâu, Hương Thơm",
       "seoDescription": "Massage body từ 249.000đ, massage đá nóng, body chuyên sâu, vai gáy và liệu pháp hương thơm tại Mandala Buôn Ma Thuột. Phòng riêng tư, kỹ thuật viên tận tâm.",
       "intro": "Ngồi máy tính nhiều giờ, lái xe đường dài, vận động sai tư thế… khiến cơ bắp co cứng và mỏi mệt tích tụ từng ngày. Các liệu trình massage tại Mandala kết hợp động tác xoa bóp, ấn huyệt và nhiệt (đá nóng, tinh dầu ấm) để giải phóng căng thẳng từ sâu bên trong.",
       "suitable": [
@@ -30,35 +30,35 @@
         {
           "name": "Massage Body",
           "desc": "Xoa bóp toàn thân với tinh dầu, lực vừa phải, thư giãn nhẹ nhàng.",
-          "duration": "",
+          "duration": "60 phút",
           "price": 249000,
           "featured": false
         },
         {
           "name": "Massage Body Đá Nóng",
           "desc": "Đá bazan ấm nóng kết hợp xoa bóp giúp giãn cơ sâu, làm ấm cơ thể.",
-          "duration": "",
+          "duration": "90 phút",
           "price": 349000,
           "featured": true
         },
         {
           "name": "Body Chuyên Sâu",
           "desc": "Lực tay mạnh, tác động vào các nhóm cơ co cứng kết hợp ấn huyệt.",
-          "duration": "",
+          "duration": "90 phút",
           "price": 399000,
           "featured": false
         },
         {
           "name": "Vai Gáy Chuyên Sâu",
           "desc": "Tập trung tháo gỡ điểm co cứng vùng cổ – vai – gáy – lưng trên.",
-          "duration": "",
+          "duration": "60 phút",
           "price": 299000,
           "featured": true
         },
         {
           "name": "Liệu Pháp Bằng Hương Thơm",
           "desc": "Tinh dầu thiên nhiên chọn theo tâm trạng, giúp an thần, dễ ngủ.",
-          "duration": "",
+          "duration": "120 phút",
           "price": 499000,
           "featured": false
         },
@@ -108,7 +108,7 @@
       "imageAlt": "Khu gội đầu dưỡng sinh với giường gội và rèm trắng tại Mandala",
       "heroImage": "khu-goi-dau.jpg",
       "heroAlt": "Khu gội đầu dưỡng sinh tại Mandala Buôn Ma Thuột",
-      "seoTitle": "Gội đầu dưỡng sinh Buôn Ma Thuột – Gội thảo dược, Gội Trung Hoa",
+      "seoTitle": "Các Gói Gội Đầu: Thư Giãn, Dưỡng Sinh, Trung Hoa",
       "seoDescription": "Gội đầu dưỡng sinh từ 69.000đ tại Mandala Buôn Ma Thuột. Gội thảo dược, gội Trung Hoa, chăm sóc vùng đầu giúp giảm căng thẳng, ngủ ngon.",
       "intro": "Không chỉ làm sạch tóc, gội đầu dưỡng sinh là nghi thức chăm sóc vùng đầu – nơi tập trung nhiều huyệt đạo quan trọng. Nước thảo dược ấm, động tác day ấn nhịp nhàng cùng massage cổ vai giúp đầu óc nhẹ nhõm, tinh thần tỉnh táo và giấc ngủ sâu hơn.",
       "suitable": [
@@ -127,28 +127,28 @@
         {
           "name": "Gội Đầu Thư Giãn",
           "desc": "Gội sạch, massage đầu nhẹ nhàng.",
-          "duration": "",
+          "duration": "30 phút",
           "price": 69000,
           "featured": false
         },
         {
           "name": "Gội Đầu Dưỡng Sinh",
           "desc": "Gội thảo dược kết hợp bấm huyệt đầu – cổ – vai.",
-          "duration": "",
+          "duration": "60 phút",
           "price": 159000,
           "featured": false
         },
         {
           "name": "Gội Đầu Trung Hoa",
           "desc": "Quy trình gội nhiều bước theo phương pháp cổ truyền Trung Hoa.",
-          "duration": "",
+          "duration": "75 phút",
           "price": 239000,
           "featured": true
         },
         {
           "name": "Chăm Sóc Vùng Đầu",
           "desc": "Liệu trình chuyên sâu cho da đầu và vùng vai gáy.",
-          "duration": "",
+          "duration": "90 phút",
           "price": 399000,
           "featured": false
         }

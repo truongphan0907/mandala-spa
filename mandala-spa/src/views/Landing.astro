@@ -1,0 +1,411 @@
+---
+// Trang đích (Google Ads + SEO địa phương) – chỉ tiếng Việt.
+// Nội dung: src/data/landing.json · Giá & thời lượng: src/data/services.json (đổi một chỗ, trang tự cập nhật)
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Faq from '../components/Faq.astro';
+import VideoCarousel from '../components/VideoCarousel.astro';
+import BookingForm from '../components/BookingForm.astro';
+import Mandala from '../components/Mandala.astro';
+import { Picture } from 'astro:assets';
+import { img, vnd } from '../lib/site';
+import { getInfo, getServices, getVideos } from '../i18n';
+import landing from '../data/landing.json';
+
+interface Props { slug: keyof typeof landing.pages }
+const { slug } = Astro.props;
+const p: any = landing.pages[slug];
+const info = getInfo('vi');
+const group = getServices('vi').groups.find((g) => g.slug === p.group)!;
+const item = (name: string) => group.items.find((i) => i.name === name)!;
+const pageUrl = new URL(`/${slug}/`, Astro.site).toString();
+const spaId = new URL('/#spa', Astro.site).toString();
+const zalo = info.zalo;
+const messenger = info.messenger;
+
+// Danh sách giá
+const priced = p.priceOrder ? p.priceOrder.map(item) : group.items;
+const plans = p.compare ? p.compare.plans.map((pl: any) => ({ ...pl, ...item(pl.name) })) : [];
+
+// ---- Dữ liệu cấu trúc (JSON-LD) ----
+const offers = group.items.filter((i) => i.price > 0).map((i) => ({
+  '@type': 'Offer',
+  name: i.duration ? `${i.name} – ${i.duration}` : i.name,
+  price: String(i.price),
+  priceCurrency: 'VND',
+}));
+const videoList = getVideos('vi').filter((v) => p.videos.includes(v.id));
+const schema: object[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': pageUrl + '#service',
+    name: p.serviceName,
+    serviceType: p.serviceType,
+    provider: { '@id': spaId },
+    areaServed: ['Buôn Ma Thuột', "Cư M'gar", 'Cư Kuin', 'Krông Pắc', 'Buôn Đôn', 'Đắk Lắk'],
+    hasOfferCatalog: { '@type': 'OfferCatalog', name: p.pricesTitle, itemListElement: offers },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': pageUrl,
+    url: pageUrl,
+    name: p.seoTitle,
+    description: p.seoDescription,
+    inLanguage: 'vi',
+    about: { '@id': pageUrl + '#service' },
+    datePublished: landing.updated,
+    dateModified: landing.updated,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Trang chủ', item: new URL('/', Astro.site).toString() },
+      { '@type': 'ListItem', position: 2, name: 'Dịch vụ', item: new URL('/dich-vu/', Astro.site).toString() },
+      { '@type': 'ListItem', position: 3, name: p.h1 },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: p.faq.map((f: any) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+  ...videoList.map((v) => ({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: `${v.title} – Mandala Buôn Ma Thuột`,
+    description: `${v.title} tại Mandala – Healthcare & Spa, 86 Hàn Mặc Tử, Buôn Ma Thuột.`,
+    thumbnailUrl: new URL(`/videos/${v.id}.jpg`, Astro.site).toString(),
+    contentUrl: new URL(`/videos/${v.id}.mp4`, Astro.site).toString(),
+    uploadDate: landing.updated,
+  })),
+];
+---
+<Base title={p.seoTitle} description={p.seoDescription} schema={schema}>
+  <!-- 1. Màn hình đầu -->
+  <PageHero eyebrow={p.eyebrow} title={p.h1} text={p.sub} image={p.heroImage} alt={p.heroAlt}
+            crumbs={[{ href: '/dich-vu/', label: 'Dịch vụ' }]}>
+    <ul class="mt-5 flex flex-wrap gap-2">
+      {p.chips.map((c: string) => <li class="rounded-full border border-gold/50 bg-ivory px-3.5 py-1.5 text-sm font-medium text-cocoa">{c}</li>)}
+    </ul>
+    <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+      <a href={zalo} target="_blank" rel="noopener" class="btn-primary">{p.zaloLabel}</a>
+      <a href={`tel:${info.phoneRaw}`} class="btn-ghost">Gọi {info.phone}</a>
+    </div>
+    <a href={info.mapLink} target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 text-[15px] text-muted hover:text-bronze">
+      <span class="tracking-wider text-gold" aria-hidden="true">★★★★★</span>
+      <span><strong class="font-medium text-ink">{info.googleRating}/5</strong> · {info.googleReviewCount} đánh giá trên Google</span>
+    </a>
+  </PageHero>
+
+  <!-- 2. Tóm tắt nhanh + thông tin nhanh -->
+  <section class="section !pb-0">
+    <div class="container-x grid gap-8 lg:grid-cols-[1.15fr_1fr]">
+      <div class="rounded-2xl border border-gold/40 bg-sand/50 p-6 md:p-8">
+        <p class="eyebrow">Tóm tắt nhanh</p>
+        <p class="mt-3 text-[17px] leading-relaxed" set:html={p.summary} />
+      </div>
+      <div class="rounded-2xl border border-line bg-ivory p-6 md:p-8">
+        <h2 class="text-2xl">Thông tin nhanh</h2>
+        <dl class="mt-4 divide-y divide-line text-[15px]">
+          {p.facts.map(([k, v]: string[]) => (
+            <div class="grid grid-cols-[8.5rem_1fr] gap-3 py-2.5"><dt class="text-muted">{k}</dt><dd class="font-medium text-ink">{v}</dd></div>
+          ))}
+        </dl>
+        <p class="mt-3 text-xs text-muted">Đánh giá Google cập nhật {landing.updatedText}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Bảng giá -->
+  <section class="section" id="bang-gia">
+    <div class="container-x">
+      <h2 class="h2">{p.pricesTitle}</h2>
+      <p class="mt-3 text-muted">{p.pricesIntro}</p>
+
+      {!p.compare && (
+        <ul class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {priced.map((i: any) => (
+            <li class="flex flex-col rounded-2xl border border-line bg-ivory p-5">
+              <p class="font-serif text-[22px] text-cocoa">{i.name}</p>
+              <p class="mt-1 text-[15px] text-muted">{p.priceFit[i.name]}</p>
+              <div class="mt-auto flex items-end justify-between gap-3 pt-5">
+                <div>
+                  {i.duration && <p class="text-sm text-muted">{i.duration}</p>}
+                  <p class="text-xl font-medium text-bronze">{vnd(i.price)}</p>
+                </div>
+                <a href={zalo} target="_blank" rel="noopener" class="btn-ghost !min-h-10 !px-4 text-sm">Giữ phòng</a>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {p.compare && (
+        <>
+          <!-- Điện thoại: thẻ trượt ngang -->
+          <div class="no-scrollbar -mx-5 mt-8 flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 md:hidden">
+            {plans.map((pl: any) => (
+              <div class:list={['w-[78%] shrink-0 snap-center rounded-2xl border p-5', pl.best ? 'order-first border-bronze bg-ivory shadow-lg shadow-espresso/10' : 'border-line bg-ivory']}>
+                <p class:list={['text-xs font-medium tracking-[0.14em] uppercase', pl.best ? 'text-bronze' : 'text-muted']}>{pl.best ? '★ ' : ''}{pl.tag}</p>
+                <p class="mt-2 font-serif text-[22px] text-cocoa">{pl.name}</p>
+                <p class="mt-1 text-2xl font-medium text-bronze">{vnd(pl.price)} <span class="text-sm font-normal text-muted">· {pl.duration}</span></p>
+                <ul class="mt-4 space-y-1.5 text-[15px]">
+                  {p.compare.rows.map(([label, vals]: any, ri: number) => (
+                    <li class:list={['flex gap-2', !vals[plans.indexOf(pl)] && 'text-muted/60']}>
+                      <span aria-hidden="true" class="text-bronze">{vals[plans.indexOf(pl)] ? '✓' : '–'}</span>{label}
+                    </li>
+                  ))}
+                </ul>
+                <p class="mt-4 text-sm text-muted">Hợp với: {pl.fit}</p>
+                <a href={zalo} target="_blank" rel="noopener" class:list={['mt-4 w-full', pl.best ? 'btn-primary' : 'btn-ghost']}>Giữ chỗ gói này</a>
+              </div>
+            ))}
+          </div>
+          <!-- Máy tính: bảng so sánh -->
+          <div class="mt-8 hidden overflow-hidden rounded-2xl border border-line bg-ivory md:block">
+            <table class="w-full table-fixed text-left text-[15px]">
+              <thead>
+                <tr class="border-b border-line">
+                  <th class="w-[26%] p-4 font-normal text-muted" scope="col">So sánh 4 gói</th>
+                  {plans.map((pl: any) => (
+                    <th scope="col" class:list={['p-4 text-center align-top', pl.best && 'bg-sand/60']}>
+                      <span class:list={['block text-xs font-medium tracking-[0.12em] uppercase', pl.best ? 'text-bronze' : 'text-muted']}>{pl.best ? '★ ' : ''}{pl.tag}</span>
+                      <span class="mt-1 block font-serif text-xl font-medium text-cocoa">{pl.name}</span>
+                      <span class="mt-1 block text-xl font-medium text-bronze">{vnd(pl.price)}</span>
+                      <span class="block text-sm font-normal text-muted">{pl.duration}</span>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-line">
+                {p.compare.rows.map(([label, vals]: any) => (
+                  <tr>
+                    <th scope="row" class="p-4 font-normal">{label}</th>
+                    {vals.map((v: boolean, i: number) => (
+                      <td class:list={['p-4 text-center text-lg', plans[i].best && 'bg-sand/60', v ? 'text-bronze' : 'text-muted/50']}>
+                        <span aria-hidden="true">{v ? '✓' : '–'}</span><span class="sr-only">{v ? 'Có' : 'Không'}</span>
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+                <tr>
+                  <th scope="row" class="p-4 font-normal">Hợp với</th>
+                  {plans.map((pl: any) => <td class:list={['p-4 text-center text-sm text-muted', pl.best && 'bg-sand/60']}>{pl.fit}</td>)}
+                </tr>
+                <tr>
+                  <td></td>
+                  {plans.map((pl: any) => (
+                    <td class:list={['p-4', pl.best && 'bg-sand/60']}>
+                      <a href={zalo} target="_blank" rel="noopener" class:list={['!min-h-10 w-full !px-3 text-sm', pl.best ? 'btn-primary' : 'btn-ghost']}>Giữ chỗ</a>
+                    </td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+
+      <p class="mt-5 text-sm text-muted">* {landing.priceNote}</p>
+      {p.comboNote && <p class="mt-2 text-[15px] [&_a]:font-medium [&_a]:text-bronze [&_a]:underline" set:html={p.comboNote} />}
+    </div>
+  </section>
+
+  <!-- 4. Chọn theo nhu cầu (massage) -->
+  {p.needs && (
+    <section class="section bg-sand/60">
+      <div class="container-x">
+        <h2 class="h2">{p.needs.title}</h2>
+        <p class="mt-3 text-muted">{p.needs.intro}</p>
+        <div class="mt-8 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          {p.needs.rows.map(([need, pick, why]: string[]) => (
+            <div class="rounded-2xl border border-line bg-ivory p-5">
+              <p class="text-[15px] text-muted">Bạn đang: {need}</p>
+              <p class="mt-2 font-serif text-xl text-cocoa">→ {pick}</p>
+              <p class="mt-1 text-[15px]">{why}</p>
+            </div>
+          ))}
+        </div>
+        <p class="mt-6">{p.needs.outro} <a href={zalo} target="_blank" rel="noopener" class="font-medium text-bronze underline underline-offset-4">Nhắn Zalo</a></p>
+      </div>
+    </section>
+  )}
+
+  <!-- 5. Bài giải thích ngắn -->
+  <section class:list={['section', !p.needs && 'bg-sand/60']}>
+    <div class="container-x max-w-3xl prose-mandala">
+      <h2 class="!mt-0">{p.article.title}</h2>
+      <Fragment set:html={p.article.html} />
+      {p.benefits && (
+        <>
+          <h2>{p.benefitsTitle}</h2>
+          <ul>{p.benefits.map(([b, d]: string[]) => <li><strong>{b}</strong> – {d}</li>)}</ul>
+          <p class="text-[15px] text-muted" set:html={p.benefitsNote} />
+        </>
+      )}
+    </div>
+  </section>
+
+  <!-- 6. Video -->
+  <section class="section pt-0">
+    <div class="container-x"><p class="eyebrow">Video thật tại Mandala</p><h2 class="h2 mt-3 mb-8">{p.videosTitle}</h2></div>
+    <div class="md:container-x"><VideoCarousel ids={p.videos} /></div>
+  </section>
+
+  <!-- 7. Quy trình + Ai nên -->
+  <section class="section bg-sand/60">
+    <div class:list={['container-x grid gap-12', p.forWho && 'lg:grid-cols-2']}>
+      <div>
+        <h2 class="h2">{p.processTitle}</h2>
+        <ol class:list={['mt-8 grid gap-5', !p.forWho && 'md:grid-cols-5']}>
+          {p.process.map(([s, d]: string[], i: number) => (
+            <li class="flex gap-4 md:flex-col md:gap-3 lg:flex-row">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold/60 bg-ivory font-serif text-lg text-bronze">{i + 1}</span>
+              <span><strong class="block font-medium text-ink">{s}</strong>{d && <span class="text-[15px] text-muted">{d}</span>}</span>
+            </li>
+          ))}
+        </ol>
+        {p.processNote && <p class="mt-6 text-sm text-muted">{p.processNote}</p>}
+      </div>
+      {p.forWho && (
+        <div class="rounded-2xl border border-line bg-ivory p-6 md:p-8">
+          <h2 class="text-[28px]">{p.forWho.title}</h2>
+          <ul class="mt-4 space-y-3">
+            {p.forWho.items.map((s: string) => <li class="flex gap-3"><Mandala class="mt-1 h-5 w-5 shrink-0 text-gold" petals={8} stroke={7} />{s}</li>)}
+          </ul>
+          <p class="mt-5 rounded-xl bg-sand/60 p-4 text-[15px] text-muted">{p.forWho.note}</p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- 8. Vì sao chọn Mandala -->
+  <section class="section">
+    <div class="container-x">
+      <h2 class="h2 max-w-3xl">{p.whyTitle}</h2>
+      <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {p.why.map(([w, d]: string[]) => (
+          <li class="rounded-2xl border border-line bg-ivory p-5">
+            <p class="flex items-center gap-2 font-medium text-ink"><span class="text-bronze" aria-hidden="true">✓</span>{w}</p>
+            <p class="mt-1 text-[15px] text-muted">{d}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- 9. Không gian -->
+  <section class="pb-14 md:pb-24">
+    <div class:list={['container-x grid grid-cols-2 gap-3 md:gap-5', p.gallery.length === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3']}>
+      {p.gallery.map((x: any) => (
+        <figure class="overflow-hidden rounded-2xl">
+          <Picture src={img(x.src)!} alt={x.alt} widths={[360, 600, 800]} sizes="(min-width: 768px) 33vw, 50vw" formats={['avif', 'webp']} class="aspect-[4/3] w-full object-cover" />
+          <figcaption class="pt-2 text-sm text-muted">{x.caption}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </section>
+
+  <!-- 10. Đánh giá Google -->
+  <section class="section bg-sand/60">
+    <div class="container-x">
+      <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h2 class="h2">{p.reviewsTitle}</h2>
+          <p class="mt-4 flex items-baseline gap-3">
+            <span class="font-serif text-5xl text-cocoa">{info.googleRating}</span>
+            <span><span class="tracking-wider text-gold" aria-hidden="true">★★★★★</span><span class="block text-[15px] text-muted">{info.googleReviewCount} đánh giá trên Google</span></span>
+          </p>
+          <p class="mt-2 text-sm text-muted">{landing.reviewTags}</p>
+        </div>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <a href={info.mapLink} target="_blank" rel="noopener" class="btn-ghost">Đọc thêm đánh giá trên Google</a>
+          <a href={info.mapLink} target="_blank" rel="noopener" class="btn-primary">Xem vị trí Mandala</a>
+        </div>
+      </div>
+      <ul class="no-scrollbar -mx-5 mt-8 flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 md:mx-0 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0">
+        {p.reviews.map((r: any) => (
+          <li class="w-[82%] shrink-0 snap-center rounded-2xl border border-line bg-ivory p-5 md:w-auto">
+            <p class="tracking-wider text-gold" aria-label="5 sao">★★★★★</p>
+            <p class="mt-3 text-[15px] leading-relaxed">“{r.text}”</p>
+            <p class="mt-4 text-sm font-medium text-cocoa">{r.name} <span class="font-normal text-muted">· Google</span></p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- 11. Vị trí -->
+  <section class="section">
+    <div class="container-x grid gap-10 lg:grid-cols-2">
+      <div>
+        <h2 class="h2">{p.locationTitle}</h2>
+        <div class="prose-mandala mt-5" set:html={p.locationHtml} />
+        {p.showDistances && (
+          <div class="mt-6 overflow-hidden rounded-2xl border border-line bg-ivory">
+            <table class="w-full text-left text-[15px]">
+              <thead><tr class="border-b border-line text-sm text-muted"><th class="p-3 font-normal">Đi từ</th><th class="p-3 font-normal">Khoảng cách</th><th class="p-3 font-normal">Ô tô</th></tr></thead>
+              <tbody class="divide-y divide-line">
+                {landing.distances.map((d) => <tr><td class="p-3">{d.from}</td><td class="p-3 whitespace-nowrap">{d.km}</td><td class="p-3 whitespace-nowrap">{d.time}</td></tr>)}
+              </tbody>
+            </table>
+            <p class="px-3 py-2 text-xs text-muted">Theo Google Maps, giao thông bình thường.</p>
+          </div>
+        )}
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href={info.mapLink} target="_blank" rel="noopener" class="btn-primary">Xem vị trí Mandala trên Google Maps</a>
+          <a href={`tel:${info.phoneRaw}`} class="btn-ghost">Gọi hỏi đường</a>
+        </div>
+      </div>
+      <iframe src={info.mapEmbedUrl} title="Bản đồ Mandala – 86 Hàn Mặc Tử, Buôn Ma Thuột" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              class="aspect-[4/3] w-full rounded-2xl border border-line lg:aspect-auto lg:min-h-[420px]"></iframe>
+    </div>
+  </section>
+
+  <!-- 12. Hỏi đáp -->
+  <section class="section bg-sand/60">
+    <div class="container-x max-w-3xl">
+      <h2 class="h2">{p.faqTitle}</h2>
+      <div class="mt-8"><Faq items={p.faq} /></div>
+    </div>
+  </section>
+
+  <!-- 13. Hành động cuối -->
+  <section class="relative overflow-hidden bg-espresso text-cream" id="dat-lich">
+    <Mandala class="pointer-events-none absolute -top-40 -right-40 h-[36rem] w-[36rem] text-goldlight/10" petals={20} />
+    <div class="container-x section relative grid gap-10 lg:grid-cols-[1fr_1.2fr]">
+      <div>
+        <h2 class="h2 text-cream">{p.ctaTitle}</h2>
+        <p class="mt-4 text-sand/80">{p.ctaText}</p>
+        <div class="mt-8 flex flex-col gap-3">
+          <a href={zalo} target="_blank" rel="noopener" class="btn bg-goldlight text-espresso hover:bg-cream">Nhắn Zalo {info.phone}</a>
+          <a href={`tel:${info.phoneRaw}`} class="btn-light">Gọi {info.phone}</a>
+          <a href={messenger} target="_blank" rel="noopener" class="btn-light">Nhắn Messenger</a>
+        </div>
+        <p class="mt-6 text-sm text-sand/70">{info.address} · Mở cửa {info.hoursShort}, nhận khách đến 22:00</p>
+      </div>
+      <div class="rounded-2xl bg-cream p-6 text-ink md:p-8" data-preselect={p.formService}>
+        <p class="mb-5 font-serif text-2xl text-cocoa">Hoặc để lại số điện thoại</p>
+        <BookingForm />
+      </div>
+    </div>
+  </section>
+
+  <div class="container-x py-6 text-center text-sm text-muted">
+    <p>{landing.disclaimer}</p>
+    <p class="mt-1">Cập nhật: {landing.updatedText}</p>
+  </div>
+</Base>
+
+<script>
+  // Chọn sẵn dịch vụ trong form theo trang (nếu khách chưa chọn qua ?dv=)
+  const box = document.querySelector<HTMLElement>('[data-preselect]');
+  const sel = box?.querySelector<HTMLSelectElement>('select[name="service"]');
+  if (box && sel && !sel.value) {
+    const opt = Array.from(sel.options).find((o) => o.value === box.dataset.preselect);
+    if (opt) opt.selected = true;
+  }
+</script>

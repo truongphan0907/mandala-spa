@@ -45,9 +45,10 @@ const business = {
     postalCode: info.postalCode,
     addressCountry: 'VN',
   },
+  geo: { '@type': 'GeoCoordinates', latitude: info.geo.lat, longitude: info.geo.lng },
   hasMap: info.mapLink,
   openingHours: info.openingHoursSchema,
-  sameAs: [info.facebook],
+  sameAs: [info.facebook, info.tiktok, info.instagram, info.mapLink],
 };
 const schemas = [business, ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
 ---
@@ -101,7 +102,8 @@ const schemas = [business, ...(schema ? (Array.isArray(schema) ? schema : [schem
         else if (h.indexOf('zalo.me') > -1) ev = 'click_zalo';
         else if (h.indexOf('m.me') > -1) ev = 'click_messenger';
         else if (h.indexOf('/maps') > -1) ev = 'click_map';
-        if (ev) (window.dataLayer = window.dataLayer || []).push({ event: ev, link_url: h });
+        else if (a.dataset.social) ev = 'click_social';
+        if (ev) (window.dataLayer = window.dataLayer || []).push({ event: ev, link_url: h, social: a.dataset.social || undefined });
       });
     </script>
   </body>

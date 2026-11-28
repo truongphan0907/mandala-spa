@@ -19,6 +19,11 @@ const t = ui(lang);
 const services = getServices(lang);
 const g: any = services.groups.find((x) => x.slug === Astro.props.slug)!;
 const others = services.groups.filter((x) => x.slug !== g.slug);
+// Trang đích địa phương (chỉ tiếng Việt)
+const localPage = ({
+  'massage-tri-lieu': { href: '/massage-buon-ma-thuot/', text: 'Xem giá, thời lượng, đường đi và giữ phòng massage nhanh' },
+  'goi-dau-duong-sinh': { href: '/goi-dau-duong-sinh-buon-ma-thuot/', text: 'So sánh 4 gói gội, xem video và giữ chỗ nhanh' },
+} as Record<string, { href: string; text: string }>)[g.slug];
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -74,6 +79,12 @@ const faqSchema = {
     <div class="container-x">
       <p class="eyebrow">{t.service.prices}</p>
       <h2 class="h2 mt-3">{t.service.listPrefix} {vi ? g.title.toLowerCase() : g.title}</h2>
+      {vi && localPage && (
+        <a href={localPage.href} class="mt-6 flex items-center justify-between gap-4 rounded-2xl border border-bronze/40 bg-ivory p-5 hover:border-bronze">
+          <span><span class="block font-medium text-ink">Bạn ở Buôn Ma Thuột?</span><span class="text-[15px] text-muted">{localPage.text}</span></span>
+          <span class="text-xl text-bronze" aria-hidden="true">→</span>
+        </a>
+      )}
       <div class="mt-8"><PriceList items={g.items} /></div>
     </div>
   </section>

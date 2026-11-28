@@ -13,6 +13,15 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 const og = post.data.image ? await getImage({ src: post.data.image, width: 1200, height: 630, format: 'jpg', fit: 'cover' }) : undefined;
+// Dẫn về trang đích địa phương theo chủ đề bài
+const MASSAGE_POSTS = ['massage-da-nong-co-tac-dung-gi', 'lan-dau-di-massage', 'massage-body-bao-lau-mot-lan', 'cac-loai-massage-khac-nhau-the-nao',
+  'massage-cap-doi-buon-ma-thuot', 'spa-gan-krong-pac-cu-mgar-buon-don', 'du-lich-buon-ma-thuot-thu-gian-o-dau', 'kinh-nghiem-chon-spa-buon-ma-thuot',
+  'dau-moi-co-vai-gay-dan-van-phong', 'loi-ich-massage-da-nong'];
+const local = post.id.startsWith('goi-dau')
+  ? { href: '/goi-dau-duong-sinh-buon-ma-thuot/', label: 'Xem bảng giá 4 gói gội đầu dưỡng sinh tại Buôn Ma Thuột →' }
+  : MASSAGE_POSTS.includes(post.id)
+    ? { href: '/massage-buon-ma-thuot/', label: 'Xem bảng giá massage tại Buôn Ma Thuột →' }
+    : null;
 const related = (await getCollection('blog', ({ data, id }) => !data.draft && id !== post.id)).slice(0, 2);
 
 const schema = {
@@ -52,6 +61,7 @@ const schema = {
           <a href="/lien-he/#dat-lich" class="btn-primary">Đặt lịch ngay</a>
           <a href={info.zalo} target="_blank" rel="noopener" class="btn-ghost">Chat Zalo</a>
         </div>
+        {local && <a href={local.href} class="mt-5 inline-block font-medium text-bronze underline underline-offset-4">{local.label}</a>}
       </div>
       {related.length > 0 && (
         <div class="mt-12 border-t border-line pt-8">

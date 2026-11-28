@@ -1,0 +1,235 @@
+{
+  "updated": "2026-11-28",
+  "updatedText": "28/11/2026",
+  "priceNote": "Thời lượng và giá có thể điều chỉnh theo từng thời điểm, vui lòng liên hệ Zalo/hotline 0395 546 979 để được cập nhật.",
+  "disclaimer": "Các liệu trình mang tính thư giãn, chăm sóc sức khỏe, không thay thế chẩn đoán và điều trị y khoa.",
+  "reviewTags": "Khách hay nhắc: nhân viên nhiệt tình · gói gội dưỡng sinh · không gian ấm cúng",
+  "distances": [
+    { "from": "Ngã Sáu – trung tâm Buôn Ma Thuột", "km": "3,9 km", "time": "~7 phút" },
+    { "from": "Cư M'gar (Quảng Phú)", "km": "14 km", "time": "~20 phút" },
+    { "from": "Cư Kuin (Dray Bhăng)", "km": "24 km", "time": "~30 phút" },
+    { "from": "Krông Pắc (Phước An)", "km": "32 km", "time": "~45–50 phút" },
+    { "from": "Khu du lịch Buôn Đôn", "km": "50 km", "time": "~1 giờ" }
+  ],
+  "pages": {
+    "massage-buon-ma-thuot": {
+      "group": "massage-tri-lieu",
+      "seoTitle": "Massage Buôn Ma Thuột – Body, Đá Nóng, Cổ Vai Gáy",
+      "seoDescription": "Massage Buôn Ma Thuột tại 86 Hàn Mặc Tử: body, đá nóng, cổ vai gáy từ 249.000đ, 60–120 phút. Phòng riêng, nhận khách đến 22:00. Nhắn Zalo giữ phòng.",
+      "serviceName": "Massage Buôn Ma Thuột",
+      "serviceType": "Massage",
+      "eyebrow": "Mandala · 86 Hàn Mặc Tử, BMT",
+      "h1": "Massage Buôn Ma Thuột",
+      "sub": "Thả lỏng cơ thể, nhẹ nhõm cổ vai gáy",
+      "chips": ["Từ 249.000đ", "60–120 phút", "Nhận khách đến 22:00", "Có phòng đôi"],
+      "zaloLabel": "Nhắn Zalo giữ phòng",
+      "heroImage": "ky-thuat-vien-massage.jpg",
+      "heroAlt": "Kỹ thuật viên massage lưng cho khách tại Mandala Buôn Ma Thuột",
+      "summary": "<strong>Mandala – Healthcare & Spa</strong> là spa massage tại <strong>86 Hàn Mặc Tử, Buôn Ma Thuột, Đắk Lắk</strong>, cách Ngã Sáu khoảng 7 phút đi xe. Spa mở cửa <strong>10:00–22:00 mỗi ngày, nhận khách đến 22:00</strong>, có massage body, đá nóng, chuyên sâu, cổ vai gáy và liệu pháp hương thơm, giá <strong>từ 249.000đ</strong> cho <strong>60–120 phút</strong>, trong phòng riêng hoặc phòng đôi. Đặt lịch qua Zalo hoặc gọi <strong>0395 546 979</strong>.",
+      "facts": [
+        ["Địa chỉ", "86 Hàn Mặc Tử, Tân An, Buôn Ma Thuột, Đắk Lắk"],
+        ["Cách trung tâm", "3,9 km từ Ngã Sáu (~7 phút) · 1,4 km từ KS Mường Thanh Luxury"],
+        ["Giờ mở cửa", "10:00 – 22:00 mỗi ngày, nhận khách đến 22:00"],
+        ["Giá massage", "249.000đ – 499.000đ"],
+        ["Thời lượng", "60 – 90 – 120 phút tùy gói"],
+        ["Phòng", "Phòng riêng, có phòng đôi"],
+        ["Đánh giá", "4.7/5 · 84 đánh giá Google"],
+        ["Gửi xe", "Có chỗ đậu ô tô và xe máy"],
+        ["Đặt lịch", "Zalo / Hotline 0395 546 979"]
+      ],
+      "pricesTitle": "Bảng giá massage tại Mandala Buôn Ma Thuột",
+      "pricesIntro": "Giá niêm yết, đã gồm phòng riêng và trà. Không phụ phí, tip không bắt buộc.",
+      "priceFit": {
+        "Massage Body": "Mỏi người, cần thư giãn toàn thân",
+        "Vai Gáy Chuyên Sâu": "Cứng cổ, vai, gáy do ngồi máy tính lâu",
+        "Massage Body Đá Nóng": "Người lạnh, cơ căng, muốn ngủ ngon",
+        "Body Chuyên Sâu": "Cơ căng nhiều, thích lực tay mạnh",
+        "Liệu Pháp Bằng Hương Thơm": "Căng thẳng, khó ngủ",
+        "Massage Foot": "Mỏi chân, đi lại nhiều"
+      },
+      "priceOrder": ["Massage Body", "Vai Gáy Chuyên Sâu", "Massage Body Đá Nóng", "Body Chuyên Sâu", "Liệu Pháp Bằng Hương Thơm", "Massage Foot"],
+      "comboNote": "Muốn thư giãn trọn gói? Combo <strong>Liệu Pháp Thư Giãn Cơ Thể 799.000đ</strong> → <a href=\"/bang-gia/\">Bảng giá đầy đủ</a>",
+      "needs": {
+        "title": "Nên chọn kiểu massage nào?",
+        "intro": "Chọn theo cảm giác của cơ thể bạn hôm nay:",
+        "rows": [
+          ["Ngồi máy tính nhiều, cứng cổ vai gáy", "Vai Gáy Chuyên Sâu", "Dành trọn thời gian cho cổ, vai, gáy, bả vai"],
+          ["Mệt cả người sau tuần làm việc", "Massage Body", "Thư giãn toàn thân với tinh dầu, lực tay vừa"],
+          ["Người lạnh, cơ căng, khó ngủ", "Massage Đá Nóng", "Hơi ấm của đá giúp cơ thả lỏng nhanh hơn"],
+          ["Thích lực tay mạnh, cơ căng nhiều", "Body Chuyên Sâu", "Ấn sâu vào các nhóm cơ căng cứng"],
+          ["Căng thẳng, đầu óc nhiều suy nghĩ", "Liệu Pháp Hương Thơm", "Tinh dầu chọn theo tâm trạng, nhịp tay chậm"],
+          ["Đi cùng người thương, bạn bè", "Phòng đôi", "Hai người massage cùng lúc, cùng phòng"]
+        ],
+        "outro": "Chưa biết chọn gì? Nhắn Zalo mô tả chỗ đau mỏi, lễ tân gợi ý liệu trình hợp với bạn."
+      },
+      "article": {
+        "title": "Massage đá nóng khác massage body thế nào?",
+        "html": "<p><strong>Massage body</strong> dùng tinh dầu và đôi tay kỹ thuật viên để xoa, miết, day ấn toàn thân – hợp khi bạn cần thư giãn chung. <strong>Massage đá nóng</strong> thêm những viên đá được làm ấm, đặt và lướt dọc lưng, vai; hơi ấm giúp cơ thả lỏng nhanh và sâu hơn, rất hợp những tối se lạnh ở Buôn Ma Thuột hoặc khi bạn khó ngủ. Nếu chủ yếu mỏi cổ vai gáy, hãy chọn <strong>Vai Gáy Chuyên Sâu</strong>.</p><p>Đọc thêm: <a href=\"/blog/massage-da-nong-co-tac-dung-gi/\">Massage đá nóng có tác dụng gì?</a> · <a href=\"/blog/cac-loai-massage-khac-nhau-the-nao/\">Các loại massage khác nhau thế nào?</a> · <a href=\"/blog/lan-dau-di-massage/\">Lần đầu đi massage cần biết gì?</a></p>"
+      },
+      "videosTitle": "Xem một buổi massage tại Mandala",
+      "videos": ["massage-tinh-dau", "massage-tay-vai", "mot-buoi-tai-mandala"],
+      "processTitle": "Một buổi massage tại Mandala diễn ra thế nào?",
+      "process": [
+        ["Trà gừng ấm đón khách", "Nghỉ vài phút cho cơ thể chậm lại."],
+        ["Tư vấn nhanh", "Chỗ đau mỏi, lực tay nhẹ hay mạnh."],
+        ["Thay đồ, cất đồ", "Tủ đồ cá nhân có khóa, phòng tắm và nhà vệ sinh sạch."],
+        ["Massage trong phòng riêng", "Nhạc nhẹ, đèn dịu; báo tăng hoặc giảm lực bất cứ lúc nào."],
+        ["Nghỉ ngơi với trà và sữa chua", "Thư thả trước khi ra về."]
+      ],
+      "whyTitle": "Vì sao khách chọn Mandala khi tìm massage ở Buôn Ma Thuột?",
+      "why": [
+        ["Phòng riêng, yên tĩnh", "Có phòng đôi cho cặp đôi, bạn bè."],
+        ["Giá rõ ràng", "Niêm yết trên web, không phụ phí, tip không bắt buộc."],
+        ["Kỹ thuật viên tận tâm", "\"Nhân viên nhiệt tình\" là điều khách nhắc nhiều nhất trong đánh giá Google."],
+        ["Mở muộn", "Nhận khách đến 22:00, tiện cho người đi làm về muộn và khách công tác."],
+        ["Gần trung tâm, dễ đậu xe", "7 phút từ Ngã Sáu, có chỗ đậu ô tô và xe máy."]
+      ],
+      "gallery": [
+        { "src": "phong-doi.jpg", "alt": "Phòng massage đôi cho cặp đôi tại Mandala Buôn Ma Thuột", "caption": "Phòng đôi" },
+        { "src": "phong-bon-go.jpg", "alt": "Phòng massage bồn gỗ rèm trắng tại Mandala Buôn Ma Thuột", "caption": "Phòng bồn gỗ" },
+        { "src": "phong-massage-sen.jpg", "alt": "Phòng massage riêng ấm cúng tại Mandala Buôn Ma Thuột", "caption": "Phòng riêng" },
+        { "src": "phong-massage-bon-go.jpg", "alt": "Giường massage và bồn gỗ ngâm thảo dược tại Mandala", "caption": "Massage & ngâm bồn" },
+        { "src": "massage-body-tinh-dau-buon-ma-thuot.jpg", "alt": "Massage body tinh dầu tại Mandala Buôn Ma Thuột", "caption": "Massage body tinh dầu" },
+        { "src": "tra-gung-don-khach.jpg", "alt": "Trà gừng đón khách tại Mandala Buôn Ma Thuột", "caption": "Trà gừng đón khách" }
+      ],
+      "reviewsTitle": "Khách nói gì về massage tại Mandala",
+      "reviews": [
+        { "name": "Thảo Nguyên Nguyễn", "text": "Dịch vụ thân thiện, các chị massage rất êm, đang đau cả người mà về ngủ êm ru luôn. Sẽ ghé 1 tháng 2 lần ạ." },
+        { "name": "Nghi Lâm", "text": "Sẽ ghé lại khi đến BMT. Nhân viên có tay nghề, không gian yên tĩnh, thư giãn." },
+        { "name": "Thành Phạm", "text": "Mình và người yêu đi chung được các bạn hỗ trợ thêm không tính phí, rất ưng. Cảm ơn shop." },
+        { "name": "Bảo Ngọc Ngô Lâm", "text": "Không gian yên tĩnh, mùi hương cũng nhẹ nhàng dễ chịu, lựa chọn tốt để thư giãn sau những lúc mệt mỏi." },
+        { "name": "Thy Tran", "text": "Tư vấn nhiệt tình, nhân viên chuyên nghiệp, không gian trải nghiệm chill, dịch vụ tuyệt hảo 👍" }
+      ],
+      "locationTitle": "Mandala ở đâu tại Buôn Ma Thuột?",
+      "locationHtml": "<p><strong>86 Hàn Mặc Tử, Tân An, Buôn Ma Thuột</strong> – ở góc đường Hàn Mặc Tử, cách Ngã Sáu 3,9 km (khoảng 7 phút đi xe) và cách khách sạn Mường Thanh Luxury 1,4 km. Spa có chỗ đậu ô tô và xe máy.</p><p>Ở xa? Đọc thêm: <a href=\"/blog/spa-gan-krong-pac-cu-mgar-buon-don/\">Từ Krông Pắc, Cư M'gar, Buôn Đôn lên Buôn Ma Thuột thư giãn ở đâu?</a></p>",
+      "showDistances": true,
+      "faqTitle": "Câu hỏi thường gặp về massage ở Buôn Ma Thuột",
+      "faq": [
+        { "q": "Massage ở Mandala Buôn Ma Thuột giá bao nhiêu?", "a": "Từ 249.000đ (Massage Body 60 phút) đến 499.000đ (Liệu Pháp Bằng Hương Thơm 120 phút). Giá niêm yết, không phụ phí." },
+        { "q": "Mandala mở cửa đến mấy giờ?", "a": "10:00–22:00 mỗi ngày, nhận khách đến 22:00. Buổi tối và cuối tuần thường đông, nên nhắn Zalo giữ phòng trước." },
+        { "q": "Có cần đặt lịch trước không?", "a": "Không bắt buộc, nhưng nên đặt để có phòng và kỹ thuật viên ngay khi đến. Nhắn Zalo hoặc gọi 0395 546 979." },
+        { "q": "Tôi có được chọn lực tay không?", "a": "Có. Bạn báo nhẹ hơn hay mạnh hơn bất cứ lúc nào trong buổi massage." },
+        { "q": "Có phòng massage cặp đôi không?", "a": "Có phòng đôi để hai người massage cùng lúc – hợp cặp đôi, bạn bè, người thân." },
+        { "q": "Mandala có massage Thái hay massage tại nhà không?", "a": "Không. Mandala chỉ phục vụ tại spa với massage body, đá nóng, chuyên sâu, cổ vai gáy và hương thơm." },
+        { "q": "Từ Krông Pắc, Cư M'gar lên mất bao lâu, đậu xe ở đâu?", "a": "Từ Quảng Phú (Cư M'gar) khoảng 20 phút, từ Phước An (Krông Pắc) khoảng 45–50 phút đi ô tô. Spa có chỗ đậu ô tô và xe máy ngay tại 86 Hàn Mặc Tử." },
+        { "q": "Phụ nữ mang thai có massage được không?", "a": "Một số liệu trình không phù hợp. Hãy báo trước khi đặt lịch và hỏi ý kiến bác sĩ." }
+      ],
+      "ctaTitle": "Giữ phòng massage hôm nay",
+      "ctaText": "Nhắn Zalo, Messenger hoặc gọi để Mandala chuẩn bị phòng và kỹ thuật viên cho bạn.",
+      "formService": "Massage Body"
+    },
+    "goi-dau-duong-sinh-buon-ma-thuot": {
+      "group": "goi-dau-duong-sinh",
+      "seoTitle": "Gội Đầu Dưỡng Sinh Buôn Ma Thuột từ 69k",
+      "seoDescription": "Gội đầu dưỡng sinh Buôn Ma Thuột tại 86 Hàn Mặc Tử: gội thảo dược, bấm huyệt đầu, massage cổ vai gáy. Từ 69.000đ, nhận khách đến 22:00. Đặt qua Zalo.",
+      "serviceName": "Gội đầu dưỡng sinh Buôn Ma Thuột",
+      "serviceType": "Gội đầu dưỡng sinh (head spa)",
+      "eyebrow": "Mandala · 86 Hàn Mặc Tử, BMT",
+      "h1": "Gội đầu dưỡng sinh Buôn Ma Thuột",
+      "sub": "Đầu nhẹ, vai thả lỏng, tối ngủ ngon hơn",
+      "chips": ["Từ 69.000đ", "Thảo mộc tự nhiên", "Nhận khách đến 22:00", "★ 4.7 Google"],
+      "zaloLabel": "Nhắn Zalo giữ chỗ gội",
+      "heroImage": "goi-dau-duong-sinh-buon-ma-thuot-mandala.jpg",
+      "heroAlt": "Kỹ thuật viên gội đầu dưỡng sinh bằng thảo mộc cho khách tại Mandala Buôn Ma Thuột",
+      "summary": "<strong>Mandala – Healthcare & Spa</strong> (86 Hàn Mặc Tử, Buôn Ma Thuột, Đắk Lắk) có 4 gói gội đầu: <strong>Gội Đầu Thư Giãn 69.000đ</strong>, <strong>Gội Đầu Dưỡng Sinh 159.000đ – 60 phút</strong> (được chọn nhiều nhất), <strong>Gội Đầu Trung Hoa 239.000đ</strong> và <strong>Chăm Sóc Vùng Đầu 399.000đ</strong>. Gội bằng nước thảo mộc ấm, day ấn huyệt đầu và massage cổ vai gáy trong khu gội riêng tư. Mở cửa 10:00–22:00, nhận khách đến 22:00. Đặt qua Zalo/hotline <strong>0395 546 979</strong>.",
+      "facts": [
+        ["Địa chỉ", "86 Hàn Mặc Tử, Tân An, Buôn Ma Thuột, Đắk Lắk"],
+        ["Cách trung tâm", "~7 phút từ Ngã Sáu · 1,4 km từ KS Mường Thanh Luxury"],
+        ["Giờ mở cửa", "10:00 – 22:00 mỗi ngày, nhận khách đến 22:00"],
+        ["Giá", "69.000đ – 399.000đ"],
+        ["Gói bán chạy", "Gội Đầu Dưỡng Sinh – 159.000đ – 60 phút"],
+        ["Thảo mộc", "Sả, chanh, quế, gừng, bồ kết"],
+        ["Đánh giá", "4.7/5 · 84 đánh giá Google"],
+        ["Đặt lịch", "Zalo / Hotline 0395 546 979"]
+      ],
+      "pricesTitle": "Bảng giá gội đầu dưỡng sinh – nên chọn gói nào?",
+      "pricesIntro": "Giá niêm yết, không phụ phí. Gói Dưỡng Sinh được khách chọn nhiều nhất.",
+      "compare": {
+        "plans": [
+          { "name": "Gội Đầu Thư Giãn", "tag": "Nhanh, tiết kiệm", "fit": "Cần gội sạch, thư giãn nhanh" },
+          { "name": "Gội Đầu Dưỡng Sinh", "tag": "Được chọn nhiều nhất", "fit": "Đau đầu nhẹ, căng thẳng, mỏi cổ vai", "best": true },
+          { "name": "Gội Đầu Trung Hoa", "tag": "Nhiều bước cổ truyền", "fit": "Muốn trải nghiệm trọn vẹn" },
+          { "name": "Chăm Sóc Vùng Đầu", "tag": "Chuyên sâu nhất", "fit": "Da đầu cần chăm kỹ, vai gáy căng nhiều" }
+        ],
+        "rows": [
+          ["Gội sạch, massage đầu nhẹ", [true, true, true, true]],
+          ["Gội nước thảo mộc ấm", [false, true, true, true]],
+          ["Day ấn huyệt vùng đầu", [false, true, true, true]],
+          ["Massage cổ – vai – tay", [false, true, true, true]],
+          ["Quy trình gội nhiều bước kiểu Trung Hoa", [false, false, true, false]],
+          ["Chăm sóc chuyên sâu da đầu, vai gáy", [false, false, false, true]]
+        ]
+      },
+      "article": {
+        "title": "Gội đầu dưỡng sinh là gì?",
+        "html": "<p><strong>Gội đầu dưỡng sinh là cách gội đầu kết hợp làm sạch bằng nước thảo mộc ấm với day ấn các huyệt vùng đầu và massage cổ vai gáy</strong>, dựa trên quan niệm của y học cổ truyền phương Đông rằng vùng đầu tập trung nhiều kinh mạch, huyệt đạo. Khác với gội đầu thường chỉ để sạch tóc, một buổi gội dưỡng sinh là khoảng 60 phút nằm thư giãn để đầu óc nhẹ nhõm và cổ vai thả lỏng.</p><p>Đọc thêm: <a href=\"/blog/goi-dau-duong-sinh-la-gi/\">Gội đầu dưỡng sinh là gì? 5 lợi ích</a> · <a href=\"/blog/goi-dau-trung-hoa-khac-goi-dau-duong-sinh/\">Gội đầu Trung Hoa khác gội đầu dưỡng sinh thế nào?</a></p>"
+      },
+      "benefitsTitle": "Gội đầu dưỡng sinh có tác dụng gì?",
+      "benefits": [
+        ["Đầu nhẹ, bớt căng thẳng", "Day ấn nhịp nhàng vùng thái dương, đỉnh đầu, chân tóc gáy giúp cơ đầu cổ thả lỏng."],
+        ["Ngủ ngon hơn", "Nhiều khách cho biết tối hôm đó ngủ sâu hơn nhờ nước ấm, hương thảo mộc và không gian yên tĩnh."],
+        ["Nhẹ cổ vai gáy", "Phần massage cổ, vai, tay hợp người ngồi máy tính nhiều giờ."],
+        ["Da đầu thông thoáng, tóc mềm", "Thảo mộc làm sạch nhẹ nhàng."]
+      ],
+      "benefitsNote": "Gội đầu dưỡng sinh mang tính thư giãn, hỗ trợ; không thay thế điều trị y khoa. Đọc thêm: <a href=\"/blog/goi-dau-duong-sinh-giup-ngu-ngon/\">Mất ngủ, đau đầu vì căng thẳng – gội đầu dưỡng sinh có giúp được không?</a>",
+      "videosTitle": "Xem một buổi gội đầu tại Mandala",
+      "videos": ["goi-dau-duong-sinh-day-an-dau", "goi-dau-duong-sinh-massage-da-dau", "goi-dau-duong-sinh-xa-toc-nuoc-am", "goi-dau-duong-sinh"],
+      "processTitle": "Quy trình gội đầu dưỡng sinh tại Mandala",
+      "process": [
+        ["Trà gừng ấm đón khách", ""],
+        ["Hỏi nhanh tình trạng", "Đau đầu, mất ngủ, da đầu."],
+        ["Massage khởi động", "Cổ, vai, gáy."],
+        ["Gội bằng nước thảo mộc ấm", ""],
+        ["Day ấn huyệt vùng đầu", "Thái dương, đỉnh đầu, chân tóc gáy."],
+        ["Massage mặt, ủ ấm", ""],
+        ["Xả sạch, sấy khô tóc", "Nghỉ với trà và sữa chua."]
+      ],
+      "processNote": "Gói Thư Giãn rút gọn còn gội sạch và massage đầu nhẹ – xem bảng so sánh ở trên.",
+      "forWho": {
+        "title": "Ai nên gội đầu dưỡng sinh?",
+        "items": ["Người làm việc trí óc, hay căng thẳng", "Người hay đau đầu nhẹ, khó ngủ", "Dân văn phòng mỏi cổ vai gáy", "Khách công tác, du lịch muốn thư giãn buổi tối sau ngày dài"],
+        "note": "Báo trước nếu bạn có vết thương vùng đầu, bệnh da đầu, huyết áp không ổn định hoặc đang mang thai."
+      },
+      "whyTitle": "Vì sao chọn Mandala để gội đầu dưỡng sinh ở Buôn Ma Thuột?",
+      "why": [
+        ["Được khách nhắc nhiều nhất", "Gói gội dưỡng sinh là dịch vụ khách nhắc nhiều nhất trong đánh giá Google của Mandala."],
+        ["Gội cả trưa lẫn tối", "Mở 10:00, nhận khách đến 22:00."],
+        ["Khu gội riêng tư", "Ghế gội nằm, nước ấm, chuông gió, hương sả quế."],
+        ["Sạch sẽ, tiện nghi", "Phòng thay đồ, tủ đồ có khóa, nhà vệ sinh sạch."],
+        ["Trà và sữa chua", "Thư thả sau buổi gội."],
+        ["Giá rõ ràng", "Từ 69.000đ, không phụ phí."]
+      ],
+      "gallery": [
+        { "src": "phong-goi-dau-duong-sinh-mandala.jpg", "alt": "Khu gội đầu dưỡng sinh với ghế gội nằm tại Mandala Buôn Ma Thuột", "caption": "Khu gội đầu" },
+        { "src": "khu-goi-dau.jpg", "alt": "Giường gội đầu thảo mộc tại Mandala Buôn Ma Thuột", "caption": "Giường gội riêng" },
+        { "src": "sa-que-gung-thao-moc-mandala.jpg", "alt": "Sả, quế, gừng và thảo mộc dùng khi gội đầu dưỡng sinh tại Mandala", "caption": "Thảo mộc tự nhiên" },
+        { "src": "tra-gung-don-khach.jpg", "alt": "Trà gừng đón khách tại Mandala Buôn Ma Thuột", "caption": "Trà gừng đón khách" }
+      ],
+      "reviewsTitle": "Khách nói gì về gội đầu tại Mandala",
+      "reviews": [
+        { "name": "Mai Anh Kiều", "text": "Dịch vụ gội đầu dưỡng sinh tốt, massage cả cổ vai và cánh tay. Các bạn nhân viên rất dễ thương. Mình làm xong thấy thoải mái và thư giãn lắm." },
+        { "name": "Anh Trâm", "text": "Mỗi năm đi công tác Đắk Lắk vài lần và may mắn tìm được quán này… Sát giờ đóng cửa vẫn nhận khách gội đầu 1 tiếng… Các bạn làm dịch vụ nhẹ nhàng, thân thiện." },
+        { "name": "Phan Long", "text": "Trưa nắng ghé đây gội đầu dưỡng sinh tránh nóng là đẹp." },
+        { "name": "du vũ", "text": "Không gian xịn mịn. Nhân viên dễ thương, phục vụ cực kỳ chu đáo." },
+        { "name": "Kiều hiền Võ thị", "text": "Dịch vụ làm rất tốt. Nhân viên dễ thương, thân thiện!" }
+      ],
+      "locationTitle": "Tìm chỗ gội đầu dưỡng sinh gần đây ở Buôn Ma Thuột?",
+      "locationHtml": "<p>Mandala ở <strong>86 Hàn Mặc Tử, Tân An, Buôn Ma Thuột</strong> – khoảng 7 phút đi xe từ Ngã Sáu, 3 phút từ khách sạn Mường Thanh Luxury (1,4 km). Có chỗ đậu ô tô và xe máy. Bấm \"Chỉ đường\" để Google Maps dẫn đường từ chỗ bạn đang đứng.</p><p>Đọc thêm: <a href=\"/blog/goi-dau-duong-sinh-buon-ma-thuot/\">Gội đầu dưỡng sinh ở Buôn Ma Thuột – kinh nghiệm chọn chỗ</a></p>",
+      "showDistances": false,
+      "faqTitle": "Câu hỏi thường gặp về gội đầu dưỡng sinh",
+      "faq": [
+        { "q": "Gội đầu dưỡng sinh ở Buôn Ma Thuột giá bao nhiêu?", "a": "Tại Mandala: Gội Đầu Thư Giãn 69.000đ, Gội Đầu Dưỡng Sinh 159.000đ (60 phút), Gội Đầu Trung Hoa 239.000đ, Chăm Sóc Vùng Đầu 399.000đ." },
+        { "q": "Lần đầu gội nên chọn gói nào?", "a": "Gội Đầu Dưỡng Sinh 159.000đ – gói được chọn nhiều nhất, có gội thảo mộc, day ấn huyệt đầu và massage cổ vai tay." },
+        { "q": "Gội đầu dưỡng sinh khác gội đầu thường thế nào?", "a": "Gội thường chỉ làm sạch tóc. Gội dưỡng sinh thêm nước thảo mộc ấm, day ấn huyệt vùng đầu và massage cổ vai gáy để thư giãn." },
+        { "q": "Gội đầu Trung Hoa khác gội đầu dưỡng sinh ra sao?", "a": "Gội Trung Hoa có quy trình nhiều bước hơn theo phương pháp cổ truyền Trung Hoa và lâu hơn; gội dưỡng sinh tập trung vào thảo mộc và bấm huyệt đầu, cổ, vai." },
+        { "q": "Bao lâu nên gội đầu dưỡng sinh một lần?", "a": "Khoảng 1–2 lần mỗi tuần, hoặc khi thấy căng thẳng, mệt mỏi." },
+        { "q": "Buổi trưa hoặc buổi tối có gội được không?", "a": "Được. Mandala mở cửa từ 10:00 và nhận khách đến 22:00 mỗi ngày." },
+        { "q": "Đi 2–3 người gội cùng lúc được không?", "a": "Được, nên nhắn Zalo trước để Mandala sắp xếp đủ chỗ gội và kỹ thuật viên." },
+        { "q": "Gội xong có sấy tóc không?", "a": "Có, kỹ thuật viên sấy khô tóc trước khi bạn ra về." }
+      ],
+      "ctaTitle": "Giữ chỗ gội đầu dưỡng sinh hôm nay",
+      "ctaText": "Buổi tối thường kín chỗ – nhắn Zalo để Mandala giữ chỗ cho bạn.",
+      "formService": "Gội Đầu Dưỡng Sinh"
+    }
+  }
+}

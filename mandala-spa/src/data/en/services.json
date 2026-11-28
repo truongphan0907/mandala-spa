@@ -24,12 +24,35 @@
         "A calmer, lighter mind"
       ],
       "items": [
-        { "name": "Aromatic Oil Body Massage", "desc": "Full-body massage with essential oil and medium pressure – gentle and relaxing." },
-        { "name": "Hot Stone Body Massage", "desc": "Warm basalt stones combined with massage to relax muscles deeply and warm the body." },
-        { "name": "Deep Tissue Body Massage", "desc": "Firm pressure targeting tight muscle groups, combined with acupressure." },
-        { "name": "Deep Neck & Shoulder Massage", "desc": "Focused work on knots in the neck, shoulders and upper back." },
-        { "name": "Aromatherapy Massage", "desc": "Natural essential oils chosen to suit your mood – calming and sleep-friendly." },
-        { "name": "Herbal Foot Soak & Foot Massage", "desc": "A warm herbal foot soak followed by foot acupressure to refresh tired legs." }
+        {
+          "name": "Aromatic Oil Body Massage",
+          "desc": "Full-body massage with essential oil and medium pressure – gentle and relaxing.",
+          "duration": "60 min"
+        },
+        {
+          "name": "Hot Stone Body Massage",
+          "desc": "Warm basalt stones combined with massage to relax muscles deeply and warm the body.",
+          "duration": "90 min"
+        },
+        {
+          "name": "Deep Tissue Body Massage",
+          "desc": "Firm pressure targeting tight muscle groups, combined with acupressure.",
+          "duration": "90 min"
+        },
+        {
+          "name": "Deep Neck & Shoulder Massage",
+          "desc": "Focused work on knots in the neck, shoulders and upper back.",
+          "duration": "60 min"
+        },
+        {
+          "name": "Aromatherapy Massage",
+          "desc": "Natural essential oils chosen to suit your mood – calming and sleep-friendly.",
+          "duration": "120 min"
+        },
+        {
+          "name": "Herbal Foot Soak & Foot Massage",
+          "desc": "A warm herbal foot soak followed by foot acupressure to refresh tired legs."
+        }
       ],
       "process": [
         "Welcome with warm ginger tea",
@@ -77,10 +100,26 @@
         "A refreshed scalp and softer hair"
       ],
       "items": [
-        { "name": "Relaxing Hair Wash", "desc": "A thorough wash with a gentle head massage." },
-        { "name": "Herbal Head Spa", "desc": "Herbal hair wash with acupressure for the head, neck and shoulders." },
-        { "name": "Chinese-Style Head Spa", "desc": "A multi-step head spa based on traditional Chinese techniques." },
-        { "name": "Scalp, Neck & Shoulder Treatment", "desc": "An intensive treatment for the scalp, neck and shoulders." }
+        {
+          "name": "Relaxing Hair Wash",
+          "desc": "A thorough wash with a gentle head massage.",
+          "duration": "30 min"
+        },
+        {
+          "name": "Herbal Head Spa",
+          "desc": "Herbal hair wash with acupressure for the head, neck and shoulders.",
+          "duration": "60 min"
+        },
+        {
+          "name": "Chinese-Style Head Spa",
+          "desc": "A multi-step head spa based on traditional Chinese techniques.",
+          "duration": "75 min"
+        },
+        {
+          "name": "Scalp, Neck & Shoulder Treatment",
+          "desc": "An intensive treatment for the scalp, neck and shoulders.",
+          "duration": "90 min"
+        }
       ],
       "process": [
         "Welcome with warm ginger tea",
@@ -124,10 +163,22 @@
         "A lighter, more supple body"
       ],
       "items": [
-        { "name": "Royal Herbal Deep Body Therapy", "desc": "A full-body treatment with premium herbal products." },
-        { "name": "Royal Herbal Neck & Shoulder Therapy", "desc": "Deep work on the neck and shoulders with warm herbs." },
-        { "name": "Herbal Body Contouring", "desc": "Helps firm the abdomen and waist using herbs and warming techniques." },
-        { "name": "Lower-Back Warming Therapy", "desc": "A warming treatment for the back and lower back that leaves you warm and supple. Known in oriental medicine as “kidney care”." }
+        {
+          "name": "Royal Herbal Deep Body Therapy",
+          "desc": "A full-body treatment with premium herbal products."
+        },
+        {
+          "name": "Royal Herbal Neck & Shoulder Therapy",
+          "desc": "Deep work on the neck and shoulders with warm herbs."
+        },
+        {
+          "name": "Herbal Body Contouring",
+          "desc": "Helps firm the abdomen and waist using herbs and warming techniques."
+        },
+        {
+          "name": "Lower-Back Warming Therapy",
+          "desc": "A warming treatment for the back and lower back that leaves you warm and supple. Known in oriental medicine as “kidney care”."
+        }
       ],
       "process": [
         "Welcome with warm ginger tea",
@@ -147,9 +198,18 @@
         }
       ],
       "gallery": [
-        { "alt": "Herbal soak with ginger, cinnamon, lemongrass and herbal powder", "caption": "Warm herbal soak" },
-        { "alt": "Herbal products beside a vase of lotus flowers", "caption": "Herbal products" },
-        { "alt": "Tray of Royal Herbal Line products", "caption": "Royal Herbal Line" }
+        {
+          "alt": "Herbal soak with ginger, cinnamon, lemongrass and herbal powder",
+          "caption": "Warm herbal soak"
+        },
+        {
+          "alt": "Herbal products beside a vase of lotus flowers",
+          "caption": "Herbal products"
+        },
+        {
+          "alt": "Tray of Royal Herbal Line products",
+          "caption": "Royal Herbal Line"
+        }
       ]
     },
     {
@@ -176,14 +236,38 @@
         "Relaxation with a face massage"
       ],
       "items": [
-        { "name": "Glow Skin Basic Facial", "desc": "Cleansing, hydration and a relaxing face massage." },
-        { "name": "Jade Face Lifting & Rejuvenation", "desc": "Nourishes and lifts the skin for a fresh, youthful look." },
-        { "name": "Acne Basic Facial", "desc": "Deep cleansing, extractions and LED light therapy." },
-        { "name": "CO2 Therapy", "desc": "An intensive skin detox using CO2 (carbonic) therapy." },
-        { "name": "Glowing Skin Facial", "desc": "Rejuvenating, brightening and glow-boosting." },
-        { "name": "Recovery Peel", "desc": "A gentle renewing peel that helps the skin recover." },
-        { "name": "Glow Peel", "desc": "For smooth, even-toned skin." },
-        { "name": "Acne Peel", "desc": "Helps calm breakouts and unclog pores." }
+        {
+          "name": "Glow Skin Basic Facial",
+          "desc": "Cleansing, hydration and a relaxing face massage."
+        },
+        {
+          "name": "Jade Face Lifting & Rejuvenation",
+          "desc": "Nourishes and lifts the skin for a fresh, youthful look."
+        },
+        {
+          "name": "Acne Basic Facial",
+          "desc": "Deep cleansing, extractions and LED light therapy."
+        },
+        {
+          "name": "CO2 Therapy",
+          "desc": "An intensive skin detox using CO2 (carbonic) therapy."
+        },
+        {
+          "name": "Glowing Skin Facial",
+          "desc": "Rejuvenating, brightening and glow-boosting."
+        },
+        {
+          "name": "Recovery Peel",
+          "desc": "A gentle renewing peel that helps the skin recover."
+        },
+        {
+          "name": "Glow Peel",
+          "desc": "For smooth, even-toned skin."
+        },
+        {
+          "name": "Acne Peel",
+          "desc": "Helps calm breakouts and unclog pores."
+        }
       ],
       "process": [
         "Welcome with warm ginger tea",
@@ -205,7 +289,13 @@
     }
   ],
   "combos": [
-    { "name": "Body Relaxation Ritual", "desc": "Ask our reception for the full steps of this package." },
-    { "name": "Mind Revitalizing Ritual", "desc": "Ask our reception for the full steps of this package." }
+    {
+      "name": "Body Relaxation Ritual",
+      "desc": "Ask our reception for the full steps of this package."
+    },
+    {
+      "name": "Mind Revitalizing Ritual",
+      "desc": "Ask our reception for the full steps of this package."
+    }
   ]
 }
